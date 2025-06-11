@@ -1,0 +1,73 @@
+.container {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 50;
+}
+
+.button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.chatBox {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.chatContent {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.userMessage {
+  text-align: right;
+  background-color: #2563eb;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.botMessage {
+  text-align: left;
+  background-color: #374151;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #374151;
+  color: white;
+}
+
+.sendButton {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.sendButton:hover {
+  background-color: #2563eb;
+}
