@@ -237,6 +237,171 @@
 // }
 
 
+// 'use client';
+
+// import styles from './hero.module.css';
+// import { motion } from 'framer-motion';
+// import Link from 'next/link';
+// import { FaCubes, FaPuzzlePiece, FaEnvelope } from 'react-icons/fa';
+
+// export default function Hero() {
+//   return (
+//     <section className={styles.heroContainer}>
+//       <motion.div
+//         className={styles.content}
+//         initial={{ opacity: 0, y: 40 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1.2 }}
+//       >
+//         <h1 className={styles.title}>
+//           <span className={styles.accent}>CLU</span>
+//           <span>sters of </span>
+//           <span className={styles.accent}>M</span>
+//           <span>ulti-</span>
+//           <span className={styles.accent}>O</span>
+//           <span>rganizations</span>
+//           <br />
+//           <span className={styles.accent}>S</span>
+//           <span>upport & </span>
+//           <span className={styles.accent}>S</span>
+//           <span>ervices</span>
+//         </h1>
+
+//         <p className={styles.subtitle}>
+//           Transforming industries through next-gen AI SaaS products,
+//           <br />
+//           solutions and platforms that redefine automation.
+//         </p>
+
+//         <div className={styles.buttonGroup}>
+//           <Link href="/products" className={styles.glassButton}>
+//             <FaCubes className={styles.icon} /> Products
+//           </Link>
+//           <Link href="/solutions" className={styles.glassButton}>
+//             <FaPuzzlePiece className={styles.icon} /> Solutions
+//           </Link>
+//           <Link href="/contact" className={styles.glassButton}>
+//             <FaEnvelope className={styles.icon} /> Contact Us
+//           </Link>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// }
+
+// 'use client';
+
+// import styles from './hero.module.css';
+// import { motion } from 'framer-motion';
+// import Link from 'next/link';
+// import { FaCubes, FaPuzzlePiece, FaEnvelope } from 'react-icons/fa';
+
+// export default function Hero() {
+//   return (
+//     <section className={styles.heroContainer}>
+//       <motion.div
+//         className={styles.content}
+//         initial={{ opacity: 0, y: 40 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1.2 }}
+//       >
+//         <h1 className={styles.title}>
+//           <span className={styles.accent}>CLU</span>
+//           <span>sters of </span>
+//           <span className={styles.accent}>M</span>
+//           <span>ulti-</span>
+//           <span className={styles.accent}>O</span>
+//           <span>rganizations</span>
+//           <br />
+//           <span className={styles.accent}>S</span>
+//           <span>upport & </span>
+//           <span className={styles.accent}>S</span>
+//           <span>ervices</span>
+//         </h1>
+
+//         <p className={styles.subtitle}>
+//           Transforming industries through next-gen AI SaaS products,
+//           <br />
+//           solutions and platforms that redefine automation.
+//         </p>
+
+//         <div className={styles.buttonGroup}>
+//           <Link href="/products" className={styles.glassButton}>
+//             <FaCubes className={styles.icon} /> Products
+//           </Link>
+//           <Link href="/solutions" className={styles.glassButton}>
+//             <FaPuzzlePiece className={styles.icon} /> Solutions
+//           </Link>
+//           <Link href="/contact" className={styles.glassButton}>
+//             <FaEnvelope className={styles.icon} /> Contact Us
+//           </Link>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// }
+
+
+
+// 'use client';
+
+// import styles from './hero.module.css';
+// import { motion } from 'framer-motion';
+// import Link from 'next/link';
+// import { FaCubes, FaPuzzlePiece, FaEnvelope } from 'react-icons/fa';
+
+// export default function Hero() {
+//   return (
+//     <section className={styles.heroContainer}>
+//       {/* ✨ Particle container */}
+//       <div className={styles.particles}>
+//         {Array.from({ length: 40 }).map((_, i) => (
+//           <span key={i} className={styles.particle}></span>
+//         ))}
+//       </div>
+
+//       <motion.div
+//         className={styles.content}
+//         initial={{ opacity: 0, y: 40 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1.2 }}
+//       >
+//         <h1 className={styles.title}>
+//           <span className={styles.accent}>CLU</span>
+//           <span>sters of </span>
+//           <span className={styles.accent}>M</span>
+//           <span>ulti-</span>
+//           <span className={styles.accent}>O</span>
+//           <span>rganizations</span>
+//           <br />
+//           <span className={styles.accent}>S</span>
+//           <span>upport & </span>
+//           <span className={styles.accent}>S</span>
+//           <span>ervices</span>
+//         </h1>
+
+//         <p className={styles.subtitle}>
+//           Transforming industries through next-gen AI SaaS products,
+//           <br />
+//           solutions and platforms that redefine automation.
+//         </p>
+
+//         <div className={styles.buttonGroup}>
+//           <Link href="/products" className={styles.glassButton}>
+//             <FaCubes className={styles.icon} /> Products
+//           </Link>
+//           <Link href="/solutions" className={styles.glassButton}>
+//             <FaPuzzlePiece className={styles.icon} /> Solutions
+//           </Link>
+//           <Link href="/contact" className={styles.glassButton}>
+//             <FaEnvelope className={styles.icon} /> Contact Us
+//           </Link>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// }
+
 'use client';
 
 import styles from './hero.module.css';
@@ -247,6 +412,13 @@ import { FaCubes, FaPuzzlePiece, FaEnvelope } from 'react-icons/fa';
 export default function Hero() {
   return (
     <section className={styles.heroContainer}>
+      {/* ✨ Particle layer */}
+      <div className={styles.particles}>
+        {Array.from({ length: 60 }).map((_, i) => (
+          <span key={i} className={styles.particle}></span>
+        ))}
+      </div>
+
       <motion.div
         className={styles.content}
         initial={{ opacity: 0, y: 40 }}
