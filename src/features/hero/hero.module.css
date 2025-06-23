@@ -193,13 +193,6 @@
   padding: 2rem;
 }
 
-.splineWrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.2;
-}
-
 .content {
   position: relative;
   z-index: 2;
@@ -237,7 +230,7 @@
   margin-right: auto;
 }
 
-/* Glass Buttons */
+/* Buttons */
 
 .buttonGroup {
   display: flex;
@@ -270,7 +263,8 @@
   font-size: 1.1rem;
 }
 
-/* Responsive adjustments */
+/* Responsive design */
+
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
