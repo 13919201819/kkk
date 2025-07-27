@@ -28,6 +28,7 @@ import Header from '../features/header/Header';
 import Footer from '../features/footer/Footer';
 import AIAssistant from '../features/ai-assistant/AIAssistant';
 import ParticlesBackground from '../features/particles/ParticlesBackground';
+import SplashCursor from '@/features/cursor/SplashCursor';
 import './globals.css';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -41,8 +42,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="bg-gray-900 text-white">
         <ParticlesBackground />
+        <SplashCursor />
         <Header />
-        <main>{children}</main>
+        <main>{children}
+        </main>
         <Footer />
         <AIAssistant />
       </body>
