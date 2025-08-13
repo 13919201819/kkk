@@ -1,4 +1,4 @@
-import Services from '@/features/services/Services';
+import Services from '@/features/solutions/Solutions';
 
 // Default export to make this file a module
 export default function ServicesPage() {

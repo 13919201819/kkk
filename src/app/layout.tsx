@@ -27,7 +27,10 @@ import Script from 'next/script';
 import Header from '../features/header/Header';
 import Footer from '../features/footer/Footer';
 import AIAssistant from '../features/ai-assistant/AIAssistant';
-import ParticlesBackground from '../features/particles/ParticlesBackground';
+// import ParticlesBackground from '../features/particles/ParticlesBackground';
+import Galaxy from '../features/particles/Galaxy';
+
+
 import SplashCursor from '@/features/cursor/SplashCursor';
 import './globals.css';
 
@@ -41,7 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="bg-gray-900 text-white">
-        <ParticlesBackground />
+        <Galaxy />
         <SplashCursor />
         <Header />
         <main>{children}
