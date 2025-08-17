@@ -38,7 +38,6 @@
 "use client";
 
 import styles from "./projects.module.css";
-import { ScrollTimeline } from "@/components/lightswind/scroll-timeline";
 
 export default function Project() {
   return (
@@ -52,9 +51,7 @@ export default function Project() {
       </div>
 
       {/* 🔥 Scroll timeline integrated here */}
-      <div className={styles.timelineWrapper}>
-        <ScrollTimeline />
-      </div>
+     
     </section>
   );
 }
