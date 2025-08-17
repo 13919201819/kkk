@@ -1,0 +1,144 @@
+.section {
+  padding: 4rem 2rem;
+  background: #000;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+/* ---------------- Marquee ---------------- */
+.marqueeRow {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+}
+
+.rightToLeft .marqueeTrack {
+  animation: marqueeRightToLeft 25s linear infinite;
+}
+
+.leftToRight .marqueeTrack {
+  animation: marqueeLeftToRight 25s linear infinite;
+}
+
+/* Pause when hovering row */
+.marqueeRow:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+/* ---------------- Cards (same as Solutions) ---------------- */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  min-width: 300px;
+  min-height: 350px;
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 60%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(168, 85, 247, 0.6) 0%,
+    rgba(59, 130, 246, 0.3) 40%,
+    transparent 80%
+  );
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  position: relative;
+  z-index: 3;
+}
+
+.learnMore {
+  display: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.card:hover .learnMore {
+  display: inline-block;
+}
+
+.learnMore:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes marqueeRightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeLeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
