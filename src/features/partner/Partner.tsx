@@ -58,7 +58,7 @@
 
 
 import styles from "./partner.module.css";
-import { Users } from "lucide-react";
+// import { Users } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { Handshake } from "lucide-react";
 
