@@ -2,11 +2,14 @@
 import Galaxy from '@/features/particles/Galaxy';
 import Button from '@/components/ui/Button';
 import { FaArrowRight, FaPhone } from "react-icons/fa"; 
+import SplashCursor from '@/features/cursor/SplashCursor';
+
 
 const Hero = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
       {/* Galaxy background */}
+      <SplashCursor />
       <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
         <Galaxy 
           mouseRepulsion={true}

@@ -1,6 +1,8 @@
 /* .section {
-  background-color: #1a1a1a;
+  position: relative; 
+  min-height: 100vh; 
   padding: 5rem 2rem;
+  overflow: hidden; 
 }
 
 .content {
@@ -13,11 +15,15 @@
   color: #b0b0b0;
 } */
 
+
+
 .section {
   position: relative; 
   min-height: 100vh; 
   padding: 5rem 2rem;
-  overflow: hidden; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .content {

@@ -31,7 +31,7 @@ import AIAssistant from '../features/ai-assistant/AIAssistant';
 import Galaxy from '../features/particles/Galaxy';
 
 
-import SplashCursor from '@/features/cursor/SplashCursor';
+// import SplashCursor from '@/features/cursor/SplashCursor';
 import './globals.css';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="bg-gray-900 text-white">
         <Galaxy />
-        <SplashCursor />
+        {/* <SplashCursor /> */}
         <Header />
         <main>{children}
         </main>
