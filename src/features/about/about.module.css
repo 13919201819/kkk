@@ -1,25 +1,6 @@
-/* .section {
-  position: relative; 
-  min-height: 100vh; 
-  padding: 5rem 2rem;
-  overflow: hidden; 
-}
-
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.content p {
-  color: #b0b0b0;
-} */
-
-
-
 .section {
-  position: relative; 
-  min-height: 100vh; 
+  position: relative;
+  min-height: 100vh;
   padding: 5rem 2rem;
   overflow: hidden;
   display: flex;
@@ -27,11 +8,216 @@
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
 .content p {
   color: #b0b0b0;
+  line-height: 1.7;
+}
+
+.content h1 {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.content h2 {
+  color: #ffffff;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Approach grid - single column centered */
+.approachGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Subsidiary cards - exact replication of solutions card properties */
+.subsidiaryGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Desktop - 2 columns for subsidiaries */
+@media (min-width: 769px) {
+  .subsidiaryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 column */
+@media (max-width: 768px) {
+  .subsidiaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subsidiaryCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  min-height: 250px; /* Reduced height */
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subsidiaryCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.subsidiaryCard::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 60%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(168, 85, 247, 0.6) 0%,
+    rgba(59, 130, 246, 0.3) 40%,
+    transparent 80%
+  );
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.subsidiaryCard::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: none;
+  transform: rotate(15deg);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.subsidiaryIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.subsidiaryTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.subsidiaryDescription {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 3;
+  flex-grow: 1;
+}
+
+.subsidiaryBulletPoints {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  z-index: 3;
+  flex-grow: 1;
+}
+
+.subsidiaryBulletPoint {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.subsidiaryBulletPoint::before {
+  content: "•";
+  color: rgba(168, 85, 247, 0.8);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.subsidiarySlogan {
+  font-size: 0.85rem;
+  color: rgba(99, 102, 241, 0.9);
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.subsidiaryLearnMore {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 3;
+  margin-top: auto; /* This will push the button to the bottom */
+}
+
+.subsidiaryLearnMore:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .subsidiaryCard {
+    min-height: 400px; /* Adjusted for mobile */
+    padding: 1.5rem;
+  }
+  .subsidiaryTitle {
+    font-size: 1.1rem;
+  }
+  .subsidiaryDescription {
+    font-size: 0.9rem;
+  }
+  .subsidiaryBulletPoint {
+    font-size: 0.85rem;
+  }
 }
