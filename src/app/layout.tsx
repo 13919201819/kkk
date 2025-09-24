@@ -23,7 +23,6 @@
 'use client';
 
 import { ReactNode } from 'react';
-import Script from 'next/script';
 import Header from '../features/header/Header';
 import Footer from '../features/footer/Footer';
 import AIAssistant from '../features/ai-assistant/AIAssistant';
@@ -39,12 +38,6 @@ import './globals.css';
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <Script 
-          src="https://unpkg.com/@splinetool/viewer@1.10.7/build/spline-viewer.js"
-          strategy="beforeInteractive"
-        />
-      </head>
       <body className="bg-gray-900 text-white">
         <LenisProvider/>
         <Galaxy />
