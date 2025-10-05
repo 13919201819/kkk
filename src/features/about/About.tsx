@@ -1,6 +1,17 @@
+'use client';
+
+import { useTranslation } from 'react-i18next';
 import styles from './about.module.css';
 
 export default function About() {
+  const { t } = useTranslation();
+  const subsidiaries = t('about.innovationEcosystem.subsidiaries', { returnObjects: true }) as Array<{
+    name: string;
+    description: string;
+    button?: string;
+    slogan?: string;
+  }>;
+
   return (
     <section id="about" className={`${styles.section} relative`}>
       {/* Indigo Cosmos Background */}
@@ -12,54 +23,62 @@ export default function About() {
       <div className="container mx-auto relative z-10 h-full flex items-center justify-center">
         <div className={styles.content}>
           <h1 className="text-4xl font-bold text-center mb-12 text-white">
-            About CLUMOSS
+            {t('about.title')}
           </h1>
           
           <div className="space-y-6">
             <p className="text-xl leading-relaxed">
-              CLUMOSS is India&apos;s leading technology conglomerate specializing in advanced artificial intelligence solutions. We architect and deploy comprehensive AI ecosystems that transform how businesses operate, innovate, and scale in the digital economy.
+              {t('about.description.0')}
             </p>
 
             <p className="text-lg leading-relaxed">
-              Our expertise spans the full spectrum of intelligent technologies—from machine learning and deep learning frameworks to cutting-edge generative AI, voice recognition systems, and autonomous agent orchestration. We combine these capabilities with enterprise-grade security and cloud-native architecture to deliver solutions that are both powerful and practical.
+              {t('about.description.1')}
             </p>
 
             <div className="mt-12 mb-8">
-              <h2 className="text-2xl font-bold text-white mb-8 text-center">Our Innovation Ecosystem</h2>
+              <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                {t('about.innovationEcosystem.title')}
+              </h2>
               
               <div className={styles.subsidiaryGrid}>
                 <div className={styles.subsidiaryCard}>
-                  <h3 className={styles.subsidiaryTitle}>MistrAI</h3>
+                  <h3 className={styles.subsidiaryTitle}>{subsidiaries[0]?.name}</h3>
                   <p className={styles.subsidiaryDescription}>
-                    Our product development arm focuses on creating sophisticated SaaS platforms and AI-powered applications. MistrAI transforms complex business challenges into intuitive, scalable solutions that drive measurable results across industries.
+                    {subsidiaries[0]?.description}
                   </p>
-                  <button className={styles.subsidiaryLearnMore}>Learn More</button>
+                  <button className={styles.subsidiaryLearnMore}>
+                    {subsidiaries[0]?.button}
+                  </button>
                 </div>
 
                 <div className={styles.subsidiaryCard}>
-                  <h3 className={styles.subsidiaryTitle}>NeuroForgeAI</h3>
+                  <h3 className={styles.subsidiaryTitle}>{subsidiaries[1]?.name}</h3>
                   <p className={styles.subsidiaryDescription}>
-                    Dedicated to physical AI implementation, NeuroForgeAI develops the intelligent backbone for robotics, autonomous systems, and IoT ecosystems. We engineer the cognitive infrastructure that brings intelligence to the physical world.
+                    {subsidiaries[1]?.description}
                   </p>
                   <div className={styles.subsidiarySlogan}>
-                    &quot;We deliver what Physical AI needs&quot;
+                    &quot;{subsidiaries[1]?.slogan}&quot;
                   </div>
-                  <button className={styles.subsidiaryLearnMore}>Learn More</button>
+                  <button className={styles.subsidiaryLearnMore}>
+                    {subsidiaries[1]?.button}
+                  </button>
                 </div>
               </div>
             </div>
 
             <div className="mt-8">
               <div className={styles.subsidiaryCard}>
-                <h3 className={styles.subsidiaryTitle}>Our Approach</h3>
+                <h3 className={styles.subsidiaryTitle}>
+                  {t('about.approach.title')}
+                </h3>
                 <p className={styles.subsidiaryDescription}>
-                  Every project at CLUMOSS begins with understanding your unique challenges and objectives. We design custom AI solutions that integrate seamlessly with your existing infrastructure while ensuring scalability, reliability, and profitability. Our cloud-native approach guarantees that your solutions grow with your business, backed by robust security frameworks and continuous optimization.
+                  {t('about.approach.description')}
                 </p>
               </div>
             </div>
 
             <p className="text-lg mt-8 leading-relaxed text-center">
-              From concept to deployment, CLUMOSS delivers intelligent solutions that don&apos;t just meet today&apos;s requirements—they anticipate tomorrow&apos;s opportunities.
+              {t('about.closing')}
             </p>
           </div>
         </div>

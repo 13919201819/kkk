@@ -1,0 +1,1059 @@
+{
+    "header": {
+        "logo": "Clumoss",
+        "home": "Startseite",
+        "about": "Über uns",
+        "projects": "Projekte",
+        "solutions": "Lösungen",
+        "whoWeServe": "Wen wir bedienen",
+        "contact": "Kontakt"
+    },
+    "footer": {
+        "brand": {
+            "name": "Clumoss",
+            "description": "Multi-Organisations-Cluster für Unterstützung und Dienstleistungen – die Zukunft durch Innovation, Künstliche Intelligenz und globale Wirkung gestalten."
+        },
+        "company": {
+            "title": "Unternehmen",
+            "links": [
+                { "name": "Über uns", "href": "/about" },
+                { "name": "Karriere", "href": "/careers" },
+                { "name": "Portfolio", "href": "/portfolio" },
+                { "name": "Blog", "href": "/blogs" }
+            ]
+        },
+        "legal": {
+            "title": "Rechtliche Informationen",
+            "links": [
+                { "name": "Haftungsausschluss", "href": "/disclaimer" },
+                { "name": "Datenschutzrichtlinie", "href": "/privacy" },
+                { "name": "Nutzungsbedingungen", "href": "/terms" }
+            ]
+        },
+        "social": [
+            { "name": "LinkedIn", "href": "#" },
+            { "name": "Twitter", "href": "#" },
+            { "name": "Instagram", "href": "#" }
+        ],
+        "copyright": {
+            "text": "Clumoss {year}",
+            "designedBy": "Entworfen, erstellt und gepflegt von Clumoss"
+        }
+    },
+    "hero": {
+        "title": "Multi-Organisations-Cluster für Unterstützung und Dienstleistungen",
+        "description": "Befähigung von Industrien durch skalierbare Plattformen, Innovation und Unterstützung mit KI-gestützten SaaS-Lösungen der nächsten Generation.",
+        "buttons": [
+            { "text": "Produkte entdecken" },
+            { "text": "Kontaktieren Sie uns" }
+        ]
+    },
+    "about": {
+        "title": "Über Clumoss",
+        "description": [
+            "Clumoss ist Indiens führendes Technologie-Konglomerat, spezialisiert auf fortschrittliche KI-Lösungen. Wir entwickeln und implementieren umfassende KI-Ökosysteme, die die Arbeitsweise, Innovation und Skalierung von Unternehmen in der digitalen Wirtschaft transformieren.",
+            "Unsere Expertise umfasst das gesamte Spektrum intelligenter Technologien – von Machine-Learning- und Deep-Learning-Frameworks bis hin zu fortschrittlicher generativer KI, Spracherkennungssystemen und Orchestrierung autonomer Agenten. Wir kombinieren diese Fähigkeiten mit Sicherheitsstandards auf Unternehmensebene und Cloud-Architektur, um leistungsstarke und praktische Lösungen zu liefern."
+        ],
+        "innovationEcosystem": {
+            "title": "Unser Innovations-Ökosystem",
+            "subsidiaries": [{
+                    "name": "MisterAI",
+                    "description": "Unsere Abteilung für Produktentwicklung konzentriert sich auf die Erstellung hochentwickelter SaaS-Plattformen und KI-gestützter Anwendungen. MisterAI verwandelt komplexe Geschäftsprobleme in intuitive, skalierbare Lösungen, die messbare Ergebnisse in verschiedenen Branchen liefern.",
+                    "button": "Mehr erfahren"
+                },
+                {
+                    "name": "NeuroforgeAI",
+                    "description": "Gewidmet der physischen Implementierung von KI, entwickelt NeuroforgeAI intelligente Grundlagen für Robotik, autonome Systeme und IoT-Ökosysteme. Wir schaffen eine kognitive Infrastruktur, die Intelligenz in die physische Welt bringt.",
+                    "slogan": "Wir erfüllen die Bedürfnisse physischer KI",
+                    "button": "Mehr erfahren"
+                }
+            ]
+        },
+        "approach": {
+            "title": "Unser Ansatz",
+            "description": "Jedes Projekt bei Clumoss beginnt mit dem Verständnis Ihrer einzigartigen Herausforderungen und Ziele. Wir entwickeln maßgeschneiderte KI-Lösungen, die sich nahtlos in Ihre bestehende Infrastruktur integrieren, um Skalierbarkeit, Zuverlässigkeit und Rentabilität zu gewährleisten. Unser Cloud-nativer Ansatz stellt sicher, dass Ihre Lösungen mit Ihrem Unternehmen wachsen, unterstützt durch robuste Sicherheitsrahmen und kontinuierliche Optimierung."
+        },
+        "closing": "Von der Konzeption bis zur Implementierung liefert Clumoss intelligente Lösungen, die nicht nur die heutigen Bedürfnisse erfüllen, sondern auch die Möglichkeiten von morgen antizipieren."
+    },
+    "domains": {
+        "title": "Branchen, die wir bedienen",
+        "items": [{
+                "title": "Gesundheitswesen",
+                "description": "KI-gestützte Gesundheitslösungen für Diagnostik, Telemedizin und sicheres Patientendatenmanagement.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Verteidigung",
+                "description": "Fortschrittliche KI- und Sicherheitslösungen für Bedrohungserkennung, Überwachung und Verteidigungsaufklärung.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Fertigung",
+                "description": "Intelligente Fertigung mit prädiktiver Wartung, Robotik und KI-gestützter Prozessautomatisierung.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Immobilien",
+                "description": "KI-Lösungen für Immobilienbewertung, virtuelle Touren und automatisierte Immobilientransaktionen.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Öffentlicher Sektor",
+                "description": "Sichere KI-Plattformen für öffentliche Dienstleistungen, Workflow-Automatisierung und Politikplanung.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "E-Commerce und Einzelhandel",
+                "description": "Personalisierte Einkaufserlebnisse mit KI-Empfehlungen, Chatbots und dynamischer Preisgestaltung.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Landwirtschaft",
+                "description": "KI-gestützte Landwirtschaft mit Erntevorhersage, Drohnenüberwachung und Optimierung der Lieferkette.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Bildung",
+                "description": "Intelligentes Lernen mit KI-Tutoren, prädiktiver Analytik und digitalen Bildungsplattformen.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Einwanderung",
+                "description": "KI-gestützte Einwanderungsunterstützung mit Dokumentenverifizierung, Fallautomatisierung und Beratungs-Bots.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Sport und Fitness",
+                "description": "KI-Lösungen für Leistungsverfolgung, virtuelles Coaching und personalisierte Fitness.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Fintech",
+                "description": "KI im Finanzbereich für Kreditscoring, Betrugserkennung und sichere digitale Zahlungen.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Banken und Finanzen",
+                "description": "KI-gestützte Betrugsprävention, LLM-basierte Einblicke und Unternehmensdatensicherheit.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Vertrieb",
+                "description": "Intelligenter Vertrieb mit KI-Agenten, prädiktivem Lead-Scoring und CRM-Automatisierung.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Musik und Unterhaltung",
+                "description": "KI in der Unterhaltungsindustrie für Musikproduktion, Empfehlungen und Publikumsengagement.",
+                "button": "Erkunden"
+            },
+            {
+                "title": "Recht",
+                "description": "Juristischer KI für Vertragsautomatisierung, Forschungsassistenten und sichere Compliance.",
+                "button": "Erkunden"
+            }
+        ]
+    },
+    "solutions": [{
+            "slug": "agentic-ai",
+            "title": "Agenten-KI",
+            "description": "KI-Agenten, die als digitale Mitarbeiter agieren, Aufgaben automatisieren und intelligente Entscheidungen treffen.",
+            "bulletPoints": [
+                "Intelligente Entscheidungsfindung mit KI-Reasoning",
+                "Automatisierung wiederkehrender und komplexer Aufgaben",
+                "Integration mit Tools, APIs und Workflows"
+            ]
+        },
+        {
+            "slug": "data-analytics-ml",
+            "title": "Datenanalyse und maschinelles Lernen",
+            "description": "Verwandeln Sie Daten in Einblicke, die schnelleres und intelligenteres Wachstum ermöglichen.",
+            "bulletPoints": [
+                "Vorhersage von Trends und Geschäftsergebnissen",
+                "Automatisierte Machine-Learning-Modelle (MLOps)",
+                "Echtzeit-Dashboards und Berichte"
+            ]
+        },
+        {
+            "slug": "workflow-automation",
+            "title": "Workflow-Automatisierung",
+            "description": "Sparen Sie Zeit und reduzieren Sie Kosten durch Automatisierung täglicher Geschäftsprozesse.",
+            "bulletPoints": [
+                "Robotergestützte Prozessautomatisierung (RPA)",
+                "KI-gestützte Aufgaben- und Genehmigungsverwaltung",
+                "Kompatibilität mit ERP, CRM und anderen Anwendungen"
+            ]
+        },
+        {
+            "slug": "generative-ai-development",
+            "title": "End-to-End-Generative KI-Entwicklung",
+            "description": "End-to-End-Entwicklung von KI-gestützten Anwendungen für Ihr Unternehmen.",
+            "bulletPoints": [
+                "KI-Chatbots, Copiloten und maßgeschneiderte Anwendungen",
+                "Multimodale KI (Text, Bild, Sprache, Video)",
+                "Cloud-Bereitstellung für Skalierbarkeit"
+            ]
+        },
+        {
+            "slug": "mcp-ai-orchestration",
+            "title": "KI-Agenten und Orchestrierung mit MCP",
+            "description": "Fortschrittliche Orchestrierung mit dem Model Context Protocol (MCP).",
+            "bulletPoints": [
+                "Skalierbare Zusammenarbeit mehrerer Agenten",
+                "Sichere Integration mit Tools und Daten",
+                "Flexible und skalierbare KI-Workflows"
+            ]
+        },
+        {
+            "slug": "ui-ux-design",
+            "title": "Next-Gen UI/UX-Design",
+            "description": "Moderne, ansprechende und benutzerfreundliche digitale Schnittstellen.",
+            "bulletPoints": [
+                "KI-unterstütztes Design und Prototyping",
+                "Interaktive AR/VR-Erlebnisse",
+                "Responsive und anpassungsfähige Layouts"
+            ]
+        },
+        {
+            "slug": "fine-tuned-llm",
+            "title": "Feinabgestimmte LLM-Lösungen",
+            "description": "Maßgeschneiderte KI-Modelle, die auf Ihre branchenspezifischen Bedürfnisse trainiert sind.",
+            "bulletPoints": [
+                "Modelle für Finanzen, Gesundheitswesen, Recht und mehr",
+                "Sichere Wissensbasis-Integration",
+                "Optimiert für schnelle und kosteneffiziente Ergebnisse"
+            ]
+        },
+        {
+            "slug": "data-security",
+            "title": "Datenschutz und Sicherheit",
+            "description": "Schützen Sie Ihre Geschäftsdaten mit Sicherheit auf Unternehmensebene.",
+            "bulletPoints": [
+                "KI-gestützte Erkennung von Cyberbedrohungen",
+                "Zero-Trust-Zugriff und Identitätsmanagement",
+                "Einhaltung von GDPR, HIPAA, ISO Standards"
+            ]
+        },
+        {
+            "slug": "enterprise-web-dev",
+            "title": "Unternehmens-Webentwicklung",
+            "description": "Entwicklung leistungsstarker, sicherer und skalierbarer Geschäftsanwendungen.",
+            "bulletPoints": [
+                "Vollständige Cloud-native Entwicklung",
+                "API-first-Architektur und Microservices",
+                "Leistung und Sicherheit auf Unternehmensebene"
+            ]
+        },
+        {
+            "slug": "voice-agents",
+            "title": "Konversationelle Sprachagenten",
+            "description": "KI-gestützte Sprachbots, die natürlich mit Ihren Kunden interagieren.",
+            "bulletPoints": [
+                "Echtzeit-Spracherkennung und -antwort",
+                "Mehrsprachige Unterstützung",
+                "Integration mit Callcentern und Anwendungen"
+            ]
+        }
+    ],
+
+    "serviceDetail": {
+        "backToServices": "Zurück zu den Dienstleistungen",
+        "businessImpactTitle": "Geschäftliche Auswirkungen & ROI",
+        "keyFeaturesTitle": "Hauptmerkmale",
+        "ctaTitle": "Transformieren Sie Ihr Unternehmen heute",
+        "ctaDescription": "Sind Sie bereit, das volle Potenzial von {service} zu erschließen? Vereinbaren Sie eine persönliche Beratung und entdecken Sie, wie unsere bewährten Lösungen innerhalb der nächsten 30 Tage messbares Wachstum und Effizienz für Ihr Unternehmen erzielen können.",
+        "ctaButton": "Kostenlose Beratung vereinbaren",
+        "solutions": [{
+                "slug": "agentic-ai",
+                "title": "Agentische KI",
+                "description": "Transformieren Sie Ihr Unternehmen mit intelligenten KI-Agenten, die autonom denken, planen und komplexe Aufgaben ausführen können.",
+                "bulletPoints": [
+                    "Autonome Entscheidungsfindung",
+                    "Mehrstufige Aufgabenausführung",
+                    "Echtzeitanpassung",
+                    "Integration in bestehende Systeme"
+                ],
+                "keywords": [
+                    "Kognitive Datenverarbeitung",
+                    "Robotergestützte Prozessautomatisierung",
+                    "Intelligente Automatisierung",
+                    "Neuronale Netzwerke",
+                    "Unternehmens-KI"
+                ],
+                "businessImpact": [{
+                        "metric": "Prozesseffizienz",
+                        "description": "Optimieren Sie manuelle Arbeitsabläufe und eliminieren Sie sich wiederholende Aufgaben durch intelligente Automatisierung, die sich an Ihre Geschäftsanforderungen anpasst"
+                    },
+                    {
+                        "metric": "Schnellere Entscheidungen",
+                        "description": "Treffen Sie kritische Geschäftsentscheidungen in Echtzeit mit KI-gestützten Erkenntnissen und automatisierten Entscheidungsunterstützungssystemen"
+                    },
+                    {
+                        "metric": "Kostenoptimierung",
+                        "description": "Reduzieren Sie die Betriebskosten um bis zu 40% durch intelligente Ressourcenzuweisung und Prozessoptimierung"
+                    },
+                    {
+                        "metric": "Immer verfügbar",
+                        "description": "Gewährleisten Sie 24/7-Geschäftskontinuität mit KI-Agenten, die niemals schlafen und kontinuierliche operative Unterstützung bieten"
+                    }
+                ]
+            },
+            {
+                "slug": "data-analytics-ml",
+                "title": "Datenanalyse & Maschinelles Lernen",
+                "description": "Erschließen Sie Erkenntnisse aus Ihren Daten mit fortschrittlichen Analysen und maßgeschneiderten Machine-Learning-Modellen.",
+                "bulletPoints": [
+                    "Prädiktive Modellierung",
+                    "Echtzeitanalyse",
+                    "Benutzerdefinierte Dashboards",
+                    "Automatisierte Erkenntnisse"
+                ],
+                "keywords": [
+                    "Statistische Modellierung",
+                    "Datenvisualisierung",
+                    "Mustererkennung",
+                    "Algorithmische Erkenntnisse",
+                    "Quantitative Analyse"
+                ],
+                "businessImpact": [{
+                        "metric": "Umsatzwachstum",
+                        "description": "Erschließen Sie neue Umsatzquellen und optimieren Sie Preisstrategien mit prädiktiver Analytik und Marktintelligenz"
+                    },
+                    {
+                        "metric": "Fundierte Entscheidungen",
+                        "description": "Verwandeln Sie Rohdaten in umsetzbare Erkenntnisse mit Echtzeit-Analyse-Dashboards und automatisierter Berichterstattung"
+                    },
+                    {
+                        "metric": "Vorhersagegenauigkeit",
+                        "description": "Prognostizieren Sie Markttrends und Kundenverhalten mit 95% Genauigkeit mithilfe fortschrittlicher Machine-Learning-Modelle"
+                    },
+                    {
+                        "metric": "Risikominderung",
+                        "description": "Identifizieren und verhindern Sie potenzielle Geschäftsrisiken, bevor sie den Betrieb beeinträchtigen, durch prädiktive Modellierung"
+                    }
+                ]
+            },
+            {
+                "slug": "data-security",
+                "title": "Datenschutz & Sicherheit",
+                "description": "Sichern Sie Ihre digitalen Assets mit umfassenden Datenschutz- und Cybersicherheitslösungen.",
+                "bulletPoints": [
+                    "End-to-End-Verschlüsselung",
+                    "Compliance-Management",
+                    "Bedrohungserkennung",
+                    "Zugriffskontrolle"
+                ],
+                "keywords": [
+                    "Informationssicherheit",
+                    "Risikomanagement",
+                    "Digitale Forensik",
+                    "Schwachstellenbewertung",
+                    "Sicherheitsprotokolle"
+                ],
+                "businessImpact": [{
+                        "metric": "Verbesserter Schutz",
+                        "description": "Schützen Sie sensible Daten und verhindern Sie Cyberbedrohungen mit Sicherheitsprotokollen und Überwachung auf Unternehmensniveau"
+                    },
+                    {
+                        "metric": "Einhaltung von Vorschriften",
+                        "description": "Erfüllen Sie Branchenstandards und -vorschriften mit automatisiertem Compliance-Tracking und prüfungsbereiter Dokumentation"
+                    },
+                    {
+                        "metric": "Schnelle Reaktion",
+                        "description": "Erkennen und neutralisieren Sie Sicherheitsbedrohungen innerhalb von Minuten mithilfe KI-gestützter Threat-Intelligence-Systeme"
+                    },
+                    {
+                        "metric": "Geschäftskontinuität",
+                        "description": "Erhalten Sie einen unterbrechungsfreien Betrieb mit robusten Backup-Systemen und Disaster-Recovery-Protokollen"
+                    }
+                ]
+            },
+            {
+                "slug": "enterprise-web-dev",
+                "title": "Enterprise-Webentwicklung",
+                "description": "Erstellen Sie skalierbare, leistungsstarke Webanwendungen, die auf Unternehmensanforderungen zugeschnitten sind.",
+                "bulletPoints": [
+                    "Skalierbare Architektur",
+                    "Moderne Frameworks",
+                    "Leistungsoptimierung",
+                    "Sicherheit an erster Stelle"
+                ],
+                "keywords": [
+                    "Full-Stack-Entwicklung",
+                    "Responsives Design",
+                    "Cloud Computing",
+                    "Software-Engineering",
+                    "API-Entwicklung"
+                ],
+                "businessImpact": [{
+                        "metric": "Optimierte Leistung",
+                        "description": "Liefern Sie blitzschnelle Ladegeschwindigkeiten und nahtlose Benutzerinteraktionen, die Besucher länger binden"
+                    },
+                    {
+                        "metric": "Höheres Engagement",
+                        "description": "Steigern Sie Kundenzufriedenheit und -bindung mit intuitiven Benutzeroberflächen und reibungslosen Benutzererlebnissen"
+                    },
+                    {
+                        "metric": "Zuverlässige Verfügbarkeit",
+                        "description": "Gewährleisten Sie konsistente Website-Verfügbarkeit mit robuster Architektur, die Ausfallzeiten und Unterbrechungen minimiert"
+                    },
+                    {
+                        "metric": "Reduzierte Wartung",
+                        "description": "Senken Sie langfristige Betriebskosten mit sauberem, skalierbarem Code, der nur minimale laufende Wartung erfordert"
+                    }
+                ]
+            },
+            {
+                "slug": "fine-tuned-llm",
+                "title": "Feinabgestimmte LLM-Lösungen",
+                "description": "Benutzerdefinierte Sprachmodelle, die für Ihre spezifische Geschäftsdomäne und Anforderungen feinabgestimmt sind.",
+                "bulletPoints": [
+                    "Domänenspezifisches Training",
+                    "Benutzerdefinierte Modellbereitstellung",
+                    "Leistungsoptimierung",
+                    "Kontinuierliches Lernen"
+                ],
+                "keywords": [
+                    "Neuronale Sprachmodelle",
+                    "Textverarbeitung",
+                    "Computerlinguistik",
+                    "Semantisches Verständnis",
+                    "Sprachmodellierung"
+                ],
+                "businessImpact": [{
+                        "metric": "Domänenexpertise",
+                        "description": "Erreichen Sie spezialisierte Aufgabenleistung, die die einzigartige Sprache und Anforderungen Ihrer Branche versteht"
+                    },
+                    {
+                        "metric": "Content-Effizienz",
+                        "description": "Beschleunigen Sie die Content-Erstellung um das 10-fache bei gleichbleibender Qualität und Markenkonsistenz über alle Materialien hinweg"
+                    },
+                    {
+                        "metric": "Verarbeitungsgeschwindigkeit",
+                        "description": "Verarbeiten Sie Tausende von Dokumenten sofort mit schneller Textanalyse und intelligenter Content-Generierung"
+                    },
+                    {
+                        "metric": "Ressourcenoptimierung",
+                        "description": "Maximieren Sie die Teamproduktivität durch Automatisierung sich wiederholender Schreibaufgaben und Content-Management-Workflows"
+                    }
+                ]
+            },
+            {
+                "slug": "generative-ai-development",
+                "title": "Full-Stack Generative KI-Entwicklung",
+                "description": "End-to-End-Lösungen für generative KI vom Konzept bis zur Bereitstellung.",
+                "bulletPoints": [
+                    "Benutzerdefinierte KI-Anwendungen",
+                    "Multimodale Fähigkeiten",
+                    "Skalierbare Bereitstellung",
+                    "Benutzerfreundliche Oberflächen"
+                ],
+                "keywords": [
+                    "Synthetische Medien",
+                    "Computer Vision",
+                    "Deep Learning",
+                    "Kreative Algorithmen",
+                    "Künstliche Kreativität"
+                ],
+                "businessImpact": [{
+                        "metric": "Beschleunigte Innovation",
+                        "description": "Bringen Sie neue Produkte 3-mal schneller auf den Markt mit schnellen KI-gestützten Prototyping- und Entwicklungszyklen"
+                    },
+                    {
+                        "metric": "Kreative Leistung",
+                        "description": "Generieren Sie unbegrenzte kreative Assets und Content-Variationen, die Ihre Marketing- und Produktfähigkeiten erweitern"
+                    },
+                    {
+                        "metric": "Content-Automatisierung",
+                        "description": "Optimieren Sie die Content-Generierung über alle Kanäle mit KI, die Ihre Markenstimme und Qualitätsstandards beibehält"
+                    },
+                    {
+                        "metric": "Starker ROI",
+                        "description": "Erzielen Sie messbare Renditen mit Lösungen, die sich innerhalb von 6-12 Monaten amortisieren"
+                    }
+                ]
+            },
+            {
+                "slug": "mcp-ai-orchestration",
+                "title": "MCP-gestützte KI-Agenten & Orchestrierung",
+                "description": "Fortschrittliche KI-Agenten-Orchestrierung mit Model Context Protocol für nahtlose Integration.",
+                "bulletPoints": [
+                    "Agenten-Koordination",
+                    "Protokoll-Integration",
+                    "Workflow-Automatisierung",
+                    "Skalierbare Orchestrierung"
+                ],
+                "keywords": [
+                    "Verteilte Systeme",
+                    "Microservices",
+                    "Ereignisgesteuerte Architektur",
+                    "Systemintegration",
+                    "Prozess-Orchestrierung"
+                ],
+                "businessImpact": [{
+                        "metric": "Verbesserte Effizienz",
+                        "description": "Optimieren Sie komplexe Workflows durch Koordination mehrerer KI-Agenten, die nahtlos zusammenarbeiten"
+                    },
+                    {
+                        "metric": "Agenten-Zusammenarbeit",
+                        "description": "Ermöglichen Sie nahtlose Multi-Agenten-Koordination, die anspruchsvolle Aufgaben mit verschiedener Expertise bewältigt"
+                    },
+                    {
+                        "metric": "Skalierbare Lösungen",
+                        "description": "Implementieren Sie flexible Agentennetzwerke, die mit Ihren Geschäftsanforderungen wachsen und zunehmende Arbeitslasten bewältigen"
+                    },
+                    {
+                        "metric": "Zuverlässige Workflows",
+                        "description": "Gewährleisten Sie konsistente Prozessausführung mit robuster Orchestrierung, die Qualität über alle Operationen hinweg aufrechterhält"
+                    }
+                ]
+            },
+            {
+                "slug": "ui-ux-design",
+                "title": "UI/UX-Design der nächsten Generation",
+                "description": "Innovatives Benutzeroberflächen- und Erlebnisdesign für moderne Anwendungen.",
+                "bulletPoints": [
+                    "Benutzerzentriertes Design",
+                    "Interaktive Prototypen",
+                    "Fokus auf Barrierefreiheit",
+                    "Moderne Ästhetik"
+                ],
+                "keywords": [
+                    "Mensch-Computer-Interaktion",
+                    "Visuelles Design",
+                    "Usability-Testing",
+                    "Interaktionsdesign",
+                    "Design Thinking"
+                ],
+                "businessImpact": [{
+                        "metric": "Benutzer-Engagement",
+                        "description": "Erstellen Sie fesselnde Oberflächen, die die Benutzerinteraktionszeit erhöhen und zu wiederholten Besuchen anregen"
+                    },
+                    {
+                        "metric": "Conversion-Wachstum",
+                        "description": "Steigern Sie die Geschäftsleistung mit Designs, die für höhere Conversion-Raten und Kundenakquise optimiert sind"
+                    },
+                    {
+                        "metric": "Benutzerzufriedenheit",
+                        "description": "Erreichen Sie hohe Zufriedenheitswerte durch intuitive, barrierefreie Designs, die jeden Benutzer begeistern"
+                    },
+                    {
+                        "metric": "Support-Effizienz",
+                        "description": "Reduzieren Sie Kundensupport-Tickets mit selbsterklärenden Oberflächen, die Benutzerverwirrung minimieren"
+                    }
+                ]
+            },
+            {
+                "slug": "voice-agents",
+                "title": "Konversationelle Sprachagenten",
+                "description": "Intelligente sprachgesteuerte Assistenten für verbessertes Kundenengagement.",
+                "bulletPoints": [
+                    "Natürliche Sprachverarbeitung",
+                    "Sprachsynthese",
+                    "Mehrsprachige Unterstützung",
+                    "Kontextbewusstsein"
+                ],
+                "keywords": [
+                    "Spracherkennung",
+                    "Sprachsynthese",
+                    "Audioverarbeitung",
+                    "Konversationsdesign",
+                    "Sprachtechnologie"
+                ],
+                "businessImpact": [{
+                        "metric": "24/7-Support",
+                        "description": "Bieten Sie rund um die Uhr Kundenservice-Verfügbarkeit, der niemals einen Anruf oder eine Anfrage verpasst"
+                    },
+                    {
+                        "metric": "Kosteneffizienz",
+                        "description": "Optimieren Sie Support-Operationen und erzielen Sie erhebliche Kosteneinsparungen bei gleichbleibender Servicequalität"
+                    },
+                    {
+                        "metric": "Kundenzufriedenheit",
+                        "description": "Liefern Sie verbesserte Benutzererlebnisse mit natürlichen, hilfreichen Sprachinteraktionen, die sich wirklich menschlich anfühlen"
+                    },
+                    {
+                        "metric": "Schnelle Lösung",
+                        "description": "Bearbeiten Sie Kundenanfragen schneller mit intelligenten Sprachagenten, die sofortige, präzise Antworten liefern"
+                    }
+                ]
+            },
+            {
+                "slug": "workflow-automation",
+                "title": "Workflow-Automatisierung",
+                "description": "Optimieren Sie Ihre Geschäftsprozesse mit intelligenter Workflow-Automatisierung.",
+                "bulletPoints": [
+                    "Prozessoptimierung",
+                    "Aufgabenautomatisierung",
+                    "Integrationsfähigkeiten",
+                    "Leistungsüberwachung"
+                ],
+                "keywords": [
+                    "Geschäftsprozessmanagement",
+                    "Digitale Transformation",
+                    "Process Mining",
+                    "Roboterautomatisierung",
+                    "Effizienzoptimierung"
+                ],
+                "businessImpact": [{
+                        "metric": "Prozessautomatisierung",
+                        "description": "Erreichen Sie operative Exzellenz durch Reduzierung manueller Eingriffe und Eliminierung menschlicher Fehler bei Routineaufgaben"
+                    },
+                    {
+                        "metric": "Workflow-Geschwindigkeit",
+                        "description": "Beschleunigen Sie Fertigstellungszeiten und steigern Sie die Gesamteffizienz durch intelligente Prozessoptimierung"
+                    },
+                    {
+                        "metric": "Prozessgenauigkeit",
+                        "description": "Gewährleisten Sie konsistente, hochwertige Ausführung automatisierter Prozesse, die professionelle Standards aufrechterhalten"
+                    },
+                    {
+                        "metric": "Betriebliche Einsparungen",
+                        "description": "Maximieren Sie das Kostenmanagement durch optimierte Ressourcennutzung und reduzierte Betriebsgemeinkosten"
+                    }
+                ]
+            }
+        ]
+    },
+
+    "partner": {
+        "title": "Beschleunigen Sie Ihre Reise mit Clumoss",
+        "button": "Lassen Sie uns zusammenarbeiten"
+    },
+    "contact": {
+        "title": "In Kontakt bleiben",
+        "description": "Unser KI-gestütztes System passt Ihre Erfahrung an Ihre Bedürfnisse an",
+        "successMessage": {
+            "title": "Vielen Dank!",
+            "description": "Ihre Nachricht wurde empfangen. Unser KI-gestütztes System verarbeitet Ihre Anfrage basierend auf Ihrem Profil.",
+            "followUp": "Wir werden Ihnen innerhalb von 24 Stunden eine personalisierte Antwort zukommen lassen.",
+            "button": "Eine weitere Nachricht senden"
+        },
+        "connect": {
+            "title": "Lassen Sie uns verbinden!",
+            "items": [{
+                    "title": "Unternehmensnummer",
+                    "value": "+917622817924",
+                    "href": "tel:+917622817924"
+                },
+                {
+                    "title": "E-Mail",
+                    "value": "info@clumoss.com",
+                    "href": "mailto:info@clumoss.com"
+                },
+                {
+                    "title": "Standort",
+                    "value": "Indien"
+                }
+            ]
+        },
+        "roles": [{
+                "id": "client",
+                "label": "Geschäftskunde",
+                "description": "Auf der Suche nach Unternehmenslösungen",
+                "fields": [
+                    "country",
+                    "company",
+                    "position",
+                    "budget",
+                    "timeline",
+                    "requirements"
+                ]
+            },
+            {
+                "id": "student",
+                "label": "Student/Absolvent",
+                "description": "Auf der Suche nach einem Job oder Praktikum",
+                "fields": [
+                    "university",
+                    "degree",
+                    "experience",
+                    "skills",
+                    "availability",
+                    "resume",
+                    "cv"
+                ]
+            },
+            {
+                "id": "demo",
+                "label": "Demo-Anfrage",
+                "description": "Möchte unsere Lösungen kennenlernen",
+                "fields": [
+                    "interest",
+                    "useCase",
+                    "teamSize",
+                    "timeline"
+                ]
+            },
+            {
+                "id": "other",
+                "label": "Sonstige Anfragen",
+                "description": "Allgemeine Fragen oder Partnerschaften",
+                "fields": [
+                    "inquiryType",
+                    "organization",
+                    "message"
+                ]
+            }
+        ],
+        "fieldLabels": {
+            "country": "Land",
+            "company": "Firmenname",
+            "position": "Ihre Position",
+            "budget": "Projektbudgetspanne",
+            "timeline": "Erwarteter Zeitrahmen",
+            "requirements": "Projektanforderungen",
+            "university": "Universität/Institut",
+            "degree": "Abschluss/Studienrichtung",
+            "experience": "Jahre der Erfahrung",
+            "skills": "Technische Fähigkeiten",
+            "availability": "Verfügbarkeit für den Start",
+            "interest": "Interessensbereich",
+            "useCase": "Hauptanwendungsfall",
+            "teamSize": "Teamgröße",
+            "inquiryType": "Anfragetyp",
+            "organization": "Organisation (falls zutreffend)",
+            "message": "Ihre Nachricht",
+            "resume": "Lebenslauf",
+            "cv": "CV (optional)",
+            "name": "Vollständiger Name",
+            "email": "E-Mail-Adresse",
+            "phone": "Telefonnummer"
+        },
+        "selectOptions": {
+            "timeline": [
+                "1-2 Wochen",
+                "1 Monat",
+                "2-3 Monate",
+                "3-6 Monate",
+                "6+ Monate"
+            ],
+            "experience": [
+                "0-1 Jahr",
+                "1-3 Jahre",
+                "3-5 Jahre",
+                "5-10 Jahre",
+                "10+ Jahre"
+            ],
+            "teamSize": [
+                "1-5 Personen",
+                "6-20 Personen",
+                "21-50 Personen",
+                "51-200 Personen",
+                "200+ Personen"
+            ],
+            "inquiryType": [
+                "Partnerschaft",
+                "Investition",
+                "Medien/Presse",
+                "Technischer Support",
+                "Allgemeine Fragen"
+            ]
+        },
+        "error": {
+            "noRole": "Bitte wählen Sie zuerst eine Rolle aus.",
+            "failed": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+            "network": "Ein Fehler ist aufgetreten. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut."
+        }
+    },
+    "disclaimer": {
+        "title": "Haftungsausschluss",
+        "sections": {
+            "generalInformation": {
+                "title": "Allgemeine Informationen",
+                "content": "Die von Clumoss und seinen Tochtergesellschaften (MisterAI und NeuroforgeAI) über diese Website und unsere Dienstleistungen bereitgestellten Informationen dienen ausschließlich allgemeinen Informations- und Bildungszwecken. Alle Inhalte werden in gutem Glauben bereitgestellt, jedoch geben wir keine ausdrücklichen oder stillschweigenden Garantien hinsichtlich der Genauigkeit, Angemessenheit, Gültigkeit, Zuverlässigkeit, Verfügbarkeit oder Vollständigkeit der Informationen auf der Website oder in unseren Dienstleistungen."
+            },
+            "professionalServices": {
+                "title": "Professionelle Dienstleistungen",
+                "content": [
+                    "Unsere Lösungen im Bereich Künstliche Intelligenz, maschinelles Lernen und Technologie werden nach aktuellen Industriestandards und Best Practices bereitgestellt. Technologien entwickeln sich jedoch schnell weiter, und die Ergebnisse können von der Implementierung, Nutzung und externen Faktoren abhängen. Clumoss garantiert keine spezifischen Ergebnisse oder Leistungskennzahlen unserer Lösungen.",
+                    "Wir empfehlen unseren Kunden, eigene Due-Diligence-Prüfungen durchzuführen und qualifizierte Fachleute zu konsultieren, bevor sie Geschäftsentscheidungen auf Basis unserer Empfehlungen oder Implementierungen treffen."
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "Haftungsbeschränkung",
+                "content": [
+                    "Unter keinen Umständen haften Clumoss, MisterAI, NeuroforgeAI, ihre Direktoren, Mitarbeiter, Partner, Agenten, Lieferanten oder verbundenen Unternehmen für indirekte, zufällige, strafende, besondere oder Folgeschäden, einschließlich entgangener Gewinne, Daten, Nutzung, Reputation oder anderer immaterieller Verluste, die aus der Nutzung unserer Dienstleistungen oder unserer Website entstehen.",
+                    "Unsere gesamte Haftung für Ansprüche im Zusammenhang mit unseren Dienstleistungen übersteigt nicht den Betrag, den der Kunde für die jeweilige Dienstleistung gezahlt hat."
+                ]
+            },
+            "aiSystemsAndDataProcessing": {
+                "title": "KI-Systeme und Datenverarbeitung",
+                "content": [
+                    "Unsere KI- und Machine-Learning-Systeme sind darauf ausgelegt, intelligente Lösungen basierend auf verfügbaren Daten und Algorithmen bereitzustellen. KI-Systeme können jedoch unvorhersehbare Ergebnisse liefern, und wir können keine 100%ige Genauigkeit in allen Szenarien garantieren. Benutzer sollten geeignete Überprüfungs- und Überwachungsmechanismen implementieren, wenn sie KI-Lösungen in Produktionsumgebungen einsetzen.",
+                    "Die Ergebnisse der Datenverarbeitung und KI-generierte Analysen sollten von qualifiziertem Personal überprüft werden, bevor wichtige Geschäftsentscheidungen getroffen werden."
+                ]
+            },
+            "thirdPartyIntegration": {
+                "title": "Integration von Drittanbietern",
+                "content": [
+                    "Unsere Lösungen können mit Diensten, APIs oder Plattformen von Drittanbietern integriert werden. Clumoss übernimmt keine Verantwortung für die Verfügbarkeit, Genauigkeit oder Zuverlässigkeit von Diensten Dritter. Änderungen in Systemen Dritter können die Funktionalität unserer Lösungen beeinflussen.",
+                    "Wir empfehlen, Backup-Systeme und Notfallpläne zu unterhalten, wenn Sie auf integrierte Lösungen angewiesen sind."
+                ]
+            },
+            "intellectualProperty": {
+                "title": "Geistiges Eigentum",
+                "content": "Alle proprietären Technologien, Methodologien und geistigen Eigentumsrechte, die von Clumoss entwickelt wurden, bleiben unser ausschließliches Eigentum. Kundenspezifische Anpassungen und Daten gehören den jeweiligen Kunden gemäß unseren Dienstleistungsvereinbarungen."
+            },
+            "regulatoryCompliance": {
+                "title": "Regulatorische Compliance",
+                "content": [
+                    "Wir bemühen uns, die Einhaltung unserer Lösungen mit geltenden Vorschriften und Industriestandards sicherzustellen, aber die Kunden sind verantwortlich dafür, dass die Nutzung unserer Dienstleistungen allen relevanten Gesetzen, Vorschriften und branchenspezifischen Anforderungen in ihrer Gerichtsbarkeit entspricht.",
+                    "Regulatorische Anforderungen können sich ändern, und Kunden sollten regelmäßig die Compliance-Anforderungen für ihre spezifischen Anwendungsfälle überprüfen."
+                ]
+            },
+            "updatesAndModifications": {
+                "title": "Aktualisierungen und Änderungen",
+                "content": "Clumoss behält sich das Recht vor, jederzeit ohne vorherige Ankündigung Aspekte unserer Dienstleistungen oder diesen Haftungsausschluss zu aktualisieren, zu ändern oder einzustellen. Die fortgesetzte Nutzung unserer Dienstleistungen nach solchen Änderungen stellt die Annahme der geänderten Bedingungen dar."
+            },
+            "contactInformation": {
+                "title": "Kontaktinformationen",
+                "content": "Für Fragen zu diesem Haftungsausschluss oder unseren Dienstleistungen wenden Sie sich bitte an unser Rechts- und Compliance-Team über die offiziellen Kommunikationskanäle. Alle offiziellen Mitteilungen müssen schriftlich über unsere festgelegten Kontaktverfahren eingereicht werden."
+            },
+            "lastUpdated": {
+                "content": "Clumoss – Indiens führendes Technologie-Konglomerat für Künstliche Intelligenz"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Datenschutzrichtlinie",
+        "sections": {
+            "ourCommitmentToPrivacy": {
+                "title": "Unser Engagement für Datenschutz",
+                "content": [
+                    "Bei Clumoss und seinen Tochtergesellschaften (MisterAI und NeuroforgeAI) schätzen und respektieren wir Ihre Privatsphäre. Diese Datenschutzrichtlinie erläutert, wie wir Ihre Informationen beim Interagieren mit unseren Dienstleistungen, Produkten, Websites und Anwendungen sammeln, verwenden, speichern und schützen.",
+                    "Unsere Praktiken entsprechen internationalen Datenschutzvorschriften wie der DSGVO (Europa), dem CCPA (Kalifornien) und anderen globalen Datenschutzstandards."
+                ]
+            },
+            "informationWeCollect": {
+                "title": "Informationen, die wir sammeln",
+                "personalData": {
+                    "title": "Personenbezogene Daten",
+                    "content": "Name, E-Mail-Adresse, Telefonnummer, Zahlungsinformationen oder andere Identifikatoren, die bei der Registrierung oder Nutzung unserer Dienstleistungen bereitgestellt werden."
+                },
+                "usageData": {
+                    "title": "Nutzungsdaten",
+                    "content": "Geräteinformationen, IP-Adressen, Browsertyp, Zugriffszeiten und angesehene Seiten zur Verbesserung unserer Dienstleistungen und Sicherstellung der Sicherheit."
+                },
+                "aiInteractionData": {
+                    "title": "Daten zur KI-Interaktion",
+                    "content": "Eingaben, Ausgaben und Ergebnisse, die durch unsere KI- und LLM-basierten Dienste generiert werden. Diese Daten werden ausschließlich zur Qualitätsverbesserung und Einhaltung von Dienststandards gesammelt."
+                }
+            },
+            "howWeUseYourInformation": {
+                "title": "Wie wir Ihre Informationen verwenden",
+                "content": [
+                    "Wir verwenden die gesammelten Daten, um außergewöhnliche KI-Lösungen bereitzustellen und höchste Servicestandards aufrechtzuerhalten. Insbesondere nutzen wir Ihre Informationen für:",
+                    {
+                        "list": [
+                            "Bereitstellung und Verbesserung unserer Dienstleistungen und KI-Lösungen",
+                            "Personalisierung der Benutzererfahrung und Optimierung der Systemleistung",
+                            "Sicherstellung der Systemsicherheit, Betrugsprävention und Einhaltung geltender Gesetze",
+                            "Bereitstellung von Kundensupport und Service-Updates",
+                            "Durchführung von Forschung und Entwicklung zur Verbesserung unserer KI-Fähigkeiten"
+                        ]
+                    }
+                ]
+            },
+            "dataSharingAndDisclosure": {
+                "title": "Datenweitergabe und Offenlegung",
+                "content": [
+                    "Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte. Ihre Privatsphäre hat oberste Priorität in unseren Geschäftsabläufen und ethischen Standards.",
+                    "Daten können nur zu Betriebs-, Sicherheits- oder Compliance-Zwecken an vertrauenswürdige Dienstleister weitergegeben werden, unterliegen jedoch vertraglichen Verpflichtungen zum Schutz Ihrer Informationen.",
+                    "KI-Modelle können Ihre Eingaben verarbeiten, um Dienstleistungen bereitzustellen, aber Daten werden ohne ausdrückliche Zustimmung nicht für Werbung oder unabhängige kommerzielle Aktivitäten weitergegeben."
+                ]
+            },
+            "dataSecurityMeasures": {
+                "title": "Datensicherheitsmaßnahmen",
+                "content": [
+                    "Wir setzen branchenübliche Verschlüsselung, Zugriffskontrollen und kontinuierliche Überwachung ein, um Ihre Informationen zu schützen. Unsere Sicherheitsinfrastruktur umfasst fortschrittliche Bedrohungserkennung, regelmäßige Sicherheitsaudits und die Einhaltung internationaler Sicherheitsstandards.",
+                    "Obwohl wir umfassende Sicherheitsmaßnahmen zum Schutz Ihrer Daten implementieren, ist kein System risikofrei. Wir aktualisieren kontinuierlich unsere Sicherheitsprotokolle, um neuen Bedrohungen entgegenzuwirken und höchste Datenschutzstandards aufrechtzuerhalten."
+                ]
+            },
+            "internationalDataTransfers": {
+                "title": "Internationale Datenübertragungen",
+                "content": [
+                    "Ihre Daten können außerhalb Ihres Wohnsitzlandes verarbeitet und gespeichert werden, um unsere globalen KI-Dienste bereitzustellen. Wir stellen sicher, dass alle internationalen Übertragungen der DSGVO, dem CCPA und anderen geltenden Vorschriften entsprechen.",
+                    "Zum Schutz von Daten während internationaler Übertragungen werden geeignete Schutzmaßnahmen wie Standardvertragsklauseln und Angemessenheitsentscheidungen implementiert."
+                ]
+            },
+            "yourPrivacyRights": {
+                "title": "Ihre Datenschutzrechte",
+                "content": [
+                    "Abhängig von Ihrer Gerichtsbarkeit haben Sie möglicherweise umfassende Rechte in Bezug auf Ihre personenbezogenen Daten:",
+                    {
+                        "list": [
+                            "Recht auf Zugang: Anforderung des Zugangs zu Ihren personenbezogenen Daten und deren Kopien",
+                            "Recht auf Berichtigung: Anforderung der Korrektur ungenauer oder unvollständiger Daten",
+                            "Recht auf Löschung: Anforderung der Löschung Ihrer personenbezogenen Daten unter bestimmten Umständen",
+                            "Einschränkung der Verarbeitung: Einspruch oder Einschränkung bestimmter Datenverarbeitungsaktivitäten",
+                            "Datenportabilität: Anforderung der Übertragung Ihrer Daten in einem maschinenlesbaren Format",
+                            "Widerruf der Einwilligung: Widerruf der Einwilligung zur Datenverarbeitung jederzeit"
+                        ]
+                    }
+                ]
+            },
+            "cookiesAndTrackingTechnologies": {
+                "title": "Cookies und Tracking-Technologien",
+                "content": [
+                    "Unsere Websites und Dienste verwenden Cookies und ähnliche Technologien, um Funktionalität, Leistung und personalisierten Inhalt zu verbessern. Diese Technologien helfen uns, das Nutzerverhalten zu verstehen und unsere KI-Lösungen zu optimieren.",
+                    "Sie können Cookie-Einstellungen über Ihre Browsereinstellungen verwalten. Das Deaktivieren bestimmter Cookies kann jedoch die Funktionalität unserer Dienste beeinträchtigen."
+                ]
+            },
+            "aiAndMachineLearningDataProcessing": {
+                "title": "Datenverarbeitung mit KI und maschinellem Lernen",
+                "content": [
+                    "Unsere KI-Systeme verarbeiten Daten, um intelligente Lösungen, prädiktive Analysen und automatisierte Entscheidungsfindung bereitzustellen. Wir wenden Datenschutz-by-Design-Prinzipien in unseren KI-Entwicklungsprozessen an.",
+                    "Daten, die zum Trainieren und Verbessern unserer KI-Modelle verwendet werden, werden nach Möglichkeit anonymisiert und aggregiert. Personenbezogene Daten der Benutzer werden durch fortschrittliche Datenschutztechniken geschützt."
+                ]
+            },
+            "policyUpdatesAndChanges": {
+                "title": "Aktualisierungen und Änderungen der Richtlinie",
+                "content": [
+                    "Wir können diese Datenschutzrichtlinie regelmäßig aktualisieren, um Änderungen in unseren Praktiken, Technologien, rechtlichen Anforderungen oder Geschäftsabläufen widerzuspiegeln. Über wesentliche Änderungen werden wir Sie über geeignete Kanäle informieren.",
+                    "Die fortgesetzte Nutzung unserer Dienste nach einer Aktualisierung der Richtlinie stellt die Annahme der geänderten Bedingungen dar. Wir empfehlen, diese Richtlinie regelmäßig zu überprüfen, um über unsere Datenschutzpraktiken informiert zu bleiben."
+                ]
+            },
+            "contactInformation": {
+                "title": "Kontaktinformationen",
+                "content": [
+                    "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, Ihre Datenschutzrechte ausüben möchten oder Unterstützung bei Datenschutzfragen benötigen, wenden Sie sich bitte an unser spezielles Datenschutzteam.",
+                    "Für offizielle datenschutzbezogene Anfragen oder Fragen nutzen Sie bitte unsere offiziellen Kommunikationskanäle. Wir verpflichten uns, alle datenschutzbezogenen Anfragen schnell und mit größter Sorgfalt zu bearbeiten."
+                ]
+            },
+            "regulatoryCompliance": {
+                "title": "Regulatorische Compliance",
+                "content": "Clumoss hält internationale Datenschutzvorschriften ein, einschließlich der DSGVO (EU), des CCPA (Kalifornien), PIPEDA (Kanada) und geltender indischer Datenschutzgesetze. Unsere Datenschutzpraktiken werden regelmäßig überprüft und aktualisiert, um sich entwickelnden regulatorischen Anforderungen zu entsprechen."
+            },
+            "lastUpdated": {
+                "content": "Clumoss – Indiens führendes Technologie-Konglomerat für Künstliche Intelligenz"
+            }
+        },
+        "metadata": {
+            "title": "Datenschutzrichtlinie | Clumoss",
+            "description": "Erfahren Sie mehr über unsere Datenschutzpraktiken und den Schutz Ihrer Daten gemäß internationalen Vorschriften, einschließlich DSGVO und CCPA.",
+            "openGraph": {
+                "title": "Datenschutzrichtlinie | Clumoss",
+                "description": "Erfahren Sie mehr über unsere Datenschutzpraktiken und den Schutz Ihrer Daten gemäß internationalen Vorschriften."
+            }
+        }
+    },
+    "terms": {
+        "title": "Nutzungsbedingungen",
+        "sections": {
+            "welcomeToClumoss": {
+                "title": "Willkommen bei Clumoss",
+                "content": [
+                    "Durch den Zugriff auf unsere Website, Produkte oder Dienstleistungen, die von Clumoss und seinen Tochtergesellschaften (MisterAI und NeuroforgeAI) bereitgestellt werden, erklären Sie sich mit den folgenden Nutzungsbedingungen einverstanden.",
+                    "Bitte lesen Sie diese sorgfältig durch. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, beenden Sie bitte umgehend die Nutzung unserer Dienstleistungen."
+                ]
+            },
+            "useOfServices": {
+                "title": "1. Nutzung der Dienstleistungen",
+                "content": [
+                    "Sie erklären sich damit einverstanden, unsere KI-gestützten Dienstleistungen, Machine-Learning-Lösungen und Technologieplattformen ausschließlich für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden internationalen, bundesweiten, staatlichen und lokalen Gesetzen zu nutzen.",
+                    {
+                        "list": [
+                            "Unbefugte Nutzung unserer Dienstleistungen, einschließlich, aber nicht beschränkt auf Hacking, Reverse Engineering oder Datenmissbrauch, ist streng verboten",
+                            "Sie dürfen unser geistiges Eigentum, unsere Marken oder proprietären KI-Algorithmen ohne vorherige schriftliche Zustimmung nicht nutzen oder ausnutzen",
+                            "Die kommerzielle Nutzung unserer Dienstleistungen muss den spezifischen Bedingungen entsprechen, die in Ihrer Dienstleistungsvereinbarung festgelegt sind"
+                        ]
+                    }
+                ]
+            },
+            "intellectualPropertyRights": {
+                "title": "2. Rechte am geistigen Eigentum",
+                "content": [
+                    "Alle Inhalte, Software, KI-Modelle, Algorithmen, Marken und Materialien, die auf unserer Plattform bereitgestellt werden, gehören Clumoss, seinen Tochtergesellschaften oder lizenzierten Drittanbietern.",
+                    " Ihnen wird eine begrenzte, nicht exklusive, nicht übertragbare Lizenz zur Nutzung der Dienstleistungen für persönliche oder genehmigte kommerzielle Zwecke gemäß diesen Bedingungen und etwaigen zusätzlichen Dienstleistungsvereinbarungen gewährt.",
+                    "Unsere proprietären KI-Technologien, Machine-Learning-Modelle und Datenverarbeitungsmethodologien bleiben das exklusive geistige Eigentum von Clumoss."
+                ]
+            },
+            "userResponsibilities": {
+                "title": "3. Verantwortlichkeiten des Nutzers",
+                "content": [
+                    "Als Nutzer der Dienstleistungen von Clumoss tragen Sie bestimmte Verantwortlichkeiten, um eine ordnungsgemäße und rechtmäßige Nutzung unserer KI-Lösungen sicherzustellen:",
+                    {
+                        "list": [
+                            "Sie sind verantwortlich für die Vertraulichkeit und Sicherheit Ihrer Zugangsdaten",
+                            "Alle Aktivitäten, die unter Ihrem Konto durchgeführt werden, liegen in Ihrer Verantwortung",
+                            "Sie dürfen keinen schädlichen Inhalt wie Malware, beleidigende Materialien oder urheberrechtlich geschützte Werke ohne entsprechende Genehmigung hochladen oder verbreiten",
+                            "Sie erklären sich damit einverstanden, unsere KI-Dienstleistungen verantwortungsvoll und ethisch zu nutzen und Anwendungen zu vermeiden, die Schaden verursachen oder geltende Gesetze verletzen könnten",
+                            "Bei der Verarbeitung personenbezogener oder sensibler Daten über unsere Dienstleistungen müssen Sie die Datenschutzvorschriften einhalten"
+                        ]
+                    }
+                ]
+            },
+            "privacyAndDataProtection": {
+                "title": "4. Datenschutz und Datensicherheit",
+                "content": [
+                    "Ihre Privatsphäre und der Schutz Ihrer Daten sind die Grundlage unserer Geschäftstätigkeit. Wir verarbeiten Ihre Informationen in Übereinstimmung mit unserer umfassenden Datenschutzrichtlinie und den geltenden Datenschutzvorschriften.",
+                    "Durch die Nutzung unserer Dienstleistungen stimmen Sie der Erhebung, Verarbeitung und Speicherung von Informationen gemäß unserer Datenschutzrichtlinie zu, die mit der DSGVO, dem CCPA und anderen relevanten Datenschutzgesetzen übereinstimmt.",
+                    "Wir implementieren fortschrittliche Sicherheitsmaßnahmen und Datenschutz-by-Design-Prinzipien in allen unseren KI-Lösungen, um Ihre Daten während des gesamten Verarbeitungszyklus zu schützen."
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "5. Haftungsbeschränkung",
+                "content": [
+                    "Wir bemühen uns, die Genauigkeit, Zuverlässigkeit und Verfügbarkeit unserer KI-Dienstleistungen und technologischen Lösungen sicherzustellen, garantieren jedoch keinen unterbrechungsfreien oder fehlerfreien Betrieb.",
+                    "Clumoss, MisterAI, NeuroforgeAI und ihre verbundenen Unternehmen haften nicht für direkte, indirekte, zufällige, Folge- oder Strafschäden, die aus der Nutzung unserer Dienstleistungen oder unserer Website entstehen.",
+                    "Unsere gesamte Haftung für Ansprüche im Zusammenhang mit unseren Dienstleistungen übersteigt nicht den Betrag, den Sie für die jeweilige Dienstleistung in den letzten zwölf Monaten gezahlt haben."
+                ]
+            },
+            "thirdPartyServicesAndIntegrations": {
+                "title": "6. Dienste und Integrationen von Drittanbietern",
+                "content": [
+                    "Unsere KI-Lösungen können mit Websites, APIs, Cloud-Diensten oder externen Plattformen von Drittanbietern integriert werden oder Links dazu enthalten, um die Funktionalität zu erweitern und umfassende Lösungen bereitzustellen.",
+                    "Wir übernehmen keine Verantwortung für die Inhalte, Richtlinien, Praktiken, Verfügbarkeit oder Sicherheit dieser externen Plattformen. Ihre Interaktion mit Diensten Dritter unterliegt deren jeweiligen Nutzungsbedingungen.",
+                    "Wir empfehlen Ihnen, die Nutzungsbedingungen und Datenschutzrichtlinien aller Drittanbieter-Dienste, auf die über unsere Plattform zugegriffen wird, zu überprüfen."
+                ]
+            },
+            "serviceAvailabilityAndPerformance": {
+                "title": "7. Verfügbarkeit und Leistung der Dienstleistungen",
+                "content": [
+                    "Obwohl wir bestrebt sind, eine hohe Verfügbarkeit und Leistungsstandards unserer KI-Dienstleistungen aufrechtzuerhalten, garantieren wir keine 100%ige Betriebszeit oder spezifische Leistungskennzahlen, sofern dies nicht ausdrücklich in Ihrer Service-Level-Vereinbarung angegeben ist.",
+                    "Geplante Wartungsarbeiten, Updates und unvorhergesehene technische Probleme können die Verfügbarkeit der Dienstleistungen vorübergehend beeinträchtigen. Wir werden angemessene Anstrengungen unternehmen, um Störungen zu minimieren und vorherige Benachrichtigungen bereitzustellen, wenn möglich."
+                ]
+            },
+            "termination": {
+                "title": "8. Beendigung",
+                "content": [
+                    "Wir behalten uns das Recht vor, den Zugang zu unseren Dienstleistungen jederzeit ohne vorherige Ankündigung auszusetzen oder zu beenden, wenn diese Bedingungen verletzt werden oder wir feststellen, dass die Fortsetzung der Dienstleistungserbringung nicht möglich ist.",
+                    "Bei Beendigung wird Ihr Zugang zu unseren Dienstleistungen eingestellt, und Sie müssen die Nutzung unserer proprietären Technologien einstellen und vertrauliche Informationen, die sich in Ihrem Besitz befinden, zurückgeben oder vernichten."
+                ]
+            },
+            "governingLawAndJurisdiction": {
+                "title": "9. Geltendes Recht und Gerichtsstand",
+                "content": [
+                    "Diese Bedingungen unterliegen und werden gemäß den Gesetzen Indiens und den geltenden internationalen Vorschriften für KI- und Technologiedienstleistungen ausgelegt.",
+                    "Alle Streitigkeiten, die aus diesen Bedingungen oder der Nutzung unserer Dienstleistungen entstehen, werden ausschließlich vor den Gerichten in Indien beigelegt, insbesondere in der Gerichtsbarkeit, in der Clumoss seine Hauptgeschäftsaktivitäten durchführt."
+                ]
+            },
+            "changesToTerms": {
+                "title": "10. Änderungen der Bedingungen",
+                "content": [
+                    "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu aktualisieren, zu ändern oder zu überarbeiten, um Änderungen in unseren Dienstleistungen, rechtlichen Anforderungen oder Geschäftspraktiken widerzuspiegeln.",
+                    "Die fortgesetzte Nutzung unserer Dienstleistungen nach Änderungen stellt die Annahme der überarbeiteten Bedingungen dar. Wir werden angemessene Benachrichtigungen über wesentliche Änderungen über geeignete Kommunikationskanäle bereitstellen."
+                ]
+            },
+            "contactUs": {
+                "title": "11. Kontaktieren Sie uns",
+                "content": [
+                    "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, Klärungen zu unseren Dienstleistungen benötigen oder rechtliche Unterstützung wünschen, wenden Sie sich bitte an unser Rechts- und Compliance-Team.",
+                    "Für offizielle rechtliche Mitteilungen oder vertragsbezogene Anfragen nutzen Sie bitte unsere offiziellen Kommunikationskanäle. Wir verpflichten uns, alle Anfragen schnell und professionell zu bearbeiten."
+                ]
+            },
+            "lastUpdated": {
+                "content": "Clumoss – Indiens führendes Technologie-Konglomerat für Künstliche Intelligenz"
+            }
+        },
+        "metadata": {
+            "title": "Nutzungsbedingungen | Clumoss",
+            "description": "Nutzungsbedingungen, die die Nutzung der Dienstleistungen und Produkte von Clumoss regeln. Erfahren Sie mehr über Ihre Rechte und Pflichten bei der Nutzung unserer KI-Lösungen.",
+            "openGraph": {
+                "title": "Nutzungsbedingungen | Clumoss",
+                "description": "Nutzungsbedingungen, die die Nutzung der Dienstleistungen und Produkte von Clumoss regeln."
+            }
+        }
+    }
+}

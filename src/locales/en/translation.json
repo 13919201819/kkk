@@ -1,0 +1,1059 @@
+{
+    "header": {
+        "logo": "CLUMOSS",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "solutions": "Solutions",
+        "whoWeServe": "Who We Serve",
+        "contact": "Contact"
+    },
+    "footer": {
+        "brand": {
+            "name": "CLUMOSS",
+            "description": "Clusters of Multi-Organizations for Support and Services — shaping the future with innovation, AI, and global impact."
+        },
+        "company": {
+            "title": "Company",
+            "links": [
+                { "name": "About Us", "href": "/about" },
+                { "name": "Careers", "href": "/careers" },
+                { "name": "Portfolio", "href": "/portfolio" },
+                { "name": "Blogs", "href": "/blogs" }
+            ]
+        },
+        "legal": {
+            "title": "Legal",
+            "links": [
+                { "name": "Disclaimer", "href": "/disclaimer" },
+                { "name": "Privacy Policy", "href": "/privacy" },
+                { "name": "Terms & Conditions", "href": "/terms" }
+            ]
+        },
+        "social": [
+            { "name": "LinkedIn", "href": "#" },
+            { "name": "Twitter", "href": "#" },
+            { "name": "Instagram", "href": "#" }
+        ],
+        "copyright": {
+            "text": "CLUMOSS {year}",
+            "designedBy": "Designed, Developed and Maintained by CLUMOSS"
+        }
+    },
+    "hero": {
+        "title": "CLUSTERS OF MULTI-ORGANIZATIONS FOR SUPPORT & SERVICES",
+        "description": "Empowering industries with next-gen AI SaaS solutions through scalable platforms, innovation, and support.",
+        "buttons": [
+            { "text": "Explore Products" },
+            { "text": "Contact Us" }
+        ]
+    },
+    "about": {
+        "title": "About CLUMOSS",
+        "description": [
+            "CLUMOSS is India's leading technology conglomerate specializing in advanced artificial intelligence solutions. We architect and deploy comprehensive AI ecosystems that transform how businesses operate, innovate, and scale in the digital economy.",
+            "Our expertise spans the full spectrum of intelligent technologies—from machine learning and deep learning frameworks to cutting-edge generative AI, voice recognition systems, and autonomous agent orchestration. We combine these capabilities with enterprise-grade security and cloud-native architecture to deliver solutions that are both powerful and practical."
+        ],
+        "innovationEcosystem": {
+            "title": "Our Innovation Ecosystem",
+            "subsidiaries": [{
+                    "name": "MistrAI",
+                    "description": "Our product development arm focuses on creating sophisticated SaaS platforms and AI-powered applications. MistrAI transforms complex business challenges into intuitive, scalable solutions that drive measurable results across industries.",
+                    "button": "Learn More"
+                },
+                {
+                    "name": "NeuroForgeAI",
+                    "description": "Dedicated to physical AI implementation, NeuroForgeAI develops the intelligent backbone for robotics, autonomous systems, and IoT ecosystems. We engineer the cognitive infrastructure that brings intelligence to the physical world.",
+                    "slogan": "We deliver what Physical AI needs",
+                    "button": "Learn More"
+                }
+            ]
+        },
+        "approach": {
+            "title": "Our Approach",
+            "description": "Every project at CLUMOSS begins with understanding your unique challenges and objectives. We design custom AI solutions that integrate seamlessly with your existing infrastructure while ensuring scalability, reliability, and profitability. Our cloud-native approach guarantees that your solutions grow with your business, backed by robust security frameworks and continuous optimization."
+        },
+        "closing": "From concept to deployment, CLUMOSS delivers intelligent solutions that don't just meet today's requirements—they anticipate tomorrow's opportunities."
+    },
+    "domains": {
+        "title": "Domains We Serve",
+        "items": [{
+                "title": "Healthcare",
+                "description": "AI-powered healthcare solutions for diagnostics, telemedicine, and secure patient data management.",
+                "button": "Explore"
+            },
+            {
+                "title": "Defense",
+                "description": "Advanced AI and security systems for threat detection, surveillance, and defense intelligence.",
+                "button": "Explore"
+            },
+            {
+                "title": "Manufacturing",
+                "description": "Smart manufacturing with predictive maintenance, robotics, and AI-driven process automation.",
+                "button": "Explore"
+            },
+            {
+                "title": "Real Estate",
+                "description": "AI solutions for property valuation, virtual tours, and automated real estate transactions.",
+                "button": "Explore"
+            },
+            {
+                "title": "Government",
+                "description": "Secure AI platforms for citizen services, workflow automation, and policy planning.",
+                "button": "Explore"
+            },
+            {
+                "title": "E-commerce & Retail",
+                "description": "Personalized shopping with AI recommendations, chatbots, and dynamic pricing.",
+                "button": "Explore"
+            },
+            {
+                "title": "Agriculture",
+                "description": "AI-powered farming with crop prediction, drone monitoring, and supply chain optimization.",
+                "button": "Explore"
+            },
+            {
+                "title": "Education",
+                "description": "Smart learning with AI tutors, predictive analytics, and digital education platforms.",
+                "button": "Explore"
+            },
+            {
+                "title": "Immigration",
+                "description": "AI-driven immigration support with document verification, case automation, and guidance bots.",
+                "button": "Explore"
+            },
+            {
+                "title": "Sports & Fitness",
+                "description": "AI solutions for performance tracking, virtual coaching, and personalized fitness.",
+                "button": "Explore"
+            },
+            {
+                "title": "FinTech",
+                "description": "AI in finance with credit scoring, fraud detection, and secure digital payments.",
+                "button": "Explore"
+            },
+            {
+                "title": "Banking & Finance",
+                "description": "AI-driven fraud prevention, LLM-powered insights, and enterprise data security.",
+                "button": "Explore"
+            },
+            {
+                "title": "Sales",
+                "description": "Smarter sales with AI agents, predictive lead scoring, and CRM automation.",
+                "button": "Explore"
+            },
+            {
+                "title": "Music & Entertainment",
+                "description": "AI in entertainment for music generation, recommendations, and audience engagement.",
+                "button": "Explore"
+            },
+            {
+                "title": "Law",
+                "description": "Legal AI for contract automation, research assistants, and secure compliance.",
+                "button": "Explore"
+            }
+        ]
+    },
+    "solutions": [{
+            "slug": "agentic-ai",
+            "title": "Agentic AI",
+            "description": "AI agents that work like digital employees to automate tasks and make smart decisions.",
+            "bulletPoints": [
+                "Smart decision-making with AI reasoning",
+                "Automates repetitive and complex tasks",
+                "Connects with tools, APIs, and workflows"
+            ]
+        },
+        {
+            "slug": "data-analytics-ml",
+            "title": "Data Analytics & Machine Learning",
+            "description": "Turn your data into insights that help you grow faster and smarter.",
+            "bulletPoints": [
+                "Predicts trends and business outcomes",
+                "Automated machine learning models (MLOps)",
+                "Real-time dashboards and reports"
+            ]
+        },
+        {
+            "slug": "workflow-automation",
+            "title": "Workflow Automation",
+            "description": "Save time and cut costs by automating daily business processes.",
+            "bulletPoints": [
+                "Robotic Process Automation (RPA)",
+                "AI-based approvals and task management",
+                "Works with ERP, CRM, and other apps"
+            ]
+        },
+        {
+            "slug": "generative-ai-development",
+            "title": "Full-Stack Generative AI Development",
+            "description": "End-to-end development of AI-powered applications for your business.",
+            "bulletPoints": [
+                "AI chatbots, copilots, and custom apps",
+                "Multi-modal AI (text, image, voice, video)",
+                "Cloud-based deployment for scalability"
+            ]
+        },
+        {
+            "slug": "mcp-ai-orchestration",
+            "title": "MCP-Powered AI Agents & Orchestration",
+            "description": "Advanced orchestration using Model Context Protocol (MCP).",
+            "bulletPoints": [
+                "Multi-agent collaboration at scale",
+                "Secure integration with tools and data",
+                "Flexible and scalable AI workflows"
+            ]
+        },
+        {
+            "slug": "ui-ux-design",
+            "title": "Next-Gen UI/UX Design",
+            "description": "Modern, attractive, and user-friendly digital experiences.",
+            "bulletPoints": [
+                "AI-assisted design and prototyping",
+                "Interactive AR/VR experiences",
+                "Responsive and adaptive layouts"
+            ]
+        },
+        {
+            "slug": "fine-tuned-llm",
+            "title": "Fine-Tuned LLM Solutions",
+            "description": "Custom AI models trained for your industry needs.",
+            "bulletPoints": [
+                "Tailored models for finance, healthcare, legal, etc.",
+                "Secure knowledge base integration",
+                "Optimized for fast, cost-efficient results"
+            ]
+        },
+        {
+            "slug": "data-security",
+            "title": "Data Protection & Security",
+            "description": "Keep your business data safe with enterprise-grade security.",
+            "bulletPoints": [
+                "AI-powered cyber threat detection",
+                "Zero-trust access and identity management",
+                "Compliance with GDPR, HIPAA, ISO standards"
+            ]
+        },
+        {
+            "slug": "enterprise-web-dev",
+            "title": "Enterprise Web Development",
+            "description": "Build powerful, secure, and scalable business applications.",
+            "bulletPoints": [
+                "Full-stack cloud-ready development",
+                "API-first and microservices architecture",
+                "Enterprise-level performance and security"
+            ]
+        },
+        {
+            "slug": "voice-agents",
+            "title": "Conversational Voice Agents",
+            "description": "AI voice bots that talk naturally with your customers.",
+            "bulletPoints": [
+                "Real-time speech recognition & response",
+                "Supports multiple languages",
+                "Integrates with call centers and apps"
+            ]
+        }
+    ],
+
+    "serviceDetail": {
+        "backToServices": "Back to Services",
+        "businessImpactTitle": "Business Impact & ROI",
+        "keyFeaturesTitle": "Key Features",
+        "ctaTitle": "Transform Your Business Today",
+        "ctaDescription": "Ready to unlock the full potential of {service}? Schedule a personalized consultation and discover how our proven solutions can drive measurable growth and efficiency for your business within the next 30 days.",
+        "ctaButton": "Schedule Free Consultation",
+        "solutions": [{
+                "slug": "agentic-ai",
+                "title": "Agentic AI",
+                "description": "Transform your business with intelligent AI agents that can think, plan, and execute complex tasks autonomously.",
+                "bulletPoints": [
+                    "Autonomous decision making",
+                    "Multi-step task execution",
+                    "Real-time adaptation",
+                    "Integration with existing systems"
+                ],
+                "keywords": [
+                    "cognitive computing",
+                    "robotic process automation",
+                    "intelligent automation",
+                    "neural networks",
+                    "enterprise AI"
+                ],
+                "businessImpact": [{
+                        "metric": "Process Efficiency",
+                        "description": "Streamline manual workflows and eliminate repetitive tasks with intelligent automation that adapts to your business needs"
+                    },
+                    {
+                        "metric": "Faster Decisions",
+                        "description": "Make critical business decisions in real-time with AI-powered insights and automated decision support systems"
+                    },
+                    {
+                        "metric": "Cost Optimization",
+                        "description": "Reduce operational costs by up to 40% through intelligent resource allocation and process optimization"
+                    },
+                    {
+                        "metric": "Always Available",
+                        "description": "Ensure 24/7 business continuity with AI agents that never sleep, providing constant operational support"
+                    }
+                ]
+            },
+            {
+                "slug": "data-analytics-ml",
+                "title": "Data Analytics & Machine Learning",
+                "description": "Unlock insights from your data with advanced analytics and custom machine learning models.",
+                "bulletPoints": [
+                    "Predictive modeling",
+                    "Real-time analytics",
+                    "Custom dashboards",
+                    "Automated insights"
+                ],
+                "keywords": [
+                    "statistical modeling",
+                    "data visualization",
+                    "pattern recognition",
+                    "algorithmic insights",
+                    "quantitative analysis"
+                ],
+                "businessImpact": [{
+                        "metric": "Revenue Growth",
+                        "description": "Unlock new revenue streams and optimize pricing strategies using predictive analytics and market intelligence"
+                    },
+                    {
+                        "metric": "Informed Decisions",
+                        "description": "Transform raw data into actionable insights with real-time analytics dashboards and automated reporting"
+                    },
+                    {
+                        "metric": "Predictive Accuracy",
+                        "description": "Forecast market trends and customer behavior with 95% accuracy using advanced machine learning models"
+                    },
+                    {
+                        "metric": "Risk Mitigation",
+                        "description": "Identify and prevent potential business risks before they impact operations through predictive modeling"
+                    }
+                ]
+            },
+            {
+                "slug": "data-security",
+                "title": "Data Protection & Security",
+                "description": "Secure your digital assets with comprehensive data protection and cybersecurity solutions.",
+                "bulletPoints": [
+                    "End-to-end encryption",
+                    "Compliance management",
+                    "Threat detection",
+                    "Access control"
+                ],
+                "keywords": [
+                    "information security",
+                    "risk management",
+                    "digital forensics",
+                    "vulnerability assessment",
+                    "security protocols"
+                ],
+                "businessImpact": [{
+                        "metric": "Enhanced Protection",
+                        "description": "Safeguard sensitive data and prevent cyber threats with enterprise-grade security protocols and monitoring"
+                    },
+                    {
+                        "metric": "Regulatory Compliance",
+                        "description": "Meet industry standards and regulations with automated compliance tracking and audit-ready documentation"
+                    },
+                    {
+                        "metric": "Rapid Response",
+                        "description": "Detect and neutralize security threats within minutes using AI-powered threat intelligence systems"
+                    },
+                    {
+                        "metric": "Business Continuity",
+                        "description": "Maintain uninterrupted operations with robust backup systems and disaster recovery protocols"
+                    }
+                ]
+            },
+            {
+                "slug": "enterprise-web-dev",
+                "title": "Enterprise Web Development",
+                "description": "Build scalable, high-performance web applications tailored for enterprise needs.",
+                "bulletPoints": [
+                    "Scalable architecture",
+                    "Modern frameworks",
+                    "Performance optimization",
+                    "Security first approach"
+                ],
+                "keywords": [
+                    "full-stack development",
+                    "responsive design",
+                    "cloud computing",
+                    "software engineering",
+                    "API development"
+                ],
+                "businessImpact": [{
+                        "metric": "Optimized Performance",
+                        "description": "Deliver lightning-fast loading speeds and seamless user interactions that keep visitors engaged longer"
+                    },
+                    {
+                        "metric": "Higher Engagement",
+                        "description": "Boost customer satisfaction and retention with intuitive interfaces and smooth user experiences"
+                    },
+                    {
+                        "metric": "Reliable Uptime",
+                        "description": "Ensure consistent website availability with robust architecture that minimizes downtime and outages"
+                    },
+                    {
+                        "metric": "Reduced Maintenance",
+                        "description": "Lower long-term operational costs with clean, scalable code that requires minimal ongoing maintenance"
+                    }
+                ]
+            },
+            {
+                "slug": "fine-tuned-llm",
+                "title": "Fine-Tuned LLM Solutions",
+                "description": "Custom language models fine-tuned for your specific business domain and requirements.",
+                "bulletPoints": [
+                    "Domain-specific training",
+                    "Custom model deployment",
+                    "Performance optimization",
+                    "Continuous learning"
+                ],
+                "keywords": [
+                    "neural language models",
+                    "text processing",
+                    "computational linguistics",
+                    "semantic understanding",
+                    "language modeling"
+                ],
+                "businessImpact": [{
+                        "metric": "Domain Expertise",
+                        "description": "Achieve specialized task performance that understands your industry's unique language and requirements"
+                    },
+                    {
+                        "metric": "Content Efficiency",
+                        "description": "Accelerate content creation by 10x while maintaining quality and brand consistency across all materials"
+                    },
+                    {
+                        "metric": "Processing Speed",
+                        "description": "Handle thousands of documents instantly with rapid text analysis and intelligent content generation"
+                    },
+                    {
+                        "metric": "Resource Optimization",
+                        "description": "Maximize team productivity by automating repetitive writing tasks and content management workflows"
+                    }
+                ]
+            },
+            {
+                "slug": "generative-ai-development",
+                "title": "Full-Stack Generative AI Development",
+                "description": "End-to-end generative AI solutions from concept to deployment.",
+                "bulletPoints": [
+                    "Custom AI applications",
+                    "Multi-modal capabilities",
+                    "Scalable deployment",
+                    "User-friendly interfaces"
+                ],
+                "keywords": [
+                    "synthetic media",
+                    "computer vision",
+                    "deep learning",
+                    "creative algorithms",
+                    "artificial creativity"
+                ],
+                "businessImpact": [{
+                        "metric": "Accelerated Innovation",
+                        "description": "Bring new products to market 3x faster with rapid AI-powered prototyping and development cycles"
+                    },
+                    {
+                        "metric": "Creative Output",
+                        "description": "Generate unlimited creative assets and content variations that enhance your marketing and product capabilities"
+                    },
+                    {
+                        "metric": "Content Automation",
+                        "description": "Streamline content generation across all channels with AI that maintains your brand voice and quality standards"
+                    },
+                    {
+                        "metric": "Strong ROI",
+                        "description": "Achieve measurable returns on investment with solutions that pay for themselves within 6-12 months"
+                    }
+                ]
+            },
+            {
+                "slug": "mcp-ai-orchestration",
+                "title": "MCP-Powered AI Agents & Orchestration",
+                "description": "Advanced AI agent orchestration using Model Context Protocol for seamless integration.",
+                "bulletPoints": [
+                    "Agent coordination",
+                    "Protocol integration",
+                    "Workflow automation",
+                    "Scalable orchestration"
+                ],
+                "keywords": [
+                    "distributed systems",
+                    "microservices",
+                    "event-driven architecture",
+                    "system integration",
+                    "process orchestration"
+                ],
+                "businessImpact": [{
+                        "metric": "Enhanced Efficiency",
+                        "description": "Optimize complex workflows by coordinating multiple AI agents that work together seamlessly"
+                    },
+                    {
+                        "metric": "Agent Collaboration",
+                        "description": "Enable seamless multi-agent coordination that handles sophisticated tasks requiring diverse expertise"
+                    },
+                    {
+                        "metric": "Scalable Solutions",
+                        "description": "Deploy flexible agent networks that grow with your business needs and handle increasing workloads"
+                    },
+                    {
+                        "metric": "Reliable Workflows",
+                        "description": "Ensure consistent process execution with robust orchestration that maintains quality across all operations"
+                    }
+                ]
+            },
+            {
+                "slug": "ui-ux-design",
+                "title": "Next-Gen UI/UX Design",
+                "description": "Innovative user interface and experience design for modern applications.",
+                "bulletPoints": [
+                    "User-centered design",
+                    "Interactive prototypes",
+                    "Accessibility focus",
+                    "Modern aesthetics"
+                ],
+                "keywords": [
+                    "human-computer interaction",
+                    "visual design",
+                    "usability testing",
+                    "interaction design",
+                    "design thinking"
+                ],
+                "businessImpact": [{
+                        "metric": "User Engagement",
+                        "description": "Create captivating interfaces that increase user interaction time and encourage repeat visits"
+                    },
+                    {
+                        "metric": "Conversion Growth",
+                        "description": "Boost business performance with designs optimized for higher conversion rates and customer acquisition"
+                    },
+                    {
+                        "metric": "User Satisfaction",
+                        "description": "Achieve high satisfaction scores through intuitive, accessible designs that delight every user"
+                    },
+                    {
+                        "metric": "Support Efficiency",
+                        "description": "Reduce customer support tickets with self-explanatory interfaces that minimize user confusion"
+                    }
+                ]
+            },
+            {
+                "slug": "voice-agents",
+                "title": "Conversational Voice Agents",
+                "description": "Intelligent voice-powered assistants for enhanced customer engagement.",
+                "bulletPoints": [
+                    "Natural language processing",
+                    "Voice synthesis",
+                    "Multi-language support",
+                    "Context awareness"
+                ],
+                "keywords": [
+                    "speech recognition",
+                    "voice synthesis",
+                    "audio processing",
+                    "conversational design",
+                    "speech technology"
+                ],
+                "businessImpact": [{
+                        "metric": "24/7 Support",
+                        "description": "Provide round-the-clock customer service availability that never misses a call or inquiry"
+                    },
+                    {
+                        "metric": "Cost Efficiency",
+                        "description": "Optimize support operations and achieve significant cost savings while maintaining service quality"
+                    },
+                    {
+                        "metric": "Customer Satisfaction",
+                        "description": "Deliver enhanced user experiences with natural, helpful voice interactions that feel truly human"
+                    },
+                    {
+                        "metric": "Quick Resolution",
+                        "description": "Handle customer queries faster with intelligent voice agents that provide instant, accurate responses"
+                    }
+                ]
+            },
+            {
+                "slug": "workflow-automation",
+                "title": "Workflow Automation",
+                "description": "Streamline your business processes with intelligent workflow automation.",
+                "bulletPoints": [
+                    "Process optimization",
+                    "Task automation",
+                    "Integration capabilities",
+                    "Performance monitoring"
+                ],
+                "keywords": [
+                    "business process management",
+                    "digital transformation",
+                    "process mining",
+                    "robotic automation",
+                    "efficiency optimization"
+                ],
+                "businessImpact": [{
+                        "metric": "Process Automation",
+                        "description": "Achieve operational excellence by reducing manual intervention and eliminating human error in routine tasks"
+                    },
+                    {
+                        "metric": "Workflow Speed",
+                        "description": "Accelerate completion times and boost overall efficiency with intelligent process optimization"
+                    },
+                    {
+                        "metric": "Process Accuracy",
+                        "description": "Ensure consistent, high-quality execution of automated processes that maintain professional standards"
+                    },
+                    {
+                        "metric": "Operational Savings",
+                        "description": "Maximize cost management through optimized resource utilization and reduced operational overhead"
+                    }
+                ]
+            }
+        ]
+    },
+    "partner": {
+        "title": "Accelerate your journey through CLUMOSS",
+        "button": "Let's Partner Up"
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "description": "Our AI-powered system will customize your experience based on your needs",
+        "successMessage": {
+            "title": "Thank You!",
+            "description": "Your message has been received. Our AI system is processing your request based on your profile.",
+            "followUp": "We will get back to you within 24 hours with a personalized response.",
+            "button": "Send Another Message"
+        },
+        "connect": {
+            "title": "Let's Connect!",
+            "items": [{
+                    "title": "Company Number",
+                    "value": "+917622817924",
+                    "href": "tel:+917622817924"
+                },
+                {
+                    "title": "Email",
+                    "value": "info@clumoss.com",
+                    "href": "mailto:info@clumoss.com"
+                },
+                {
+                    "title": "Location",
+                    "value": "India"
+                }
+            ]
+        },
+        "roles": [{
+                "id": "client",
+                "label": "Business Client",
+                "description": "Looking for enterprise solutions",
+                "fields": [
+                    "country",
+                    "company",
+                    "position",
+                    "budget",
+                    "timeline",
+                    "requirements"
+                ]
+            },
+            {
+                "id": "student",
+                "label": "Student/Graduate",
+                "description": "Seeking jobs or apprenticeships",
+                "fields": [
+                    "university",
+                    "degree",
+                    "experience",
+                    "skills",
+                    "availability",
+                    "resume",
+                    "cv"
+                ]
+            },
+            {
+                "id": "demo",
+                "label": "Demo Request",
+                "description": "Want to see our solutions",
+                "fields": [
+                    "interest",
+                    "useCase",
+                    "teamSize",
+                    "timeline"
+                ]
+            },
+            {
+                "id": "other",
+                "label": "Other Inquiry",
+                "description": "General questions or partnerships",
+                "fields": [
+                    "inquiryType",
+                    "organization",
+                    "message"
+                ]
+            }
+        ],
+        "fieldLabels": {
+            "country": "Country",
+            "company": "Company Name",
+            "position": "Your Position",
+            "budget": "Project Budget Range",
+            "timeline": "Expected Timeline",
+            "requirements": "Project Requirements",
+            "university": "University/Institution",
+            "degree": "Degree/Field of Study",
+            "experience": "Years of Experience",
+            "skills": "Technical Skills",
+            "availability": "Availability to Start",
+            "interest": "Area of Interest",
+            "useCase": "Primary Use Case",
+            "teamSize": "Team Size",
+            "inquiryType": "Type of Inquiry",
+            "organization": "Organization (if applicable)",
+            "message": "Your Message",
+            "resume": "Resume",
+            "cv": "CV (Optional)",
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number"
+        },
+        "selectOptions": {
+            "timeline": [
+                "1-2 weeks",
+                "1 month",
+                "2-3 months",
+                "3-6 months",
+                "6+ months"
+            ],
+            "experience": [
+                "0-1 years",
+                "1-3 years",
+                "3-5 years",
+                "5-10 years",
+                "10+ years"
+            ],
+            "teamSize": [
+                "1-5 people",
+                "6-20 people",
+                "21-50 people",
+                "51-200 people",
+                "200+ people"
+            ],
+            "inquiryType": [
+                "Partnership",
+                "Investment",
+                "Media/Press",
+                "Technical Support",
+                "General Question"
+            ]
+        },
+        "error": {
+            "noRole": "Please select a role first.",
+            "failed": "Failed to send message. Please try again.",
+            "network": "An error occurred. Please check your connection and try again."
+        }
+    },
+
+    "disclaimer": {
+        "title": "Disclaimer",
+        "sections": {
+            "generalInformation": {
+                "title": "General Information",
+                "content": "The information provided by CLUMOSS and its subsidiaries (MistrAI and NeuroForgeAI) on this website and through our services is for general informational and educational purposes only. All content is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site or our services."
+            },
+            "professionalServices": {
+                "title": "Professional Services",
+                "content": [
+                    "Our AI, machine learning, and technology solutions are provided based on current industry standards and best practices. However, technology evolves rapidly, and outcomes may vary depending on implementation, usage, and environmental factors. CLUMOSS does not guarantee specific results or performance metrics from our solutions.",
+                    "Clients are advised to conduct their own due diligence and consult with qualified professionals before making business decisions based on our recommendations or implementations."
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "Limitation of Liability",
+                "content": [
+                    "Under no circumstance shall CLUMOSS, MistrAI, NeuroForgeAI, or their directors, employees, partners, agents, suppliers, or affiliates be liable for any indirect, incidental, punitive, special, or consequential damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of our services or website.",
+                    "Our total liability for any claims arising from or related to our services shall not exceed the amount paid by the client for the specific service in question."
+                ]
+            },
+            "aiSystemsAndDataProcessing": {
+                "title": "AI Systems and Data Processing",
+                "content": [
+                    "Our AI and machine learning systems are designed to provide intelligent solutions based on available data and algorithms. However, AI systems may produce unexpected results, and we cannot guarantee 100% accuracy in all scenarios. Users should implement appropriate validation and oversight mechanisms when deploying AI solutions in production environments.",
+                    "Data processing results and AI-generated insights should be reviewed by qualified personnel before making critical business decisions."
+                ]
+            },
+            "thirdPartyIntegration": {
+                "title": "Third-Party Integration",
+                "content": [
+                    "Our solutions may integrate with third-party services, APIs, or platforms. CLUMOSS is not responsible for the availability, accuracy, or reliability of third-party services. Changes to third-party systems may affect the functionality of our solutions.",
+                    "We recommend maintaining backup systems and contingency plans when relying on integrated solutions."
+                ]
+            },
+            "intellectualProperty": {
+                "title": "Intellectual Property",
+                "content": "All proprietary technologies, methodologies, and intellectual property developed by CLUMOSS remain our exclusive property. Client-specific customizations and data remain the property of the respective clients, subject to our service agreements."
+            },
+            "regulatoryCompliance": {
+                "title": "Regulatory Compliance",
+                "content": [
+                    "While we strive to ensure our solutions comply with applicable regulations and industry standards, clients are responsible for ensuring that their use of our services complies with all relevant laws, regulations, and industry requirements in their jurisdiction.",
+                    "Regulatory requirements may change, and clients should regularly review compliance requirements for their specific use cases."
+                ]
+            },
+            "updatesAndModifications": {
+                "title": "Updates and Modifications",
+                "content": "CLUMOSS reserves the right to update, modify, or discontinue any aspect of our services or this disclaimer at any time without prior notice. Continued use of our services after such changes constitutes acceptance of the modified terms."
+            },
+            "contactInformation": {
+                "title": "Contact Information",
+                "content": "For questions regarding this disclaimer or our services, please contact our legal and compliance team through our official communication channels. All formal notices should be submitted in writing through our designated contact procedures."
+            },
+            "lastUpdated": {
+                "content": "CLUMOSS - India’s Leading AI Technology Conglomerate"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "sections": {
+            "ourCommitmentToPrivacy": {
+                "title": "Our Commitment to Privacy",
+                "content": [
+                    "At CLUMOSS and its subsidiaries (MistrAI and NeuroForgeAI), we value and respect your privacy. This Privacy Policy outlines how we collect, use, store, and protect your information when you engage with our services, products, websites, and applications.",
+                    "Our practices are aligned with international data protection regulations, including the GDPR (Europe), CCPA (California), and other global privacy standards."
+                ]
+            },
+            "informationWeCollect": {
+                "title": "Information We Collect",
+                "personalData": {
+                    "title": "Personal Data",
+                    "content": "Name, email address, phone number, billing information, or other identifiers provided when registering or using our services."
+                },
+                "usageData": {
+                    "title": "Usage Data",
+                    "content": "Device information, IP addresses, browser type, access times, and pages viewed to improve our services and ensure security."
+                },
+                "aiInteractionData": {
+                    "title": "AI Interaction Data",
+                    "content": "Prompts, inputs, and outputs generated through our AI and LLM-powered services. This data is collected only to improve quality and ensure compliance with our service standards."
+                }
+            },
+            "howWeUseYourInformation": {
+                "title": "How We Use Your Information",
+                "content": [
+                    "We use the collected data to deliver exceptional AI-driven solutions and maintain the highest standards of service. Specifically, we use your information for:",
+                    {
+                        "list": [
+                            "Delivering and improving our AI-driven services and solutions",
+                            "Personalizing user experiences and optimizing system performance",
+                            "Ensuring system security, fraud prevention, and compliance with applicable laws",
+                            "Providing customer support and service updates",
+                            "Conducting research and development to enhance our AI capabilities"
+                        ]
+                    }
+                ]
+            },
+            "dataSharingAndDisclosure": {
+                "title": "Data Sharing & Disclosure",
+                "content": [
+                    "We do not sell or rent your personal data to third parties. Your privacy is paramount to our business operations and ethical standards.",
+                    "Data may be shared with trusted service providers, strictly for operational, security, or compliance purposes under contractual obligations to protect your information.",
+                    "AI models may process your inputs to provide services, but data is not shared for advertising or unrelated commercial activities without explicit consent."
+                ]
+            },
+            "dataSecurityMeasures": {
+                "title": "Data Security Measures",
+                "content": [
+                    "We implement industry-standard encryption, access controls, and continuous monitoring to safeguard your information. Our security infrastructure includes advanced threat detection, regular security audits, and compliance with international security frameworks.",
+                    "While we employ comprehensive security measures to protect your data, no system is completely immune to risks. We continuously update our security protocols to address emerging threats and maintain the highest level of data protection."
+                ]
+            },
+            "internationalDataTransfers": {
+                "title": "International Data Transfers",
+                "content": [
+                    "Your data may be processed and stored in regions outside your country of residence to provide our global AI services. We ensure all international transfers comply with GDPR, CCPA, and other applicable regulations.",
+                    "Appropriate safeguards, including standard contractual clauses and adequacy decisions, are implemented to protect your data during international transfers."
+                ]
+            },
+            "yourPrivacyRights": {
+                "title": "Your Privacy Rights",
+                "content": [
+                    "Depending on your jurisdiction, you may have comprehensive rights regarding your personal data:",
+                    {
+                        "list": [
+                            "Access Rights: Request access to and copies of your personal data",
+                            "Correction Rights: Request correction of inaccurate or incomplete data",
+                            "Deletion Rights: Request deletion of your personal data under certain circumstances",
+                            "Processing Restrictions: Object to or restrict certain data processing activities",
+                            "Data Portability: Request transfer of your data in a machine-readable format",
+                            "Consent Withdrawal: Withdraw consent for data processing at any time"
+                        ]
+                    }
+                ]
+            },
+            "cookiesAndTrackingTechnologies": {
+                "title": "Cookies & Tracking Technologies",
+                "content": [
+                    "Our website and services use cookies and similar technologies to enhance functionality, improve performance, and personalize content. These technologies help us understand user behavior and optimize our AI solutions.",
+                    "You can manage cookie preferences through your browser settings. However, disabling certain cookies may affect the functionality of our services."
+                ]
+            },
+            "aiAndMachineLearningDataProcessing": {
+                "title": "AI and Machine Learning Data Processing",
+                "content": [
+                    "Our AI systems process data to provide intelligent solutions, predictive analytics, and automated decision-making capabilities. We implement privacy-by-design principles in our AI development processes.",
+                    "Data used for training and improving our AI models is anonymized and aggregated where possible. Individual user data is protected through advanced privacy-preserving techniques."
+                ]
+            },
+            "policyUpdatesAndChanges": {
+                "title": "Policy Updates and Changes",
+                "content": [
+                    "We may update this Privacy Policy periodically to reflect changes in our practices, technology, legal requirements, or business operations. Material changes will be communicated through appropriate channels.",
+                    "Continued use of our services after policy updates constitutes acceptance of the revised terms. We encourage regular review of this policy to stay informed about our privacy practices."
+                ]
+            },
+            "contactInformation": {
+                "title": "Contact Information",
+                "content": [
+                    "If you have questions about this Privacy Policy, wish to exercise your data rights, or need assistance with privacy-related matters, please contact our dedicated privacy team.",
+                    "For formal privacy requests or concerns, please use our official communication channels. We are committed to responding promptly and addressing all privacy-related inquiries with the utmost care and attention."
+                ]
+            },
+            "regulatoryCompliance": {
+                "title": "Regulatory Compliance",
+                "content": "CLUMOSS maintains compliance with international privacy regulations including GDPR (EU), CCPA (California), PIPEDA (Canada), and applicable Indian data protection laws. Our privacy practices are regularly audited and updated to meet evolving regulatory requirements."
+            },
+            "lastUpdated": {
+                "content": "CLUMOSS - India’s Leading AI Technology Conglomerate"
+            }
+        },
+        "metadata": {
+            "title": "Privacy Policy | CLUMOSS",
+            "description": "Learn about our privacy practices and how we protect your data in compliance with international regulations including GDPR and CCPA.",
+            "openGraph": {
+                "title": "Privacy Policy | CLUMOSS",
+                "description": "Learn about our privacy practices and how we protect your data in compliance with international regulations."
+            }
+        }
+    },
+    "terms": {
+        "title": "Terms & Conditions",
+        "sections": {
+            "welcomeToClumoss": {
+                "title": "Welcome to CLUMOSS",
+                "content": [
+                    "By accessing, browsing, or using our website, products, and services provided by CLUMOSS and its subsidiaries (MistrAI and NeuroForgeAI), you agree to be bound by the following Terms and Conditions.",
+                    "Please read them carefully. If you do not agree with these terms, kindly discontinue use of our services immediately."
+                ]
+            },
+            "useOfServices": {
+                "title": "1. Use of Services",
+                "content": [
+                    "You agree to use our AI-powered services, machine learning solutions, and technology platforms only for lawful purposes and in compliance with all applicable international, federal, state, and local laws.",
+                    {
+                        "list": [
+                            "Unauthorized use of our services, including but not limited to hacking, reverse engineering, or misusing data is strictly prohibited",
+                            "You may not exploit or misuse our intellectual property, trademarks, or proprietary AI algorithms without prior written consent",
+                            "Commercial use of our services must comply with the specific terms outlined in your service agreement"
+                        ]
+                    }
+                ]
+            },
+            "intellectualPropertyRights": {
+                "title": "2. Intellectual Property Rights",
+                "content": [
+                    "All content, software, AI models, algorithms, trademarks, and materials provided on our platform are owned by CLUMOSS, its subsidiaries, or licensed third-party providers.",
+                    "You are granted a limited, non-exclusive, non-transferable license to use the services for personal or authorized business use, subject to these Terms and any additional service agreements.",
+                    "Our proprietary AI technologies, machine learning models, and data processing methodologies remain the exclusive intellectual property of CLUMOSS."
+                ]
+            },
+            "userResponsibilities": {
+                "title": "3. User Responsibilities",
+                "content": [
+                    "As a user of CLUMOSS services, you bear certain responsibilities to ensure proper and lawful use of our AI solutions:",
+                    {
+                        "list": [
+                            "You are responsible for maintaining the confidentiality and security of your account credentials",
+                            "Any activities performed under your account will be considered your responsibility",
+                            "You must not upload or distribute harmful content, including malware, offensive material, or copyrighted works without proper authorization",
+                            "You agree to use our AI services responsibly and ethically, avoiding any applications that could cause harm or violate applicable laws",
+                            "You must comply with data protection regulations when processing personal or sensitive data through our services"
+                        ]
+                    }
+                ]
+            },
+            "privacyAndDataProtection": {
+                "title": "4. Privacy & Data Protection",
+                "content": [
+                    "Your privacy and data security are fundamental to our operations. We handle your data in accordance with our comprehensive Privacy Policy and applicable data protection regulations.",
+                    "By using our services, you consent to the collection, processing, and storage of your information as outlined in our Privacy Policy, which complies with GDPR, CCPA, and other relevant privacy laws.",
+                    "We implement advanced security measures and privacy-by-design principles in all our AI solutions to protect your data throughout the processing lifecycle."
+                ]
+            },
+            "limitationOfLiability": {
+                "title": "5. Limitation of Liability",
+                "content": [
+                    "We make every effort to ensure accuracy, reliability, and availability of our AI services and technology solutions, but we do not guarantee uninterrupted or error-free operation.",
+                    "CLUMOSS, MistrAI, NeuroForgeAI, and their affiliates will not be held liable for direct, indirect, incidental, consequential, or punitive damages arising from the use of our services.",
+                    "Our total liability for any claims shall not exceed the amount paid by you for the specific service in question during the preceding twelve months."
+                ]
+            },
+            "thirdPartyServicesAndIntegrations": {
+                "title": "6. Third-Party Services & Integrations",
+                "content": [
+                    "Our AI solutions may integrate with or contain links to third-party websites, APIs, cloud services, or external platforms to enhance functionality and provide comprehensive solutions.",
+                    "We are not responsible for the content, policies, practices, availability, or security of such external platforms. Your interactions with third-party services are governed by their respective terms and conditions.",
+                    "We recommend reviewing the terms and privacy policies of any third-party services you access through our platform."
+                ]
+            },
+            "serviceAvailabilityAndPerformance": {
+                "title": "7. Service Availability & Performance",
+                "content": [
+                    "While we strive to maintain high availability and performance standards for our AI services, we do not guarantee 100% uptime or specific performance metrics unless explicitly stated in your service level agreement.",
+                    "Scheduled maintenance, updates, and unforeseen technical issues may temporarily affect service availability. We will make reasonable efforts to minimize disruptions and provide advance notice when possible."
+                ]
+            },
+            "termination": {
+                "title": "8. Termination",
+                "content": [
+                    "We reserve the right to suspend or terminate access to our services at any time, with or without prior notice, if these Terms are violated or if we determine that continued service provision is not feasible.",
+                    "Upon termination, your access to our services will cease, and you must discontinue all use of our proprietary technologies and return or delete any confidential information in your possession."
+                ]
+            },
+            "governingLawAndJurisdiction": {
+                "title": "9. Governing Law & Jurisdiction",
+                "content": [
+                    "These Terms will be governed and interpreted in accordance with the laws of India and applicable international regulations governing AI and technology services.",
+                    "Any disputes arising from these Terms or the use of our services shall be resolved under the exclusive jurisdiction of courts located in India, specifically in the jurisdiction where CLUMOSS maintains its principal operations."
+                ]
+            },
+            "changesToTerms": {
+                "title": "10. Changes to Terms",
+                "content": [
+                    "We reserve the right to update, modify, or revise these Terms & Conditions at any time to reflect changes in our services, legal requirements, or business practices.",
+                    "Continued use of our services after changes are made signifies your acceptance of the updated Terms. We will provide reasonable notice of material changes through appropriate communication channels."
+                ]
+            },
+            "contactUs": {
+                "title": "11. Contact Us",
+                "content": [
+                    "If you have any questions regarding these Terms & Conditions, need clarification about our services, or require legal assistance, please contact our legal and compliance team.",
+                    "For formal legal notices or contract-related inquiries, please use our official communication channels. We are committed to addressing all inquiries promptly and professionally."
+                ]
+            },
+            "lastUpdated": {
+                "content": "CLUMOSS - India’s Leading AI Technology Conglomerate"
+            }
+        },
+        "metadata": {
+            "title": "Terms and Conditions | CLUMOSS",
+            "description": "Terms and conditions governing the use of CLUMOSS services and products. Learn about your rights and obligations when using our AI solutions.",
+            "openGraph": {
+                "title": "Terms and Conditions | CLUMOSS",
+                "description": "Terms and conditions governing the use of CLUMOSS services and products."
+            }
+        }
+    }
+}

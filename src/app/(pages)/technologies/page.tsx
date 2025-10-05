@@ -1,9 +1,7 @@
-
-
-
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { 
   FaBuilding, 
   FaHeartbeat, 
@@ -22,89 +20,41 @@ import {
   FaGavel
 } from "react-icons/fa";
 
-const solutions = [
-
-  {
-      title: "Healthcare",
-      description: "AI-powered healthcare solutions for diagnostics, telemedicine, and secure patient data management.",
-      icon: <FaHeartbeat size={40} />,
-    },
-    {
-      title: "Defense",
-      description: "Advanced AI and security systems for threat detection, surveillance, and defense intelligence.",
-      icon: <FaShieldAlt size={40} />,
-    },
-    {
-      title: "Manufacturing",
-      description: "Smart manufacturing with predictive maintenance, robotics, and AI-driven process automation.",
-      icon: <FaIndustry size={40} />,
-    },
-    {
-      title: "Real Estate",
-      description: "AI solutions for property valuation, virtual tours, and automated real estate transactions.",
-      icon: <FaHome size={40} />,
-    },
-    {
-      title: "Government",
-      description: "Secure AI platforms for citizen services, workflow automation, and policy planning.",
-      icon: <FaBuilding size={40} />,
-    },
-    {
-      title: "E-commerce & Retail",
-      description: "Personalized shopping with AI recommendations, chatbots, and dynamic pricing.",
-      icon: <FaShoppingCart size={40} />,
-    },
-    {
-      title: "Agriculture",
-      description: "AI-powered farming with crop prediction, drone monitoring, and supply chain optimization.",
-      icon: <FaSeedling size={40} />,
-    },
-    {
-      title: "Education",
-      description: "Smart learning with AI tutors, predictive analytics, and digital education platforms.",
-      icon: <FaGraduationCap size={40} />,
-    },
-    {
-      title: "Immigration",
-      description: "AI-driven immigration support with document verification, case automation, and guidance bots.",
-      icon: <FaPassport size={40} />,
-    },
-    {
-      title: "Sports & Fitness",
-      description: "AI solutions for performance tracking, virtual coaching, and personalized fitness.",
-      icon: <FaRunning size={40} />,
-    },
-    {
-      title: "FinTech",
-      description: "AI in finance with credit scoring, fraud detection, and secure digital payments.",
-      icon: <FaCreditCard size={40} />,
-    },
-    {
-      title: "Banking & Finance",
-      description: "AI-driven fraud prevention, LLM-powered insights, and enterprise data security.",
-      icon: <FaUniversity size={40} />,
-    },
-    {
-      title: "Sales",
-      description: "Smarter sales with AI agents, predictive lead scoring, and CRM automation.",
-      icon: <FaChartLine size={40} />,
-    },
-    {
-      title: "Music & Entertainment",
-      description: "AI in entertainment for music generation, recommendations, and audience engagement.",
-      icon: <FaMusic size={40} />,
-    },
-    {
-      title: "Law",
-      description: "Legal AI for contract automation, research assistants, and secure compliance.",
-      icon: <FaGavel size={40} />,
-    },
+const domainIcons = [
+  <FaHeartbeat size={40} key="healthcare" />,
+  <FaShieldAlt size={40} key="defense" />,
+  <FaIndustry size={40} key="manufacturing" />,
+  <FaHome size={40} key="realestate" />,
+  <FaBuilding size={40} key="government" />,
+  <FaShoppingCart size={40} key="ecommerce" />,
+  <FaSeedling size={40} key="agriculture" />,
+  <FaGraduationCap size={40} key="education" />,
+  <FaPassport size={40} key="immigration" />,
+  <FaRunning size={40} key="sports" />,
+  <FaCreditCard size={40} key="fintech" />,
+  <FaUniversity size={40} key="banking" />,
+  <FaChartLine size={40} key="sales" />,
+  <FaMusic size={40} key="music" />,
+  <FaGavel size={40} key="law" />,
 ];
 
+interface Domain {
+  title: string;
+  description: string;
+  button: string;
+}
+
 export default function ServicesPage() {
+  const { t } = useTranslation();
+  
+  const domainsData = t('domains.items', { returnObjects: true }) as Domain[];
+  const solutions = domainsData.map((domain, index) => ({
+    ...domain,
+    icon: domainIcons[index],
+  }));
+
   return (
     <div className="min-h-screen w-full relative bg-black">
-      {/* Indigo Cosmos Background with Top Glow */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -112,11 +62,10 @@ export default function ServicesPage() {
         }}
       />
     
-      {/* Content with proper spacing from header */}
       <div className="relative z-10 pt-20 md:pt-24 lg:pt-28">
         <section className="py-16 px-8 bg-transparent">
           <h2 className="text-center text-4xl md:text-5xl font-bold mb-12 text-white">
-            Industries We Serve
+            {t('domains.title')}
           </h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
             {solutions.map((sol, idx) => (
@@ -128,7 +77,6 @@ export default function ServicesPage() {
                 transition={{ duration: 0.6, delay: idx * 0.15 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                {/* Card glow effect */}
                 <div 
                   className="absolute bottom-[-40%] left-1/2 transform -translate-x-1/2 w-[140%] h-[60%] blur-[60px] z-0"
                   style={{
@@ -139,11 +87,8 @@ export default function ServicesPage() {
                 <div className="text-4xl mb-4 relative z-10">{sol.icon}</div>
                 <h3 className="text-xl font-bold mb-4 relative z-10">{sol.title}</h3>
                 <p className="text-base text-white/80 mb-6 relative z-10">{sol.description}</p>
-                {/* <ul className="list-none p-0 m-0 mb-6 flex-grow relative z-10">
-      
-                </ul> */}
                 <button className="bg-white/10 text-white py-2 px-5 rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-white/20 relative z-10 mt-auto">
-                  Learn More
+                  {sol.button}
                 </button>
               </motion.div>
             ))}
