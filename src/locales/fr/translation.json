@@ -36,7 +36,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "CLUMOSS {year}",
+            "text": "CLUMOSS 2024",
             "designedBy": "Conçu, développé et maintenu par CLUMOSS"
         }
     },
@@ -47,6 +47,12 @@
             { "text": "Découvrir les produits" },
             { "text": "Nous contacter" }
         ]
+    },
+
+    "serhead": {
+        "solutionsHeading": "Solutions",
+        "moreButton": "Plus",
+        "servicesPageHeading": "Notre gamme diversifiée de services"
     },
     "about": {
         "title": "À propos de CLUMOSS",
@@ -939,6 +945,377 @@
             }
         }
     },
+
+    "chatbot": {
+        "title": "CLUMOSS AI",
+        "subtitle": "Assistant Exécutif",
+        "placeholder": "Demandez-moi n'importe quoi...",
+        "thinking": "Réfléchit...",
+        "speaking": "Parle...",
+        "listening": "Écoute...",
+        "stopSpeaking": "Arrêter de parler",
+        "closeAssistant": "Fermer l'assistant",
+        "startVoice": "Démarrer l'entrée vocale",
+        "stopVoice": "Arrêter l'entrée vocale",
+        "sendMessage": "Envoyer le message",
+        "cancelGeneration": "Annuler la génération de réponse",
+        "greeting": "Bonjour et bienvenue chez CLUMOSS — où l'innovation rencontre l'intelligence ! Première visite ou cherchez-vous quelque chose de spécifique ?",
+        "reminder": "Bonjour, êtes-vous toujours là ? Vous pouvez demander ce que vous voulez savoir ou explorer simplement en posant une question ou en écrivant un message",
+        "instantResponses": {
+            "greetingHi": {
+                "question": "Bonjour, Salut, Hey",
+                "text": "Bonjour et bienvenue chez CLUMOSS — où l'innovation rencontre l'intelligence ! Première visite ou cherchez-vous quelque chose de spécifique ?",
+                "followUps": [
+                    { "text": "Que pouvez-vous faire ?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Qui êtes-vous ?", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "greetingTime": {
+                "question": "Bonjour le matin, Bonsoir, Bon après-midi",
+                "text": "Salutations de CLUMOSS, avez-vous besoin d'aide pour quelque chose de spécifique ?",
+                "followUps": [
+                    { "text": "Que pouvez-vous faire ?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Qui êtes-vous ?", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "whoAreYou": {
+                "question": "Qui êtes-vous",
+                "text": "Je suis l'Assistant CLUMOSS AI, développé par MistrAI (filiale principale de CLUMOSS) — ici pour vous guider à travers tout ce qui concerne CLUMOSS, ses filiales, produits et services.",
+                "followUps": [
+                    { "text": "Que pouvez-vous faire ?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "whatDoYouDo": {
+                "question": "Que pouvez-vous faire",
+                "text": "Ce que je peux faire\n\nVous guider dans l'écosystème CLUMOSS :\nDécouvrez CLUMOSS, ses filiales — MistrAI et NeuroForgeAI — et comment nous révolutionnons l'IA dans tous les secteurs.\n\nMontrer l'impact commercial :\nDécouvrez comment nos solutions rendent votre entreprise plus rapide, plus intelligente et plus rentable avec des coûts de main-d'œuvre réduits et une productivité accrue.\n\nVous connecter à notre équipe :\nPrenez rendez-vous ou consultez facilement pour explorer comment CLUMOSS peut vous aider à évoluer avec une automatisation intelligente et de l'innovation.",
+                "followUps": [
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Quelles sont les filiales de CLUMOSS ?", "target": "whatAreSubsidiaries", "icon": "building" },
+                    { "text": "Comment réserver une consultation ?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whatIsClumoss": {
+                "question": "Qu'est-ce que CLUMOSS ?",
+                "text": "CLUMOSS est une entreprise hybride d'IA qui construit des produits SaaS avancés d'IA générative, des flux de travail automatisés, des plateformes et des solutions commerciales intelligentes. C'est la société mère de MistrAI et NeuroForgeAI, deux filiales spécialisées dans les domaines de l'IA numérique et physique. Ensemble, ils forment un écosystème complet d'IA axé sur l'innovation, la scalabilité et l'impact réel.",
+                "followUps": [
+                    { "text": "Quelle est la signification complète de CLUMOSS ?", "target": "fullFormClumoss", "icon": "magnifying-glass" },
+                    { "text": "Qui a fondé CLUMOSS ?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "Quand CLUMOSS a-t-il été créé ?", "target": "whenEstablished", "icon": "calendar" }
+                ]
+            },
+            "fullFormClumoss": {
+                "question": "Quelle est la signification complète de CLUMOSS ?",
+                "text": "La signification complète de CLUMOSS est « Cluster of Multi Organizations for Support & Services ».\n\nElle représente un écosystème unifié de plusieurs entités spécialisées travaillant ensemble pour fournir des produits d'IA de pointe, des solutions d'entreprise et des services d'automatisation — le tout sous un même toit puissant pour garantir l'innovation, l'efficacité et l'excellence dans tous les secteurs.",
+                "followUps": [
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Qui a fondé CLUMOSS ?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "Quelles sont les filiales de CLUMOSS ?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whoFoundedClumoss": {
+                "question": "Qui a fondé CLUMOSS, qui est le fondateur/propriétaire de CLUMOSS",
+                "text": "CLUMOSS a été fondée par Karan Bhatt, un entrepreneur technologique indien et producteur de musique EDM. Il détient actuellement la pleine propriété de CLUMOSS et de ses filiales MistrAI et NeuroForgeAI.",
+                "followUps": [
+                    { "text": "Quand CLUMOSS a-t-il été créé ?", "target": "whenEstablished", "icon": "calendar" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Quelles sont les filiales de CLUMOSS ?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whenEstablished": {
+                "question": "Quand CLUMOSS a-t-il été créé",
+                "text": "CLUMOSS a été créé le 18 juillet 2023",
+                "followUps": [
+                    { "text": "Qui a fondé CLUMOSS ?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "Quelles solutions CLUMOSS propose-t-il ?", "target": "solutions", "icon": "sparkles" }
+                ]
+            },
+            "solutions": {
+                "question": "Quelles solutions CLUMOSS propose-t-il ? Quel type de solutions proposez-vous ? Quels services CLUMOSS propose-t-il",
+                "text": "CLUMOSS propose un ensemble complet de solutions basées sur l'IA conçues pour relever divers défis commerciaux dans tous les secteurs. Voici un aperçu organisé de nos offres principales :\n\nSolutions IA principales :\n\n1) IA Agentique\n2) Analyse de Données & Machine Learning\n3) Automatisation de Flux de Travail\n4) Développement Full-Stack d'IA Générative\n5) Agents IA MCP & Orchestration\n6) Design UI/UX de Nouvelle Génération\n7) Solutions LLM Finement Ajustées\n8) Protection et Sécurité des Données\n9) Développement Web d'Entreprise\n10) Agents Vocaux Conversationnels",
+                "showSolutions": true,
+                "followUps": [
+                    { "text": "Quels secteurs servez-vous ?", "target": "industries", "icon": "globe" },
+                    { "text": "Quel type d'entreprise est CLUMOSS ?", "target": "clumossCompanyType", "icon": "question" },
+                    { "text": "Pouvez-vous me montrer la page Solutions ?", "target": "redirectSolutions", "icon": "arrow-right" }
+                ]
+            },
+            "industries": {
+                "question": "Quels domaines ou secteurs servez-vous ? À qui servez-vous, quels services proposez-vous ? Dans quels domaines proposez-vous des services ?",
+                "text": "Santé\nDéfense\nFabrication\nImmobilier\nGouvernement\nCommerce Électronique & Retail\nAgriculture\nÉducation\nImmigration\nSports & Fitness\nFinTech\nBanque & Finance\nVentes\nMusique & Divertissement\nLégal",
+                "showIndustries": true,
+                "followUps": [
+                    { "text": "Quelles solutions CLUMOSS propose-t-il ?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "Pouvez-vous me montrer la page Services ?", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "Comment CLUMOSS bénéficie-t-il aux clients ?", "target": "clientBenefits", "icon": "star" }
+                ]
+            },
+            "hasSubsidiaries": {
+                "question": "CLUMOSS a-t-il des filiales ?",
+                "text": "Oui, CLUMOSS a deux filiales clés — MistrAI et NeuroForgeAI.\n\nMistrAI : Spécialisée dans les produits SaaS d'IA générative full-stack, les plateformes et les outils d'automatisation de flux de travail sécurisés, basés sur abonnement et personnalisables selon les besoins du client.\n\nNeuroForgeAI : Spécialisée dans l'IA Physique, développe la logique backend, les cadres neuronaux et les prototypes intelligents permettant aux machines de percevoir, comprendre et interagir avec leur environnement.\n\nEnsemble, ils opèrent sous l'écosystème CLUMOSS, stimulant l'innovation dans les domaines de l'IA numérique et physique.",
+                "followUps": [
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "Quelles sont les filiales de CLUMOSS ?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whatAreSubsidiaries": {
+                "question": "Quelles sont les filiales de CLUMOSS ?",
+                "text": "CLUMOSS opère à travers ses deux puissantes filiales — MistrAI et NeuroForgeAI — chacune repoussant une frontière distincte de l'intelligence artificielle sous l'écosystème unifié de CLUMOSS.\n\nMistrAI : Développe des produits SaaS d'IA générative full-stack, des plateformes et des outils d'automatisation de flux de travail sécurisés, basés sur abonnement et entièrement personnalisables selon les besoins du client.\n\nNeuroForgeAI : Construit la logique backend, les cadres neuronaux et les prototypes pour les systèmes d'IA physique, permettant aux machines de percevoir, comprendre et interagir avec l'environnement externe.\n\nEnsemble, ils représentent le cœur de l'innovation de CLUMOSS — où l'intelligence numérique rencontre l'automatisation physique, façonnant l'avenir de la transformation pilotée par l'IA.",
+                "followUps": [
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS a-t-il des filiales ?", "target": "hasSubsidiaries", "icon": "question" }
+                ]
+            },
+            "whatIsMistrAI": {
+                "question": "Qu'est-ce que MistrAI",
+                "text": "MistrAI est la filiale principale de CLUMOSS, spécialisée dans l'IA générative et le développement de produits SaaS. Elle construit des plateformes d'IA sécurisées, personnalisables et prêtes à être déployées basées sur abonnement. En tant que bras principal d'innovation de CLUMOSS, MistrAI propose des solutions d'IA de bout en bout qui automatisent les opérations commerciales, réduisent les coûts et favorisent la prise de décision intelligente basée sur les données.",
+                "followUps": [
+                    { "text": "Comment fonctionne MistrAI ?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "MistrAI est-il basé sur produit ou service ?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "Comment contacter MistrAI ?", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howMistrAIWorks": {
+                "question": "Comment fonctionne MistrAI",
+                "text": "MistrAI développe ses propres produits SaaS d'IA basés sur abonnement, des automatisations de flux de travail et des plateformes sécurisées, évolutives et personnalisables. Ces produits sont conçus pour être prêts à l'emploi ou adaptés aux exigences spécifiques du client.\n\nLorsque les clients ont besoin de personnalisation supplémentaire, l'équipe MistrAI adapte et améliore le produit pour l'aligner parfaitement sur leurs objectifs. Pour les modifications complexes ou à grande échelle au-delà du champ opérationnel de MistrAI, le projet est escaladé vers CLUMOSS pour exécution et livraison stratégique.",
+                "followUps": [
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "MistrAI est-il basé sur produit ou service ?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "isMistrAIProductOrService": {
+                "question": "MistrAI est-il basé sur produit ou service ?",
+                "text": "MistrAI est principalement une entreprise basée sur produit qui offre également des services de personnalisation.\n\nElle développe des produits SaaS d'IA propriétaires, basés sur abonnement, sécurisés, évolutifs et prêts à l'emploi. Cependant, lorsque les clients ont besoin de solutions personnalisées ou d'intégrations, MistrAI étend son bras de service pour adapter ces produits aux exigences commerciales spécifiques.\n\nConclusion : MistrAI est une entreprise hybride, mais son identité principale est basée sur produit.",
+                "followUps": [
+                    { "text": "Comment fonctionne MistrAI ?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "Quel type d'entreprise est CLUMOSS ?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "whatIsNeuroForgeAI": {
+                "question": "Qu'est-ce que NeuroForgeAI",
+                "text": "NeuroForgeAI est une filiale de CLUMOSS axée sur le développement de l'intelligence backend pour les systèmes d'IA physique. Elle construit la logique centrale, les cadres neuronaux et les mécanismes de contrôle adaptatifs permettant aux machines de percevoir, interagir et agir de manière autonome. NeuroForgeAI présente ses innovations via des prototypes fonctionnels et des démonstrations, permettant aux entreprises d'expérimenter l'intégration d'IA dans le monde réel. Son slogan — « Nous fournissons ce dont l'IA physique a besoin » — définit sa mission d'alimenter le cerveau derrière la robotique et l'automatisation intelligente.",
+                "followUps": [
+                    { "text": "Comment fonctionne NeuroForgeAI ?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI est-il basé sur produit ou service ?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "Comment contacter NeuroForgeAI ?", "target": "contactNeuroForgeAI", "icon": "phone" }
+                ]
+            },
+            "howNeuroForgeAIWorks": {
+                "question": "Comment fonctionne NeuroForgeAI",
+                "text": "NeuroForgeAI alimente l'intelligence backend des systèmes d'IA physique — essentiellement le cerveau qui propulse les machines du monde réel. Elle développe la logique centrale, le contrôle neuronal et les systèmes de prise de décision permettant à un corps ou appareil physique de percevoir, détecter, interagir et répondre à son environnement avec précision et autonomie.\n\nSlogan : « Nous fournissons ce dont l'IA physique a besoin. »",
+                "followUps": [
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "NeuroForgeAI est-il basé sur produit ou service ?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "isNeuroForgeAIProductOrService": {
+                "question": "NeuroForgeAI est-il basé sur produit ou service ?",
+                "text": "NeuroForgeAI est une entreprise hybride, combinant développement de produit et prestation de service dans le domaine de l'IA physique.\n\nElle se concentre principalement sur le développement de logique backend et de cadres neuronaux servant de cerveau aux systèmes d'IA physique — permettant aux machines de percevoir, interagir et répondre intelligemment à leur environnement.\nNeuroForgeAI présente ses innovations via des prototypes que les entreprises peuvent utiliser ou intégrer dans leurs propres systèmes.\n\nConclusion : NeuroForgeAI propose à la fois des prototypes prêts à adapter (produit) et une intégration de logique d'IA personnalisée (service) — en faisant un hybride complet dans le domaine de l'automatisation physique intelligente.",
+                "followUps": [
+                    { "text": "Comment fonctionne NeuroForgeAI ?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "Quel type d'entreprise est CLUMOSS ?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "contactClumoss": {
+                "question": "Comment vous contacter ? Comment contacter CLUMOSS ?",
+                "text": "Vous pouvez nous joindre au :\n+91 7622817924\ninfo@clumoss.com",
+                "showContactButtons": true,
+                "showContactRedirect": true,
+                "followUps": [
+                    { "text": "Comment contacter MistrAI ?", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "Comment contacter NeuroForgeAI ?", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "Pouvez-vous me rediriger vers la page Contact ?", "target": "redirectContact", "icon": "arrow-right" }
+                ]
+            },
+            "contactMistrAI": {
+                "question": "Comment contacter MistrAI ?",
+                "text": "Vous pouvez contacter MistrAI par e-mail : info@mistrai.com ou au +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "Comment contacter NeuroForgeAI ?", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "Comment contacter CLUMOSS ?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "Qu'est-ce que MistrAI ?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "contactNeuroForgeAI": {
+                "question": "Comment contacter NeuroForgeAI ?",
+                "text": "Vous pouvez contacter NeuroForgeAI par e-mail : info@neuroforgeai.com ou au +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "Comment contacter MistrAI ?", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "Comment contacter CLUMOSS ?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "Qu'est-ce que NeuroForgeAI ?", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "bookConsultation": {
+                "question": "Comment réserver une consultation ?",
+                "text": "Vous pouvez réserver une consultation en partageant votre date et heure préférées, ou en cliquant directement sur « Réserver maintenant » — je vous guiderai vers notre page de réservation.",
+                "showScheduleButton": true,
+                "followUps": [
+                    { "text": "Comment contacter CLUMOSS ?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "Pourquoi devrais-je m'associer à CLUMOSS ?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS aide-t-il les startups et les investisseurs ?", "target": "helpStartupsInvestors", "icon": "rocket" }
+                ]
+            },
+            "redirectSolutions": {
+                "question": "Redirigez-moi vers la page Solutions",
+                "text": "Bien sûr ! Je vous redirige vers notre page Solutions où vous pouvez explorer toutes nos offres et services d'IA.",
+                "followUps": [
+                    { "text": "Quelles solutions CLUMOSS propose-t-il ?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "Pouvez-vous me montrer la page Services ?", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "Quels secteurs servez-vous ?", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectServices": {
+                "question": "Redirigez-moi vers la page Services",
+                "text": "Bien sûr ! Je vous redirige vers notre section Services qui présente notre ensemble complet d'automatisation intelligente et de systèmes d'IA.",
+                "followUps": [
+                    { "text": "Quelles solutions CLUMOSS propose-t-il ?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "Pouvez-vous me montrer la page Solutions ?", "target": "redirectSolutions", "icon": "arrow-right" },
+                    { "text": "Quels secteurs servez-vous ?", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectContact": {
+                "question": "Redirigez-moi vers la page Contact",
+                "text": "Bien sûr ! Je vous redirige vers la page Contact pour que vous puissiez atteindre notre équipe instantanément pour des partenariats ou collaborations.",
+                "followUps": [
+                    { "text": "Comment contacter CLUMOSS ?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "Comment réserver une consultation ?", "target": "bookConsultation", "icon": "calendar" },
+                    { "text": "Comment contacter MistrAI ?", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howClumossWorks": {
+                "question": "Comment fonctionne CLUMOSS ? Comment CLUMOSS gère-t-il les exigences des clients et l'exécution des projets ?",
+                "text": "Toutes les nouvelles exigences ou directes des clients sont gérées et livrées par CLUMOSS, qui supervise chaque projet de la stratégie à l'exécution avec une autorité complète.\n\nSi un client s'approche via MistrAI pour un produit existant ou une personnalisation, l'équipe MistrAI le gère. Pour les exigences avancées ou hors champ, le projet est escaladé vers CLUMOSS pour exécution stratégique. Il en va de même pour NeuroForgeAI — il gère ses propres solutions d'IA physique et robotique sauf si la demande nécessite une intégration plus large ou une complexité supérieure, auquel cas CLUMOSS prend le relais.\n\nDans tous les cas, CLUMOSS conserve l'autorité finale pour évaluer, diriger et assigner tout projet à MistrAI ou NeuroForgeAI, garantissant l'excellence, la précision et une livraison fluide dans tout son écosystème.",
+                "followUps": [
+                    { "text": "Comment fonctionne MistrAI ?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "Comment fonctionne NeuroForgeAI ?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "Quel type d'entreprise est CLUMOSS ?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "clumossCompanyType": {
+                "question": "Quel type d'entreprise est CLUMOSS — basé sur produit ou service ?",
+                "text": "Entreprise Hybride :\nCLUMOSS est une entreprise hybride d'IA et de technologie, opérant à la fois comme basée sur produit et sur service. Elle unit innovation et exécution en construisant des produits d'IA intelligents tout en livrant des solutions technologiques complètes et personnalisées à des clients dans le monde entier.\n\nBasée sur Produit :\nÀ travers ses filiales — MistrAI et NeuroForgeAI — CLUMOSS développe des produits SaaS d'IA générative full-stack, des plateformes d'automatisation de flux de travail et des systèmes d'IA physique. Tous les produits sont basés sur abonnement, évolutifs et personnalisables selon les besoins commerciaux.\n\nBasée sur Service :\nSous la marque CLUMOSS, elle propose des solutions logicielles d'entreprise et d'IA de bout en bout, gérant tout de l'analyse des exigences et du design au développement full-stack, à l'automatisation et au déploiement.\n\nConclusion :\nCLUMOSS est une entreprise hybride d'IA de nouvelle génération, combinant innovation produit avec livraison de solutions personnalisées, et conserve l'autorité finale pour assigner des projets à ses filiales — MistrAI ou NeuroForgeAI — selon les exigences du projet et l'adéquation du domaine.",
+                "followUps": [
+                    { "text": "MistrAI est-il basé sur produit ou service ?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "NeuroForgeAI est-il basé sur produit ou service ?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "Qu'est-ce que CLUMOSS ?", "target": "whatIsClumoss", "icon": "lightbulb" }
+                ]
+            },
+            "helpStartupsInvestors": {
+                "question": "CLUMOSS aide-t-il les startups et les investisseurs ?",
+                "text": "Oui — CLUMOSS autonomise les startups, fondateurs et investisseurs en fournissant un accès à son infrastructure d'IA et à ses cadres d'automatisation.\nLes startups obtiennent un développement de produit plus rapide, des coûts réduits et une scalabilité accrue, tandis que les investisseurs bénéficient d'une croissance à long terme, de rendements prévisibles et d'un accès à des marchés d'IA en expansion.\n\nCLUMOSS comble le fossé entre innovation et succès d'investissement.",
+                "followUps": [
+                    { "text": "Comment CLUMOSS est-il rentable pour les investisseurs ?", "target": "profitableForInvestors", "icon": "chart" },
+                    { "text": "Pourquoi devrais-je m'associer à CLUMOSS ?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "Comment réserver une consultation ?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whyPartner": {
+                "question": "Pourquoi devrais-je m'associer à CLUMOSS ?",
+                "text": "S'associer avec CLUMOSS signifie rejoindre une puissance d'IA prête pour l'avenir, construite pour la croissance et la domination mondiale.\nAccès à des solutions d'IA de classe mondiale et à une automatisation intelligente\nCoûts de main-d'œuvre réduits, efficacité accrue et livraison de projets plus rapide\nModèles de partenariat flexibles pour startups, entreprises et investisseurs\nSoutenu par un écosystème d'innovation incluant MistrAI, Automata et NeuroForgeAI\n\nCLUMOSS n'est pas seulement un partenaire — c'est votre avantage concurrentiel dans la révolution de l'IA.",
+                "followUps": [
+                    { "text": "CLUMOSS aide-t-il les startups et les investisseurs ?", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "Comment CLUMOSS bénéficie-t-il aux clients ?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "Comment réserver une consultation ?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "clientBenefits": {
+                "question": "Comment CLUMOSS bénéficie-t-il aux clients ?",
+                "text": "Les clients bénéficient de :\nCoûts opérationnels réduits\nIntelligence décisionnelle basée sur données\nAutomatisation des processus\nDéploiements d'IA personnalisés\nScalabilité complète avec sécurité\nCLUMOSS garantit confort, flexibilité et rentabilité à chaque mise en œuvre.",
+                "followUps": [
+                    { "text": "Pourquoi devrais-je m'associer à CLUMOSS ?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS peut-il s'intégrer à mes systèmes existants ?", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "À quel point les produits CLUMOSS sont-ils sécurisés ?", "target": "productSecurity", "icon": "lock" }
+                ]
+            },
+            "profitableForInvestors": {
+                "question": "Comment CLUMOSS est-il rentable pour les investisseurs ?",
+                "text": "CLUMOSS opère avec un écosystème d'IA basé sur abonnement, garantissant des revenus récurrents prévisibles et une croissance durable.\nScalabilité SaaS à haute marge\nExpansion dans les verticales B2B, B2C et D2C\nAccès à des marchés d'IA de nouvelle génération avec adoption exponentielle\nOpportunités d'intégration d'entreprise mondiale\n\nPour les investisseurs, CLUMOSS représente un écosystème d'IA axé sur l'innovation et à haut rendement, construit pour une valeur à long terme.",
+                "followUps": [
+                    { "text": "CLUMOSS aide-t-il les startups et les investisseurs ?", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "Pourquoi devrais-je m'associer à CLUMOSS ?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "Qu'est-ce qui rend CLUMOSS différent ?", "target": "whatMakesDifferent", "icon": "trophy" }
+                ]
+            },
+            "whatMakesDifferent": {
+                "question": "Qu'est-ce qui rend CLUMOSS différent ?",
+                "text": "CLUMOSS combine développement d'IA full-stack, automatisation et intelligence de design — étant l'un des rares écosystèmes capables d'offrir une transformation d'IA complète sous un même toit.",
+                "followUps": [
+                    { "text": "Pourquoi devrais-je m'associer à CLUMOSS ?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "Comment CLUMOSS bénéficie-t-il aux clients ?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "Quel type d'entreprise est CLUMOSS ?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "systemIntegration": {
+                "question": "CLUMOSS peut-il s'intégrer à mes systèmes existants ?",
+                "text": "Oui ! Nos cadres d'IA et d'automatisation sont API-first et entièrement intégrables — se connectant facilement aux CRM, bases de données, systèmes ERP ou toute infrastructure d'entreprise existante.",
+                "followUps": [
+                    { "text": "Comment CLUMOSS bénéficie-t-il aux clients ?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "À quel point les produits CLUMOSS sont-ils sécurisés ?", "target": "productSecurity", "icon": "lock" },
+                    { "text": "Comment réserver une consultation ?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "productSecurity": {
+                "question": "À quel point les produits CLUMOSS sont-ils sécurisés ?",
+                "text": "Nous suivons des protocoles de sécurité des données de niveau entreprise, incluant chiffrement, contrôles d'accès utilisateur et conformité aux normes GDPR et ISO — garantissant que vos données restent sécurisées à tout moment.",
+                "followUps": [
+                    { "text": "CLUMOSS peut-il s'intégrer à mes systèmes existants ?", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "Comment CLUMOSS bénéficie-t-il aux clients ?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "Quelles solutions CLUMOSS propose-t-il ?", "target": "solutions", "icon": "sparkles" }
+                ]
+            }
+        },
+        "solutions": [
+            { "text": "IA Agentique", "url": "/services/agentic-ai", "icon": "robot" },
+            { "text": "Analyse de Données & Machine Learning", "url": "/services/data-analytics", "icon": "chart" },
+            { "text": "Automatisation de Flux de Travail", "url": "/services/automation", "icon": "zap" },
+            { "text": "Développement Full-Stack d'IA Générative", "url": "/services/generative-ai", "icon": "sparkles" },
+            { "text": "Agents IA MCP & Orchestration", "url": "/services/mcp-agents", "icon": "link" },
+            { "text": "Design UI/UX de Nouvelle Génération", "url": "/services/ui-ux", "icon": "palette" },
+            { "text": "Solutions LLM Finement Ajustées", "url": "/services/custom-models", "icon": "brain" },
+            { "text": "Protection et Sécurité des Données", "url": "/services/security", "icon": "lock" },
+            { "text": "Développement Web d'Entreprise", "url": "/services/web-dev", "icon": "globe" },
+            { "text": "Agents Vocaux Conversationnels", "url": "/services/voice-ai", "icon": "microphone" }
+        ],
+        "industries": [
+            { "text": "Santé", "url": "/technologies/healthcare", "icon": "hospital" },
+            { "text": "Défense", "url": "/technologies/defense", "icon": "shield" },
+            { "text": "Fabrication", "url": "/technologies/manufacturing", "icon": "factory" },
+            { "text": "Immobilier", "url": "/technologies/real-estate", "icon": "home" },
+            { "text": "Gouvernement", "url": "/technologies/government", "icon": "building" },
+            { "text": "Commerce Électronique & Retail", "url": "/technologies/ecommerce", "icon": "shopping-bag" },
+            { "text": "Agriculture", "url": "/technologies/agriculture", "icon": "seedling" },
+            { "text": "Éducation", "url": "/technologies/education", "icon": "graduation-cap" },
+            { "text": "Immigration", "url": "/technologies/immigration", "icon": "passport" },
+            { "text": "Sports & Fitness", "url": "/technologies/sports-fitness", "icon": "dumbbell" },
+            { "text": "FinTech", "url": "/technologies/fintech", "icon": "credit-card" },
+            { "text": "Banque & Finance", "url": "/technologies/banking-finance", "icon": "bank" },
+            { "text": "Ventes", "url": "/technologies/sales", "icon": "chart-line" },
+            { "text": "Musique & Divertissement", "url": "/technologies/music-entertainment", "icon": "music" },
+            { "text": "Légal", "url": "/technologies/legal", "icon": "gavel" }
+        ],
+        "buttons": {
+            "callUs": "Appelez-nous",
+            "emailUs": "Envoyez-nous un e-mail",
+            "bookNow": "Réserver maintenant",
+            "yesRedirect": "Oui, redirigez-moi",
+            "notNow": "Pas maintenant",
+            "viewTechnologies": "Oui, montrez-moi",
+            "declineTechnologies": "Non, merci"
+        }
+    },
+
     "terms": {
         "title": "Conditions générales",
         "sections": {

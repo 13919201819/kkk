@@ -1,6 +1,6 @@
 {
     "header": {
-        "logo": "Clumoss",
+        "logo": "CLUMOSS",
         "home": "首页",
         "about": "关于我们",
         "projects": "项目",
@@ -10,7 +10,7 @@
     },
     "footer": {
         "brand": {
-            "name": "Clumoss",
+            "name": "CLUMOSS",
             "description": "多组织集群支持与服务——通过创新、人工智能和全球影响力塑造未来。"
         },
         "company": {
@@ -36,8 +36,8 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "Clumoss {year}",
-            "designedBy": "由Clumoss设计、开发和维护"
+            "text": "CLUMOSS 2024",
+            "designedBy": "由CLUMOSS设计、开发和维护"
         }
     },
     "hero": {
@@ -48,10 +48,15 @@
             { "text": "联系我们" }
         ]
     },
+    "serhead": {
+        "solutionsHeading": "解决方案",
+        "moreButton": "更多",
+        "servicesPageHeading": "我们多样化的服务范围"
+    },
     "about": {
-        "title": "关于Clumoss",
+        "title": "关于CLUMOSS",
         "description": [
-            "Clumoss是印度领先的科技集团，专注于先进的人工智能解决方案。我们设计并部署全面的人工智能生态系统，改变企业在数字经济中的运营、创新和扩展方式。",
+            "CLUMOSS是印度领先的科技集团，专注于先进的人工智能解决方案。我们设计并部署全面的人工智能生态系统，改变企业在数字经济中的运营、创新和扩展方式。",
             "我们的专长涵盖了智能技术的全谱——从机器学习和深度学习框架到尖端生成式人工智能、语音识别系统和自主代理编排。我们将这些能力与企业级安全标准和云架构相结合，交付强大且实用的解决方案。"
         ],
         "innovationEcosystem": {
@@ -71,9 +76,9 @@
         },
         "approach": {
             "title": "我们的方法",
-            "description": "Clumoss的每个项目都始于了解您的独特挑战和目标。我们开发定制的人工智能解决方案，与您现有的基础设施无缝整合，确保可扩展性、可靠性和投资回报。我们的云原生方法确保您的解决方案与您的业务共同成长，并得到强大的安全框架和持续优化的支持。"
+            "description": "CLUMOSS的每个项目都始于了解您的独特挑战和目标。我们开发定制的人工智能解决方案，与您现有的基础设施无缝整合，确保可扩展性、可靠性和投资回报。我们的云原生方法确保您的解决方案与您的业务共同成长，并得到强大的安全框架和持续优化的支持。"
         },
-        "closing": "从概念到实施，Clumoss提供智能解决方案，不仅满足今天的需要，还能预见明天的可能性。"
+        "closing": "从概念到实施，CLUMOSS提供智能解决方案，不仅满足今天的需要，还能预见明天的可能性。"
     },
     "domains": {
         "title": "我们服务的行业",
@@ -618,7 +623,7 @@
 
 
     "partner": {
-        "title": "与Clumoss加速您的旅程",
+        "title": "与CLUMOSS加速您的旅程",
         "button": "让我们合作"
     },
     "contact": {
@@ -762,19 +767,19 @@
         "sections": {
             "generalInformation": {
                 "title": "一般信息",
-                "content": "Clumoss及其子公司（MisterAI和NeuroforgeAI）通过本网站及我们的服务提供的信息仅用于一般信息和教育目的。所有内容均以诚信提供，但我们对网站或服务信息的准确性、适用性、有效性、可靠性、可用性或完整性不作任何明示或暗示的保证。"
+                "content": "CLUMOSS及其子公司（MisterAI和NeuroforgeAI）通过本网站及我们的服务提供的信息仅用于一般信息和教育目的。所有内容均以诚信提供，但我们对网站或服务信息的准确性、适用性、有效性、可靠性、可用性或完整性不作任何明示或暗示的保证。"
             },
             "professionalServices": {
                 "title": "专业服务",
                 "content": [
-                    "我们的人工智能、机器学习和技术解决方案按照当前行业标准和最佳实践提供。然而，技术发展迅速，结果可能因实施、使用和外部因素而异。Clumoss不保证我们的解决方案的具体结果或性能指标。",
+                    "我们的人工智能、机器学习和技术解决方案按照当前行业标准和最佳实践提供。然而，技术发展迅速，结果可能因实施、使用和外部因素而异。CLUMOSS不保证我们的解决方案的具体结果或性能指标。",
                     "我们建议客户在根据我们的建议或实施做出商业决策之前，开展自己的尽职调查并咨询合格的专业人士。"
                 ]
             },
             "limitationOfLiability": {
                 "title": "责任限制",
                 "content": [
-                    "在任何情况下，Clumoss、MisterAI、NeuroforgeAI、其董事、员工、合作伙伴、代理、供应商或关联公司均不对因使用我们的服务或网站而产生的间接、附带、惩罚性、特殊或后果性损害（包括利润损失、数据丢失、使用损失、声誉或其他无形损失）承担责任。",
+                    "在任何情况下，CLUMOSS、MisterAI、NeuroforgeAI、其董事、员工、合作伙伴、代理、供应商或关联公司均不对因使用我们的服务或网站而产生的间接、附带、惩罚性、特殊或后果性损害（包括利润损失、数据丢失、使用损失、声誉或其他无形损失）承担责任。",
                     "我们对与服务相关的任何索赔的总责任不超过客户为特定服务支付的金额。"
                 ]
             },
@@ -788,13 +793,13 @@
             "thirdPartyIntegration": {
                 "title": "第三方整合",
                 "content": [
-                    "我们的解决方案可能与第三方服务、API或平台整合。Clumoss对第三方服务的可用性、准确性或可靠性不承担责任。第三方系统的变更可能影响我们解决方案的功能。",
+                    "我们的解决方案可能与第三方服务、API或平台整合。CLUMOSS对第三方服务的可用性、准确性或可靠性不承担责任。第三方系统的变更可能影响我们解决方案的功能。",
                     "我们建议在依赖整合解决方案时保持备份系统和应急计划。"
                 ]
             },
             "intellectualProperty": {
                 "title": "知识产权",
-                "content": "Clumoss开发的所有专有技术、方法论和知识产权均为我们的独家财产。客户特定定制和数据根据我们的服务协议归客户所有。"
+                "content": "CLUMOSS开发的所有专有技术、方法论和知识产权均为我们的独家财产。客户特定定制和数据根据我们的服务协议归客户所有。"
             },
             "regulatoryCompliance": {
                 "title": "法规遵从",
@@ -805,14 +810,14 @@
             },
             "updatesAndModifications": {
                 "title": "更新和修改",
-                "content": "Clumoss保留随时更新、修改或终止我们的服务或本免责声明的任何方面的权利，恕不另行通知。继续使用我们的服务即表示接受修改后的条款。"
+                "content": "CLUMOSS保留随时更新、修改或终止我们的服务或本免责声明的任何方面的权利，恕不另行通知。继续使用我们的服务即表示接受修改后的条款。"
             },
             "contactInformation": {
                 "title": "联系信息",
                 "content": "如对本免责声明或我们的服务有任何疑问，请通过官方沟通渠道联系我们的法律与合规团队。所有官方通知必须通过我们指定的联系程序以书面形式提交。"
             },
             "lastUpdated": {
-                "content": "Clumoss - 印度领先的人工智能技术集团"
+                "content": "CLUMOSS - 印度领先的人工智能技术集团"
             }
         }
     },
@@ -822,7 +827,7 @@
             "ourCommitmentToPrivacy": {
                 "title": "我们对隐私的承诺",
                 "content": [
-                    "在Clumoss及其子公司（MisterAI和NeuroforgeAI），我们重视并尊重您的隐私。本隐私政策说明了我们在您与我们的服务、产品、网站和应用程序互动时如何收集、使用、存储和保护您的信息。",
+                    "在CLUMOSS及其子公司（MisterAI和NeuroforgeAI），我们重视并尊重您的隐私。本隐私政策说明了我们在您与我们的服务、产品、网站和应用程序互动时如何收集、使用、存储和保护您的信息。",
                     "我们的实践符合国际数据保护法规，包括GDPR（欧洲）、CCPA（加利福尼亚）和其他全球隐私标准。"
                 ]
             },
@@ -924,28 +929,399 @@
             },
             "regulatoryCompliance": {
                 "title": "法规遵从",
-                "content": "Clumoss遵守国际隐私法规，包括GDPR（欧盟）、CCPA（加利福尼亚）、PIPEDA（加拿大）和适用的印度数据保护法律。我们的隐私实践定期审查和更新，以满足不断变化的法规要求。"
+                "content": "CLUMOSS遵守国际隐私法规，包括GDPR（欧盟）、CCPA（加利福尼亚）、PIPEDA（加拿大）和适用的印度数据保护法律。我们的隐私实践定期审查和更新，以满足不断变化的法规要求。"
             },
             "lastUpdated": {
-                "content": "Clumoss - 印度领先的人工智能技术集团"
+                "content": "CLUMOSS - 印度领先的人工智能技术集团"
             }
         },
         "metadata": {
-            "title": "隐私政策 | Clumoss",
+            "title": "隐私政策 | CLUMOSS",
             "description": "了解我们的隐私实践以及根据国际法规（包括GDPR和CCPA）保护您的数据。",
             "openGraph": {
-                "title": "隐私政策 | Clumoss",
+                "title": "隐私政策 | CLUMOSS",
                 "description": "了解我们的隐私实践以及根据国际法规保护您的数据。"
             }
         }
     },
+
+    "chatbot": {
+        "title": "CLUMOSS AI",
+        "subtitle": "执行助理",
+        "placeholder": "问我任何问题...",
+        "thinking": "思考中...",
+        "speaking": "正在说话...",
+        "listening": "正在倾听...",
+        "stopSpeaking": "停止说话",
+        "closeAssistant": "关闭助理",
+        "startVoice": "开始语音输入",
+        "stopVoice": "停止语音输入",
+        "sendMessage": "发送消息",
+        "cancelGeneration": "取消生成回复",
+        "greeting": "您好，欢迎来到 CLUMOSS —— 创新与智能相遇的地方！第一次来还是在找特定内容？",
+        "reminder": "您好，还在吗？您可以问任何问题，或通过提问或输入来探索",
+        "instantResponses": {
+            "greetingHi": {
+                "question": "你好, 嗨, Hello",
+                "text": "您好，欢迎来到 CLUMOSS —— 创新与智能相遇的地方！第一次来还是在找特定内容？",
+                "followUps": [
+                    { "text": "你能做什么？", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "你是谁？", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "greetingTime": {
+                "question": "早上好, 晚上好, 你好",
+                "text": "来自 CLUMOSS 的问候，您需要特定方面的帮助吗？",
+                "followUps": [
+                    { "text": "你能做什么？", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "你是谁？", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "whoAreYou": {
+                "question": "你是谁",
+                "text": "我是 CLUMOSS AI 助理，由 MistrAI（CLUMOSS 的主要子公司）开发，负责引导您了解 CLUMOSS、其子公司、产品和服务。",
+                "followUps": [
+                    { "text": "你能做什么？", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "whatDoYouDo": {
+                "question": "你能做什么",
+                "text": "我能做什么\n\n引导您了解 CLUMOSS 生态系统：\n了解 CLUMOSS、其子公司——MistrAI 和 NeuroForgeAI——以及我们如何在各行业革新 AI。\n\n展示商业影响：\n我们的解决方案如何让您的业务更快、更智能、更高效——降低人力成本、提升生产力。\n\n连接团队：\n轻松预约会议或咨询，了解 CLUMOSS 如何通过智能自动化和创新帮助您扩展。",
+                "followUps": [
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS 的子公司有哪些？", "target": "whatAreSubsidiaries", "icon": "building" },
+                    { "text": "如何预约咨询？", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whatIsClumoss": {
+                "question": "CLUMOSS 是什么？",
+                "text": "CLUMOSS 是一家混合型 AI 公司，构建先进的生成式 AI SaaS 产品、自动化工作流、平台和智能商业解决方案。它是 MistrAI 和 NeuroForgeAI 的母公司——两家专注于数字和物理 AI 领域的子公司。共同构成一个以创新、可扩展性和现实世界影响为中心的完整 AI 生态系统。",
+                "followUps": [
+                    { "text": "CLUMOSS 的全称是什么？", "target": "fullFormClumoss", "icon": "magnifying-glass" },
+                    { "text": "CLUMOSS 是谁创立的？", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS 何时成立？", "target": "whenEstablished", "icon": "calendar" }
+                ]
+            },
+            "fullFormClumoss": {
+                "question": "CLUMOSS 的全称是什么？",
+                "text": "CLUMOSS 全称是「Cluster of Multi Organizations for Support & Services」。\n\n它代表多个专业组织的集成生态系统，共同提供前沿 AI 产品、企业解决方案和自动化服务——全部在一个强大屋檐下，确保创新、效率和各行业的卓越。",
+                "followUps": [
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS 是谁创立的？", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS 的子公司有哪些？", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whoFoundedClumoss": {
+                "question": "CLUMOSS 是谁创立的，CLUMOSS 的创始人/所有者是谁",
+                "text": "CLUMOSS 由印度科技企业家兼 EDM 音乐制作人 Karan Bhatt 创立。目前他拥有 CLUMOSS 及其子公司 MistrAI、NeuroForgeAI 的 100% 所有权。",
+                "followUps": [
+                    { "text": "CLUMOSS 何时成立？", "target": "whenEstablished", "icon": "calendar" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS 的子公司有哪些？", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whenEstablished": {
+                "question": "CLUMOSS 何时成立",
+                "text": "CLUMOSS 成立于 2023 年 7 月 18 日",
+                "followUps": [
+                    { "text": "CLUMOSS 是谁创立的？", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS 提供哪些解决方案？", "target": "solutions", "icon": "sparkles" }
+                ]
+            },
+            "solutions": {
+                "question": "CLUMOSS 提供哪些解决方案？提供什么类型的解决方案？CLUMOSS 提供什么服务",
+                "text": "CLUMOSS 提供全面的 AI 驱动解决方案组合，专为解决各行业多样化业务挑战而设计。以下是主要产品概述：\n\n核心 AI 解决方案：\n\n1) 代理 AI\n2) 数据分析 & 机器学习\n3) 工作流自动化\n4) 全栈生成式 AI 开发\n5) MCP 驱动 AI 代理 & 编排\n6) 下一代 UI/UX 设计\n7) 微调 LLM 解决方案\n8) 数据保护 & 安全\n9) 企业级 Web 开发\n10) 会话式语音代理",
+                "showSolutions": true,
+                "followUps": [
+                    { "text": "你们服务哪些行业？", "target": "industries", "icon": "globe" },
+                    { "text": "CLUMOSS 是什么类型的公司？", "target": "clumossCompanyType", "icon": "question" },
+                    { "text": "能否跳转到解决方案页面？", "target": "redirectSolutions", "icon": "arrow-right" }
+                ]
+            },
+            "industries": {
+                "question": "你们服务哪些领域或行业？你们为谁提供服务，提供什么服务？在哪些领域提供服务？",
+                "text": "医疗保健\n国防\n制造\n房地产\n政府\n电商 & 零售\n农业\n教育\n移民\n体育 & 健身\n金融科技\n银行 & 金融\n销售\n音乐 & 娱乐\n法律",
+                "showIndustries": true,
+                "followUps": [
+                    { "text": "CLUMOSS 提供哪些解决方案？", "target": "solutions", "icon": "sparkles" },
+                    { "text": "能否跳转到服务页面？", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "CLUMOSS 如何为客户带来价值？", "target": "clientBenefits", "icon": "star" }
+                ]
+            },
+            "hasSubsidiaries": {
+                "question": "CLUMOSS 有子公司吗？",
+                "text": "是的，CLUMOSS 有两家主要子公司——MistrAI 和 NeuroForgeAI。\n\nMistrAI：专注于全栈生成式 AI SaaS 产品、平台和工作流自动化工具——安全、订阅制、可根据客户需求完全定制。\n\nNeuroForgeAI：专注于物理 AI，开发后端逻辑、神经框架和智能原型，使机器能够感知、理解并与环境交互。\n\n共同在 CLUMOSS 生态系统下运作，推动数字和物理 AI 领域的创新。",
+                "followUps": [
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS 的子公司有哪些？", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whatAreSubsidiaries": {
+                "question": "CLUMOSS 的子公司有哪些？",
+                "text": "CLUMOSS 通过两家强大子公司——MistrAI 和 NeuroForgeAI——运营，每家在 CLUMOSS 统一生态系统下推动 AI 的不同前沿。\n\nMistrAI：开发全栈生成式 AI SaaS 产品、平台和工作流自动化工具——安全、订阅制、可完全根据客户需求定制。\n\nNeuroForgeAI：为物理 AI 系统构建后端逻辑、神经框架和原型——使机器能够感知、理解并与外部环境交互。\n\n共同代表 CLUMOSS 创新核心——数字智能与物理自动化相遇，塑造 AI 驱动转型的未来。",
+                "followUps": [
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS 有子公司吗？", "target": "hasSubsidiaries", "icon": "question" }
+                ]
+            },
+            "whatIsMistrAI": {
+                "question": "MistrAI 是什么",
+                "text": "MistrAI 是 CLUMOSS 的主要子公司，专注于生成式 AI 和 SaaS 产品开发。构建安全、可定制、开箱即用的订阅制 AI 平台。作为 CLUMOSS 的核心创新部门，MistrAI 提供端到端 AI 解决方案，自动化业务流程、降低成本并促进数据驱动决策。",
+                "followUps": [
+                    { "text": "MistrAI 如何运作？", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "MistrAI 是产品型还是服务型公司？", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "如何联系 MistrAI？", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howMistrAIWorks": {
+                "question": "MistrAI 如何运作",
+                "text": "MistrAI 开发自有订阅制 AI SaaS 产品、工作流自动化和平台——安全、可扩展、可定制。这些产品开箱即用或可根据客户特定需求调整。\n\n当客户需要额外定制时，MistrAI 团队调整并优化产品，使其完全符合目标。若超出 MistrAI 运营范围的复杂或大规模变更，项目将升级至 CLUMOSS 进行战略执行和交付。",
+                "followUps": [
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "MistrAI 是产品型还是服务型公司？", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "isMistrAIProductOrService": {
+                "question": "MistrAI 是产品型还是服务型公司？",
+                "text": "MistrAI 主要为产品型公司，同时提供定制服务。\n\n开发自有订阅制 AI SaaS 产品和平台——安全、可扩展、开箱即用。但当客户需要定制解决方案或集成时，MistrAI 扩展其服务部门以适配特定业务需求。\n\n结论：MistrAI 为混合型公司，但核心身份是产品型。",
+                "followUps": [
+                    { "text": "MistrAI 如何运作？", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "CLUMOSS 是什么类型的公司？", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "whatIsNeuroForgeAI": {
+                "question": "NeuroForgeAI 是什么",
+                "text": "NeuroForgeAI 是 CLUMOSS 的子公司，专注于物理 AI 系统的后端智能开发。构建核心逻辑、神经框架和自适应控制机制，使机器能够自主感知、交互并行动。通过功能性原型和演示展示创新，让企业体验现实世界中的 AI 集成。其口号——「我们为物理 AI 提供所需」——定义了其为智能机器人与自动化背后大脑的使命。",
+                "followUps": [
+                    { "text": "NeuroForgeAI 如何运作？", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI 是产品型还是服务型公司？", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "如何联系 NeuroForgeAI？", "target": "contactNeuroForgeAI", "icon": "phone" }
+                ]
+            },
+            "howNeuroForgeAIWorks": {
+                "question": "NeuroForgeAI 如何运作",
+                "text": "NeuroForgeAI 驱动物理 AI 系统的后端智能——本质上是驱动现实世界机器的大脑。开发核心逻辑、神经控制和决策系统，使物理体或设备能够精确且自主地感知、检测、交互并响应环境。\n\n口号：「我们为物理 AI 提供所需。」",
+                "followUps": [
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "NeuroForgeAI 是产品型还是服务型公司？", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "isNeuroForgeAIProductOrService": {
+                "question": "NeuroForgeAI 是产品型还是服务型公司？",
+                "text": "NeuroForgeAI 是混合型公司，在物理 AI 领域结合产品开发与服务交付。\n\n主要专注于开发作为物理 AI 系统大脑的后端逻辑和神经框架——使机器能够智能地感知、交互并响应环境。\nNeuroForgeAI 通过原型展示创新，企业可使用或集成到自身系统中。\n\n结论：NeuroForgeAI 同时提供可适配原型（产品）和定制 AI 逻辑集成（服务）——在智能物理自动化领域为完整混合体。",
+                "followUps": [
+                    { "text": "NeuroForgeAI 如何运作？", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS 是什么类型的公司？", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "contactClumoss": {
+                "question": "如何联系你们？如何联系 CLUMOSS？",
+                "text": "联系方式：\n+91 7622817924\ninfo@clumoss.com",
+                "showContactButtons": true,
+                "showContactRedirect": true,
+                "followUps": [
+                    { "text": "如何联系 MistrAI？", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "如何联系 NeuroForgeAI？", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "能否跳转到联系页面？", "target": "redirectContact", "icon": "arrow-right" }
+                ]
+            },
+            "contactMistrAI": {
+                "question": "如何联系 MistrAI？",
+                "text": "联系 MistrAI：info@mistrai.com 或 +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "如何联系 NeuroForgeAI？", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "如何联系 CLUMOSS？", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "MistrAI 是什么？", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "contactNeuroForgeAI": {
+                "question": "如何联系 NeuroForgeAI？",
+                "text": "联系 NeuroForgeAI：info@neuroforgeai.com 或 +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "如何联系 MistrAI？", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "如何联系 CLUMOSS？", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "NeuroForgeAI 是什么？", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "bookConsultation": {
+                "question": "如何预约咨询？",
+                "text": "分享您希望的日期和时间，或直接点击「立即预约」——我将引导您进入预约页面。",
+                "showScheduleButton": true,
+                "followUps": [
+                    { "text": "如何联系 CLUMOSS？", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "为何与 CLUMOSS 合作？", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS 是否帮助初创企业和投资者？", "target": "helpStartupsInvestors", "icon": "rocket" }
+                ]
+            },
+            "redirectSolutions": {
+                "question": "跳转到解决方案页面",
+                "text": "当然！正在跳转到解决方案页面，您可探索我们所有 AI 产品和服务。",
+                "followUps": [
+                    { "text": "CLUMOSS 提供哪些解决方案？", "target": "solutions", "icon": "sparkles" },
+                    { "text": "能否跳转到服务页面？", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "你们服务哪些行业？", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectServices": {
+                "question": "跳转到服务页面",
+                "text": "当然！正在跳转到服务板块，展示我们完整的智能自动化和 AI 系统。",
+                "followUps": [
+                    { "text": "CLUMOSS 提供哪些解决方案？", "target": "solutions", "icon": "sparkles" },
+                    { "text": "能否跳转到解决方案页面？", "target": "redirectSolutions", "icon": "arrow-right" },
+                    { "text": "你们服务哪些行业？", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectContact": {
+                "question": "跳转到联系页面",
+                "text": "当然！正在跳转到联系页面，您可立即联系我们的团队进行合作或协作。",
+                "followUps": [
+                    { "text": "如何联系 CLUMOSS？", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "如何预约咨询？", "target": "bookConsultation", "icon": "calendar" },
+                    { "text": "如何联系 MistrAI？", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howClumossWorks": {
+                "question": "CLUMOSS 如何运作？CLUMOSS 如何管理客户需求和项目执行？",
+                "text": "所有新或直接客户需求均由 CLUMOSS 管理并交付，从战略到执行全程监督每个项目。\n\n若客户通过 MistrAI 寻求现有产品或定制，MistrAI 团队负责处理。高级或超出范围的需求将升级至 CLUMOSS 进行战略执行。NeuroForgeAI 同样适用——管理其物理 AI 和机器人解决方案，除非请求涉及更广泛集成或更高复杂性，此时 CLUMOSS 接管控制。\n\n在所有情况下，CLUMOSS 保留对项目评估、指导及分配至 MistrAI 或 NeuroForgeAI 的最终权限——确保整个生态系统的卓越、精确和无缝交付。",
+                "followUps": [
+                    { "text": "MistrAI 如何运作？", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI 如何运作？", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "CLUMOSS 是什么类型的公司？", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "clumossCompanyType": {
+                "question": "CLUMOSS 是产品型还是服务型公司？",
+                "text": "混合型公司：\nCLUMOSS 是一家混合型 AI 和科技公司，同时以产品和服务模式运营。构建智能 AI 产品的同时，为全球客户提供完全定制的科技解决方案，融合创新与执行。\n\n产品型：\n通过子公司——MistrAI 和 NeuroForgeAI——CLUMOSS 开发全栈生成式 AI SaaS 产品、工作流自动化平台和物理 AI 系统。所有产品均为订阅制、可扩展、可根据业务需求定制。\n\n服务型：\n在 CLUMOSS 品牌下，提供端到端企业软件和 AI 解决方案——从需求分析、设计到全栈开发、自动化和部署。\n\n结论：\nCLUMOSS 是下一代混合型 AI 公司，将产品创新与定制解决方案交付结合，并保留根据项目需求和领域匹配向子公司——MistrAI 或 NeuroForgeAI——分配项目的最终权限。",
+                "followUps": [
+                    { "text": "MistrAI 是产品型还是服务型公司？", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "NeuroForgeAI 是产品型还是服务型公司？", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "CLUMOSS 是什么？", "target": "whatIsClumoss", "icon": "lightbulb" }
+                ]
+            },
+            "helpStartupsInvestors": {
+                "question": "CLUMOSS 是否帮助初创企业和投资者？",
+                "text": "是的——CLUMOSS 通过提供 AI 基础设施和自动化框架访问，赋能初创企业、创始人和投资者。\n初创企业获得更快的产品开发、更低成本和更高可扩展性，投资者获得长期增长、可预测回报和对不断扩展的 AI 市场的访问。\n\nCLUMOSS 弥合创新与投资成功之间的差距。",
+                "followUps": [
+                    { "text": "CLUMOSS 对投资者如何盈利？", "target": "profitableForInvestors", "icon": "chart" },
+                    { "text": "为何与 CLUMOSS 合作？", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "如何预约咨询？", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whyPartner": {
+                "question": "为何与 CLUMOSS 合作？",
+                "text": "与 CLUMOSS 合作意味着加入为增长和全球主导地位打造的未来型 AI 超级力量。\n获得世界级 AI 解决方案和智能自动化\n降低人力成本、提升效率、加速项目交付\n为初创企业、企业和投资者的灵活合作模式\n包括 MistrAI、Automata 和 NeuroForgeAI 的创新生态系统支持\n\nCLUMOSS 不仅是合作伙伴——它是您在 AI 革命中的竞争优势。",
+                "followUps": [
+                    { "text": "CLUMOSS 是否帮助初创企业和投资者？", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "CLUMOSS 如何为客户带来价值？", "target": "clientBenefits", "icon": "star" },
+                    { "text": "如何预约咨询？", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "clientBenefits": {
+                "question": "CLUMOSS 如何为客户带来价值？",
+                "text": "客户获得：\n运营成本降低\n数据驱动决策智能\n流程自动化\n定制化 AI 部署\n全面可扩展性与安全性\nCLUMOSS 在每次实施中确保舒适、灵活和成本效益。",
+                "followUps": [
+                    { "text": "为何与 CLUMOSS 合作？", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS 是否能与现有系统集成？", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "CLUMOSS 产品有多安全？", "target": "productSecurity", "icon": "lock" }
+                ]
+            },
+            "profitableForInvestors": {
+                "question": "CLUMOSS 对投资者如何盈利？",
+                "text": "CLUMOSS 以订阅制 AI 生态系统运营，确保可预测的经常性收入和可持续增长。\n高利润率的可扩展 SaaS\nB2B、B2C、D2C 垂直扩展\n进入快速增长的下一代 AI 市场\n全球企业集成机会\n\n对投资者而言，CLUMOSS 代表创新驱动、高回报的 AI 生态系统——为长期价值而建。",
+                "followUps": [
+                    { "text": "CLUMOSS 是否帮助初创企业和投资者？", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "为何与 CLUMOSS 合作？", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS 的独特之处是什么？", "target": "whatMakesDifferent", "icon": "trophy" }
+                ]
+            },
+            "whatMakesDifferent": {
+                "question": "CLUMOSS 的独特之处是什么？",
+                "text": "CLUMOSS 结合全栈 AI 开发、自动化和设计智能——是少数能在同一屋檐下提供完整 AI 转型的生态系统之一。",
+                "followUps": [
+                    { "text": "为何与 CLUMOSS 合作？", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS 如何为客户带来价值？", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS 是什么类型的公司？", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "systemIntegration": {
+                "question": "CLUMOSS 是否能与现有系统集成？",
+                "text": "是的！我们的 AI 和自动化框架采用 API 优先设计，完全可集成——轻松连接 CRM、数据库、ERP 系统或任何现有企业基础设施。",
+                "followUps": [
+                    { "text": "CLUMOSS 如何为客户带来价值？", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS 产品有多安全？", "target": "productSecurity", "icon": "lock" },
+                    { "text": "如何预约咨询？", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "productSecurity": {
+                "question": "CLUMOSS 产品有多安全？",
+                "text": "我们遵循企业级数据安全协议，包括加密、用户访问控制、符合 GDPR 和 ISO 标准——始终确保您的数据安全。",
+                "followUps": [
+                    { "text": "CLUMOSS 是否能与现有系统集成？", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "CLUMOSS 如何为客户带来价值？", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS 提供哪些解决方案？", "target": "solutions", "icon": "sparkles" }
+                ]
+            }
+        },
+        "solutions": [
+            { "text": "代理 AI", "url": "/services/agentic-ai", "icon": "robot" },
+            { "text": "数据分析 & 机器学习", "url": "/services/data-analytics", "icon": "chart" },
+            { "text": "工作流自动化", "url": "/services/automation", "icon": "zap" },
+            { "text": "全栈生成式 AI 开发", "url": "/services/generative-ai", "icon": "sparkles" },
+            { "text": "MCP 驱动 AI 代理 & 编排", "url": "/services/mcp-agents", "icon": "link" },
+            { "text": "下一代 UI/UX 设计", "url": "/services/ui-ux", "icon": "palette" },
+            { "text": "微调 LLM 解决方案", "url": "/services/custom-models", "icon": "brain" },
+            { "text": "数据保护 & 安全", "url": "/services/security", "icon": "lock" },
+            { "text": "企业级 Web 开发", "url": "/services/web-dev", "icon": "globe" },
+            { "text": "会话式语音代理", "url": "/services/voice-ai", "icon": "microphone" }
+        ],
+        "industries": [
+            { "text": "医疗保健", "url": "/technologies/healthcare", "icon": "hospital" },
+            { "text": "国防", "url": "/technologies/defense", "icon": "shield" },
+            { "text": "制造", "url": "/technologies/manufacturing", "icon": "factory" },
+            { "text": "房地产", "url": "/technologies/real-estate", "icon": "home" },
+            { "text": "政府", "url": "/technologies/government", "icon": "building" },
+            { "text": "电商 & 零售", "url": "/technologies/ecommerce", "icon": "shopping-bag" },
+            { "text": "农业", "url": "/technologies/agriculture", "icon": "seedling" },
+            { "text": "教育", "url": "/technologies/education", "icon": "graduation-cap" },
+            { "text": "移民", "url": "/technologies/immigration", "icon": "passport" },
+            { "text": "体育 & 健身", "url": "/technologies/sports-fitness", "icon": "dumbbell" },
+            { "text": "金融科技", "url": "/technologies/fintech", "icon": "credit-card" },
+            { "text": "银行 & 金融", "url": "/technologies/banking-finance", "icon": "bank" },
+            { "text": "销售", "url": "/technologies/sales", "icon": "chart-line" },
+            { "text": "音乐 & 娱乐", "url": "/technologies/music-entertainment", "icon": "music" },
+            { "text": "法律", "url": "/technologies/legal", "icon": "gavel" }
+        ],
+        "buttons": {
+            "callUs": "给我们打电话",
+            "emailUs": "给我们发邮件",
+            "bookNow": "立即预约",
+            "yesRedirect": "是的，跳转",
+            "notNow": "现在不要",
+            "viewTechnologies": "是的，显示",
+            "declineTechnologies": "不用，谢谢"
+        }
+    },
+
     "terms": {
         "title": "使用条款",
         "sections": {
-            "welcomeToClumoss": {
-                "title": "欢迎体验Clumoss",
+            "welcomeToCLUMOSS": {
+                "title": "欢迎体验CLUMOSS",
                 "content": [
-                    "通过访问Clumoss及其子公司（MisterAI和NeuroforgeAI）提供的网站、产品或服务，您同意遵守以下使用条款。",
+                    "通过访问CLUMOSS及其子公司（MisterAI和NeuroforgeAI）提供的网站、产品或服务，您同意遵守以下使用条款。",
                     "请仔细阅读这些条款。如果您不同意这些条款，请立即停止使用我们的服务。"
                 ]
             },
@@ -965,15 +1341,15 @@
             "intellectualPropertyRights": {
                 "title": "2. 知识产权",
                 "content": [
-                    "我们平台上提供的所有内容、软件、人工智能模型、算法、商标和材料均为Clumoss、其子公司或授权的第三方供应商所有。",
+                    "我们平台上提供的所有内容、软件、人工智能模型、算法、商标和材料均为CLUMOSS、其子公司或授权的第三方供应商所有。",
                     "我们授予您有限的、非独占的、不可转让的许可，允许您根据这些条款和任何附加服务协议为个人或授权的商业目的使用服务。",
-                    "我们的人工智能专有技术、机器学习模型和数据处理方法论始终是Clumoss的独家知识产权。"
+                    "我们的人工智能专有技术、机器学习模型和数据处理方法论始终是CLUMOSS的独家知识产权。"
                 ]
             },
             "userResponsibilities": {
                 "title": "3. 用户责任",
                 "content": [
-                    "作为Clumoss服务的用户，您有责任确保我们的人工智能解决方案的正确和合法使用：",
+                    "作为CLUMOSS服务的用户，您有责任确保我们的人工智能解决方案的正确和合法使用：",
                     {
                         "list": [
                             "您有责任维护账户凭据的保密性和安全性",
@@ -997,7 +1373,7 @@
                 "title": "5. 责任限制",
                 "content": [
                     "我们努力确保我们的人工智能服务和技术解决方案的准确性、可靠性和可用性，但不保证无中断或无错误的运行。",
-                    "Clumoss、MisterAI、NeuroforgeAI及其关联公司对因使用我们的服务或网站而产生的直接、间接、附带、后果性或惩罚性损害不承担责任。",
+                    "CLUMOSS、MisterAI、NeuroforgeAI及其关联公司对因使用我们的服务或网站而产生的直接、间接、附带、后果性或惩罚性损害不承担责任。",
                     "我们对与服务相关的任何索赔的总责任不超过您在过去十二个月内为特定服务支付的金额。"
                 ]
             },
@@ -1027,7 +1403,7 @@
                 "title": "9. 适用法律和管辖权",
                 "content": [
                     "这些条款受印度法律和适用于人工智能和技术服务的国际法规的约束和解释。",
-                    "因这些条款或使用我们的服务而产生的任何争议将在印度法院独家解决，具体在Clumoss开展主要商业活动的司法管辖区内。"
+                    "因这些条款或使用我们的服务而产生的任何争议将在印度法院独家解决，具体在CLUMOSS开展主要商业活动的司法管辖区内。"
                 ]
             },
             "changesToTerms": {
@@ -1045,15 +1421,15 @@
                 ]
             },
             "lastUpdated": {
-                "content": "Clumoss - 印度领先的人工智能技术集团"
+                "content": "CLUMOSS - 印度领先的人工智能技术集团"
             }
         },
         "metadata": {
-            "title": "使用条款 | Clumoss",
-            "description": "管理Clumoss服务和产品使用的条款。了解您在使用我们的人工智能解决方案时的权利和义务。",
+            "title": "使用条款 | CLUMOSS",
+            "description": "管理CLUMOSS服务和产品使用的条款。了解您在使用我们的人工智能解决方案时的权利和义务。",
             "openGraph": {
-                "title": "使用条款 | Clumoss",
-                "description": "管理Clumoss服务和产品使用的条款。"
+                "title": "使用条款 | CLUMOSS",
+                "description": "管理CLUMOSS服务和产品使用的条款。"
             }
         }
     }

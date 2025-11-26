@@ -44,7 +44,7 @@ export default function ServicesPage() {
       <div className="relative z-10 pt-20 md:pt-24 lg:pt-28">
         <section className="py-16 px-8 bg-transparent">
           <h2 className="text-center text-4xl md:text-5xl font-bold mb-12 text-white">
-            {t('servicesPageHeading')}
+            {t('serhead.servicesPageHeading')}
           </h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
             {solutions.map((sol, idx) => (

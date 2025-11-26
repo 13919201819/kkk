@@ -36,7 +36,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "كلوموس {year}",
+            "text": "كلوموس 2024",
             "designedBy": "صمم وطور ويتم صيانته بواسطة كلوموس"
         }
     },
@@ -48,6 +48,13 @@
             { "text": "اتصل بنا" }
         ]
     },
+
+    "serhead": {
+        "solutionsHeading": "الحلول",
+        "moreButton": "المزيد",
+        "servicesPageHeading": "مجموعة خدماتنا المتنوعة"
+    },
+
     "about": {
         "title": "عن كلوموس",
         "description": [
@@ -938,6 +945,377 @@
             }
         }
     },
+
+    "chatbot": {
+        "title": "CLUMOSS AI",
+        "subtitle": "المساعد التنفيذي",
+        "placeholder": "اسألني أي شيء...",
+        "thinking": "جاري التفكير...",
+        "speaking": "يتحدث...",
+        "listening": "يستمع...",
+        "stopSpeaking": "إيقاف الكلام",
+        "closeAssistant": "إغلاق المساعد",
+        "startVoice": "بدء الإدخال الصوتي",
+        "stopVoice": "إيقاف الإدخال الصوتي",
+        "sendMessage": "إرسال الرسالة",
+        "cancelGeneration": "إلغاء توليد الرد",
+        "greeting": "مرحباً بك في CLUMOSS — حيث تلتقي الابتكار بالذكاء! هل هذه زيارتك الأولى، أم تبحث عن شيء محدد؟",
+        "reminder": "مرحباً، هل ما زلت هنا؟ يمكنك أن تسأل عما تريد معرفته أو استكشاف أي شيء فقط بالسؤال أو كتابة نص",
+        "instantResponses": {
+            "greetingHi": {
+                "question": "مرحباً، مرحباً، أهلاً",
+                "text": "مرحباً بك في CLUMOSS — حيث تلتقي الابتكار بالذكاء! هل هذه زيارتك الأولى، أم تبحث عن شيء محدد؟",
+                "followUps": [
+                    { "text": "ماذا يمكنك أن تفعل؟", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "من أنت؟", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "greetingTime": {
+                "question": "صباح الخير، مساء الخير، مرحباً بعد الظهر",
+                "text": "تحيات من CLUMOSS، هل ترغب في مساعدة بشأن شيء محدد؟",
+                "followUps": [
+                    { "text": "ماذا يمكنك أن تفعل؟", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "من أنت؟", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "whoAreYou": {
+                "question": "من أنت",
+                "text": "أنا مساعد CLUMOSS AI، تم تطويري بواسطة MistrAI (الشركة الفرعية الأساسية لـ CLUMOSS) — هنا لأرشدك خلال كل ما يتعلق بـ CLUMOSS، وشركاتها الفرعية، ومنتجاتها، وخدماتها.",
+                "followUps": [
+                    { "text": "ماذا يمكنك أن تفعل؟", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "whatDoYouDo": {
+                "question": "ماذا يمكنك أن تفعل",
+                "text": "ما يمكنني فعله\n\nإرشادك عبر نظام CLUMOSS البيئي:\nتعرف على CLUMOSS، وشركاتها الفرعية — MistrAI و NeuroForgeAI — وكيف نُحدث ثورة في الذكاء الاصطناعي عبر الصناعات.\n\nعرض تأثير الأعمال:\nاكتشف كيف تجعل حلولنا عملك أسرع، أذكى، وأكثر كفاءة من حيث التكلفة مع تقليل تكاليف العمالة وزيادة الإنتاجية.\n\nربطك بفريقنا:\nاحجز اجتماعًا أو استشارة بسهولة لاستكشاف كيف يمكن لـ CLUMOSS مساعدتك على التوسع مع الأتمتة الذكية والابتكار.",
+                "followUps": [
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "ما هي الشركات الفرعية لـ CLUMOSS؟", "target": "whatAreSubsidiaries", "icon": "building" },
+                    { "text": "كيف أحجز استشارة؟", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whatIsClumoss": {
+                "question": "ما هو CLUMOSS؟",
+                "text": "CLUMOSS هي شركة ذكاء اصطناعي هجينة تبني منتجات SaaS متقدمة للذكاء الاصطناعي التوليدي، وتدفقات عمل آلية، ومنصات، وحلول أعمال ذكية. وهي الشركة الأم لـ MistrAI و NeuroForgeAI، وهما شركتان فرعيتان متخصصتان في مجالات الذكاء الاصطناعي الرقمي والمادي. معًا، يشكلون نظامًا بيئيًا كاملاً للذكاء الاصطناعي يركز على الابتكار، وقابلية التوسع، والتأثير في العالم الحقيقي.",
+                "followUps": [
+                    { "text": "ما هو الشكل الكامل لـ CLUMOSS؟", "target": "fullFormClumoss", "icon": "magnifying-glass" },
+                    { "text": "من أسس CLUMOSS؟", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "متى تم تأسيس CLUMOSS؟", "target": "whenEstablished", "icon": "calendar" }
+                ]
+            },
+            "fullFormClumoss": {
+                "question": "ما هو الشكل الكامل لـ CLUMOSS؟",
+                "text": "الشكل الكامل لـ CLUMOSS هو \"Cluster of Multi Organizations for Support & Services\".\n\nيمثل نظامًا بيئيًا موحدًا لعدة كيانات متخصصة تعمل معًا لتقديم منتجات ذكاء اصطناعي متقدمة، وحلول مؤسسية، وخدمات أتمتة — كلها تحت مظلة واحدة قوية لضمان الابتكار، والكفاءة، والتميز عبر الصناعات.",
+                "followUps": [
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "من أسس CLUMOSS؟", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "ما هي الشركات الفرعية لـ CLUMOSS؟", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whoFoundedClumoss": {
+                "question": "من أسس CLUMOSS، من هو المؤسس/المالك لـ CLUMOSS",
+                "text": "تم تأسيس CLUMOSS بواسطة كاران بهات، رائد أعمال تقني هندي ومنتج موسيقى إلكترونية. وهو حاليًا يمتلك الملكية الكاملة لـ CLUMOSS وشركاتها الفرعية MistrAI و NeuroForgeAI.",
+                "followUps": [
+                    { "text": "متى تم تأسيس CLUMOSS؟", "target": "whenEstablished", "icon": "calendar" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "ما هي الشركات الفرعية لـ CLUMOSS؟", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whenEstablished": {
+                "question": "متى تم تأسيس CLUMOSS",
+                "text": "تم تأسيس CLUMOSS في 18 يوليو 2023",
+                "followUps": [
+                    { "text": "من أسس CLUMOSS؟", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "ما هي الحلول التي تقدمها CLUMOSS؟", "target": "solutions", "icon": "sparkles" }
+                ]
+            },
+            "solutions": {
+                "question": "ما هي الحلول التي تقدمها CLUMOSS؟ ما نوع الحلول التي تقدمها؟ ما الخدمات التي تقدمها CLUMOSS",
+                "text": "تقدم CLUMOSS مجموعة شاملة من الحلول القائمة على الذكاء الاصطناعي المصممة خصيصًا لمواجهة تحديات الأعمال المتنوعة عبر الصناعات. إليك نظرة عامة منظمة على عروضنا الرئيسية:\n\nالحلول الذكية الأساسية:\n\n1) الذكاء الاصطناعي الوكيلي\n2) تحليل البيانات والتعلم الآلي\n3) أتمتة تدفق العمل\n4) تطوير الذكاء الاصطناعي التوليدي كامل المكدس\n5) وكلاء الذكاء الاصطناعي المعززة بـ MCP وتنسيقها\n6) تصميم واجهة مستخدم/تجربة مستخدم من الجيل التالي\n7) حلول النماذج اللغوية الكبيرة المعدلة بدقة\n8) حماية البيانات والأمان\n9) تطوير الويب المؤسسي\n10) وكلاء الصوت الحواري",
+                "showSolutions": true,
+                "followUps": [
+                    { "text": "ما هي الصناعات التي تخدمها؟", "target": "industries", "icon": "globe" },
+                    { "text": "ما نوع شركة CLUMOSS؟", "target": "clumossCompanyType", "icon": "question" },
+                    { "text": "هل يمكنك أن تعرض لي صفحة الحلول؟", "target": "redirectSolutions", "icon": "arrow-right" }
+                ]
+            },
+            "industries": {
+                "question": "ما هي المجالات أو القطاعات التي تخدمها؟ من تخدم، تقدم خدماتك؟ من تخدم؟ ما المجالات التي تقدم فيها خدمات؟",
+                "text": "الرعاية الصحية\nالدفاع\nالتصنيع\nالعقارات\nالحكومة\nالتجارة الإلكترونية والتجزئة\nالزراعة\nالتعليم\nالهجرة\nالرياضة واللياقة البدنية\nالتكنولوجيا المالية\nالبنوك والتمويل\nالمبيعات\nالموسيقى والترفيه\nالقانون",
+                "showIndustries": true,
+                "followUps": [
+                    { "text": "ما هي الحلول التي تقدمها CLUMOSS؟", "target": "solutions", "icon": "sparkles" },
+                    { "text": "هل يمكنك أن تعرض لي صفحة الخدمات؟", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "كيف تكون CLUMOSS مفيدة للعملاء؟", "target": "clientBenefits", "icon": "star" }
+                ]
+            },
+            "hasSubsidiaries": {
+                "question": "هل لدى CLUMOSS شركات فرعية؟",
+                "text": "نعم، لدى CLUMOSS شركتان فرعيتان رئيسيتان — MistrAI و NeuroForgeAI.\n\nMistrAI: تركز على منتجات SaaS للذكاء الاصطناعي التوليدي كامل المكدس، والمنصات، وأدوات أتمتة تدفق العمل التي تكون آمنة، قائمة على الاشتراك، وقابلة للتخصيص حسب متطلبات العميل.\n\nNeuroForgeAI: متخصصة في الذكاء الاصطناعي المادي، تطوير المنطق الخلفي، والإطارات العصبية، والنماذج الأولية الذكية التي تسمح للآلات بالاستشعار، والفهم، والتفاعل مع محيطها.\n\nمعًا، يعملان تحت نظام CLUMOSS البيئي، مما يدفع الابتكار عبر مجالات الذكاء الاصطناعي الرقمي والمادي.",
+                "followUps": [
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "ما هي الشركات الفرعية لـ CLUMOSS؟", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whatAreSubsidiaries": {
+                "question": "ما هي الشركات الفرعية لـ CLUMOSS؟",
+                "text": "تعمل CLUMOSS من خلال شركتيها الفرعيتين القويتين — MistrAI و NeuroForgeAI — كل منهما تدفع حدودًا مختلفة للذكاء الاصطناعي تحت النظام البيئي الموحد لـ CLUMOSS.\n\nMistrAI: تطور منتجات SaaS للذكاء الاصطناعي التوليدي كامل المكدس، والمنصات، وأدوات أتمتة تدفق العمل التي تكون آمنة، قائمة على الاشتراك، وقابلة للتخصيص بالكامل حسب احتياجات العميل.\n\nNeuroForgeAI: تبني المنطق الخلفي، والإطارات العصبية، والنماذج الأولية لأنظمة الذكاء الاصطناعي المادي، مما يمكّن الآلات من الاستشعار، والفهم، والتفاعل مع البيئة الخارجية.\n\nمعًا، يمثلان جوهر الابتكار في CLUMOSS — حيث يلتقي الذكاء الرقمي بالأتمتة المادية، مما يشكل مستقبل التحول القائم على الذكاء الاصطناعي.",
+                "followUps": [
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "هل لدى CLUMOSS شركات فرعية؟", "target": "hasSubsidiaries", "icon": "question" }
+                ]
+            },
+            "whatIsMistrAI": {
+                "question": "ما هو MistrAI",
+                "text": "MistrAI هي الشركة الفرعية الأساسية لـ CLUMOSS، متخصصة في تطوير الذكاء الاصطناعي التوليدي ومنتجات SaaS. تبني منصات ذكاء اصطناعي قائمة على الاشتراك آمنة، قابلة للتخصيص، وجاهزة للنشر. كذراع الابتكار الأساسي لـ CLUMOSS، تقدم MistrAI حلول ذكاء اصطناعي شاملة تؤتمت عمليات الأعمال، وتقلل التكاليف، وتدفع اتخاذ القرارات الذكية المستندة إلى البيانات.",
+                "followUps": [
+                    { "text": "كيف يعمل MistrAI؟", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "هل MistrAI قائم على المنتج أو الخدمة؟", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "كيف أتواصل مع MistrAI؟", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howMistrAIWorks": {
+                "question": "كيف يعمل MistrAI",
+                "text": "تطور MistrAI منتجاتها الخاصة من SaaS للذكاء الاصطناعي قائمة على الاشتراك، وأتمتة تدفق العمل، والمنصات التي تكون آمنة، قابلة للتوسع، وقابلة للتخصيص. تُصمم هذه المنتجات لتكون إما جاهزة للاستخدام أو مخصصة لتلبية متطلبات العميل المحددة.\n\nعندما يحتاج العملاء إلى تخصيص إضافي، يقوم فريق MistrAI بتكييف وتحسين المنتج ليتناسب تمامًا مع أهدافهم. بالنسبة للتعديلات المعقدة أو واسعة النطاق التي تتجاوز نطاق عمليات MistrAI، يتم تصعيد المشروع إلى CLUMOSS للتنفيذ الاستراتيجي والتسليم.",
+                "followUps": [
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "هل MistrAI قائم على المنتج أو الخدمة؟", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "isMistrAIProductOrService": {
+                "question": "هل MistrAI قائم على المنتج أو الخدمة؟",
+                "text": "MistrAI هي شركة قائمة بشكل أساسي على المنتج وتقدم أيضًا خدمات تخصيص.\n\nتطور منتجات SaaS للذكاء الاصطناعي الخاصة بها، والمنصات التي تكون آمنة، قابلة للتوسع، وجاهزة للاستخدام. ومع ذلك، عندما يحتاج العملاء إلى حلول مخصصة أو تكاملات، تمدد MistrAI ذراع خدمتها لتخصيص تلك المنتجات وفقًا لمتطلبات الأعمال المحددة.\n\nالخلاصة: MistrAI هي شركة هجينة، لكن هويتها الأساسية قائمة على المنتج.",
+                "followUps": [
+                    { "text": "كيف يعمل MistrAI؟", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "ما نوع شركة CLUMOSS؟", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "whatIsNeuroForgeAI": {
+                "question": "ما هو NeuroForgeAI",
+                "text": "NeuroForgeAI هي شركة فرعية لـ CLUMOSS تركز على تطوير الذكاء الخلفي لأنظمة الذكاء الاصطناعي المادي. تبني المنطق الأساسي، والإطارات العصبية، وآليات التحكم التكيفية التي تسمح للآلات بالاستشعار، والتفاعل، والعمل بشكل مستقل. تعرض NeuroForgeAI ابتكاراتها من خلال نماذج أولية وعروض عملية، مما يمكّن الشركات من تجربة تكامل الذكاء الاصطناعي في العالم الحقيقي. شعارها — \"نقدم ما يحتاجه الذكاء الاصطناعي المادي\" — يحدد مهمتها في تشغيل العقول خلف الروبوتات الذكية والأتمتة.",
+                "followUps": [
+                    { "text": "كيف يعمل NeuroForgeAI؟", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "هل NeuroForgeAI قائم على المنتج أو الخدمة؟", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "كيف أتواصل مع NeuroForgeAI؟", "target": "contactNeuroForgeAI", "icon": "phone" }
+                ]
+            },
+            "howNeuroForgeAIWorks": {
+                "question": "كيف يعمل NeuroForgeAI",
+                "text": "تشغل NeuroForgeAI الذكاء الخلفي لأنظمة الذكاء الاصطناعي المادي — بمثابة العقل الذي يدفع الآلات في العالم الحقيقي. تطور المنطق الأساسي، والتحكم العصبي، وأنظمة اتخاذ القرار التي تمكّن الجسم أو الجهاز المادي من الاستشعار، والكشف، والتفاعل، والاستجابة لمحيطه بدقة واستقلالية.\n\nالشعار: \"نقدم ما يحتاجه الذكاء الاصطناعي المادي\".",
+                "followUps": [
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "هل NeuroForgeAI قائم على المنتج أو الخدمة؟", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "isNeuroForgeAIProductOrService": {
+                "question": "هل NeuroForgeAI قائم على المنتج أو الخدمة؟",
+                "text": "NeuroForgeAI هي شركة هجينة، تجمع بين تطوير المنتج وتقديم الخدمة في مجال الذكاء الاصطناعي المادي.\n\nتركز بشكل أساسي على تطوير المنطق الخلفي والإطارات العصبية التي تعمل كعقل لأنظمة الذكاء الاصطناعي المادي — مما يمكّن الآلات من الاستشعار، والتفاعل، والاستجابة بذكاء لبيئتها.\nتعرض NeuroForgeAI ابتكاراتها من خلال نماذج أولية، يمكن للشركات استخدامها أو دمجها في أنظمتها الخاصة.\n\nالخلاصة: تقدم NeuroForgeAI نماذج أولية جاهزة للتكيف (منتج) وتكامل منطق الذكاء الاصطناعي المخصص (خدمة) — مما يجعلها هجينة كاملة في مجال الأتمتة المادية الذكية.",
+                "followUps": [
+                    { "text": "كيف يعمل NeuroForgeAI؟", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "ما نوع شركة CLUMOSS؟", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "contactClumoss": {
+                "question": "كيف أتواصل بك؟ كيف أتواصل مع CLUMOSS؟",
+                "text": "يمكنك الوصول إلينا على:\n+91 7622817924\ninfo@clumoss.com",
+                "showContactButtons": true,
+                "showContactRedirect": true,
+                "followUps": [
+                    { "text": "كيف أتواصل مع MistrAI؟", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "كيف أتواصل مع NeuroForgeAI؟", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "هل يمكنك أن تأخذني إلى صفحة الاتصال؟", "target": "redirectContact", "icon": "arrow-right" }
+                ]
+            },
+            "contactMistrAI": {
+                "question": "كيف أتواصل مع MistrAI؟",
+                "text": "يمكنك التواصل مع MistrAI عبر البريد: info@mistrai.com أو الاتصال على +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "كيف أتواصل مع NeuroForgeAI؟", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "كيف أتواصل مع CLUMOSS؟", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "ما هو MistrAI؟", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "contactNeuroForgeAI": {
+                "question": "كيف أتواصل مع NeuroForgeAI؟",
+                "text": "يمكنك التواصل مع NeuroForgeAI عبر البريد: info@neuroforgeai.com أو الاتصال على +91 7622817924",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "كيف أتواصل مع MistrAI؟", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "كيف أتواصل مع CLUMOSS؟", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "ما هو NeuroForgeAI؟", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "bookConsultation": {
+                "question": "كيف أحجز استشارة؟",
+                "text": "يمكنك حجز استشارة من خلال مشاركة التاريخ والوقت المفضل لديك، أو بالنقر مباشرة على \"احجز الآن\" — سأرشدك إلى صفحة الحجز الخاصة بنا.",
+                "showScheduleButton": true,
+                "followUps": [
+                    { "text": "كيف أتواصل مع CLUMOSS؟", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "لماذا يجب أن أتعاون مع CLUMOSS؟", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "هل تساعد CLUMOSS الشركات الناشئة والمستثمرين؟", "target": "helpStartupsInvestors", "icon": "rocket" }
+                ]
+            },
+            "redirectSolutions": {
+                "question": "أعد توجيهي إلى صفحة الحلول",
+                "text": "بالتأكيد! أعد توجيهك إلى صفحة الحلول الخاصة بنا حيث يمكنك استكشاف جميع عروض الذكاء الاصطناعي والخدمات.",
+                "followUps": [
+                    { "text": "ما هي الحلول التي تقدمها CLUMOSS؟", "target": "solutions", "icon": "sparkles" },
+                    { "text": "هل يمكنك أن تعرض لي صفحة الخدمات؟", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "ما هي الصناعات التي تخدمها؟", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectServices": {
+                "question": "أعد توجيهي إلى صفحة الخدمة",
+                "text": "بالتأكيد! أعد توجيهك إلى قسم الخدمات الخاص بنا الذي يعرض مجموعتنا الكاملة من الأتمتة الذكية وأنظمة الذكاء الاصطناعي.",
+                "followUps": [
+                    { "text": "ما هي الحلول التي تقدمها CLUMOSS؟", "target": "solutions", "icon": "sparkles" },
+                    { "text": "هل يمكنك أن تعرض لي صفحة الحلول؟", "target302": "redirectSolutions", "icon": "arrow-right" },
+                    { "text": "ما هي الصناعات التي تخدمها؟", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectContact": {
+                "question": "أعد توجيهي إلى صفحة الاتصال",
+                "text": "بالتأكيد! — أعد توجيهك إلى صفحة الاتصال حتى تتمكن من الوصول إلى فريقنا فورًا للشراكات أو التعاون.",
+                "followUps": [
+                    { "text": "كيف أتواصل مع CLUMOSS؟", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "كيف أحجز استشارة؟", "target": "bookConsultation", "icon": "calendar" },
+                    { "text": "كيف أتواصل مع MistrAI؟", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howClumossWorks": {
+                "question": "كيف تعمل CLUMOSS؟ كيف تدير CLUMOSS متطلبات العملاء وتنفيذ المشروع؟",
+                "text": "يتم إدارة وتسليم جميع متطلبات العملاء الجديدة أو المباشرة بواسطة CLUMOSS، التي تشرف على كل مشروع من الاستراتيجية إلى التنفيذ بسلطة كاملة.\n\nإذا اقترب العميل من خلال MistrAI لمنتج موجود أو تخصيص، يتعامل فريق MistrAI معه. بالنسبة للمتطلبات المتقدمة أو خارج النطاق، يتم تصعيد المشروع إلى CLUMOSS للتنفيذ الاستراتيجي. ينطبق الأمر نفسه على NeuroForgeAI — تدير حلول الذكاء الاصطناعي المادي والروبوتات الخاصة بها ما لم يتطلب الطلب تكاملًا أوسع أو تعقيدًا أعلى، وفي هذه الحالة تتولى CLUMOSS المسؤولية.\n\nفي جميع الحالات، تحتفظ CLUMOSS بالسلطة النهائية لتقييم وتوجيه وتخصيص أي مشروع إلى MistrAI أو NeuroForgeAI، مما يضمن التميز، والدقة، والتسليم السلس عبر نظامها البيئي.",
+                "followUps": [
+                    { "text": "كيف يعمل MistrAI؟", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "كيف يعمل NeuroForgeAI؟", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "ما نوع شركة CLUMOSS؟", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "clumossCompanyType": {
+                "question": "ما نوع شركة CLUMOSS — قائمة على المنتج أو الخدمة؟",
+                "text": "شركة هجينة:\nCLUMOSS هي شركة ذكاء اصطناعي وتكنولوجيا هجينة، تعمل كشركة قائمة على المنتج والخدمة. تجمع بين الابتكار والتنفيذ من خلال بناء منتجات ذكاء اصطناعي ذكية مع تقديم حلول تكنولوجية مخصصة كاملة للعملاء في جميع أنحاء العالم.\n\nقائمة على المنتج:\nمن خلال شركاتها الفرعية — MistrAI و NeuroForgeAI — تطور CLUMOSS منتجات SaaS للذكاء الاصطناعي التوليدي كامل المكدس، ومنصات أتمتة تدفق العمل، وأنظمة الذكاء الاصطناعي المادي. جميع المنتجات قائمة على الاشتراك، قابلة للتوسع، وقابلة للتخصيص حسب احتياجات الأعمال.\n\nقائمة على الخدمة:\nتحت علامة CLUMOSS التجارية، تقدم حلول برمجيات مؤسسية وذكاء اصطناعي شاملة، تتعامل مع كل شيء من تحليل المتطلبات والتصميم إلى التطوير الكامل، والأتمتة، والنشر.\n\nالخلاصة:\nCLUMOSS هي شركة ذكاء اصطناعي هجينة من الجيل التالي، تجمع بين ابتكار المنتج وتقديم الحلول المخصصة، وتحتفظ بالسلطة النهائية لتخصيص المشاريع إلى شركاتها الفرعية — MistrAI أو NeuroForgeAI — بناءً على متطلبات المشروع وملاءمة المجال.",
+                "followUps": [
+                    { "text": "هل MistrAI قائم على المنتج أو الخدمة؟", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "هل NeuroForgeAI قائم على المنتج أو الخدمة؟", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "ما هو CLUMOSS؟", "target": "whatIsClumoss", "icon": "lightbulb" }
+                ]
+            },
+            "helpStartupsInvestors": {
+                "question": "هل تساعد CLUMOSS الشركات الناشئة والمستثمرين؟",
+                "text": "نعم — تمكّن CLUMOSS الشركات الناشئة، والمؤسسين، والمستثمرين من خلال توفير الوصول إلى بنيتها التحتية للذكاء الاصطناعي وأطر الأتمتة.\nتحصل الشركات الناشئة على تطوير منتجات أسرع، وتكاليف مخفضة، وقابلية توسع أعلى، بينما يستفيد المستثمرون من النمو طويل الأجل، والعوائد المتوقعة، والدخول إلى أسواق الذكاء الاصطناعي المتوسعة.\n\nتربط CLUMOSS الفجوة بين الابتكار ونجاح الاستثمار.",
+                "followUps": [
+                    { "text": "كيف تكون CLUMOSS مربحة للمستثمرين؟", "target": "profitableForInvestors", "icon": "chart" },
+                    { "text": "لماذا يجب أن أتعاون مع CLUMOSS؟", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "كيف أحجز استشارة؟", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whyPartner": {
+                "question": "لماذا يجب أن أتعاون مع CLUMOSS؟",
+                "text": "التعاون مع CLUMOSS يعني الانضمام إلى قوة ذكاء اصطناعي جاهزة للمستقبل مبنية للنمو والهيمنة العالمية.\nالوصول إلى حلول ذكاء اصطناعي عالمية المستوى وأتمتة ذكية\nتقليل تكاليف العمالة، وزيادة الكفاءة، وتسليم المشروع بشكل أسرع\nنماذج شراكة مرنة للشركات الناشئة، والمؤسسات، والمستثمرين\nمدعومة بنظام بيئي من الابتكار بما في ذلك MistrAI، و Automata، و NeuroForgeAI\n\nCLUMOSS ليست مجرد شريك — إنها ميزتك التنافسية في ثورة الذكاء الاصطناعي.",
+                "followUps": [
+                    { "text": "هل تساعد CLUMOSS الشركات الناشئة والمستثمرين؟", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "كيف تكون CLUMOSS مفيدة للعملاء؟", "target": "clientBenefits", "icon": "star" },
+                    { "text": "كيف أحجز استشارة؟", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "clientBenefits": {
+                "question": "كيف تكون CLUMOSS مفيدة للعملاء؟",
+                "text": "يستفيد العملاء من:\nتقليل تكاليف التشغيل\nذكاء اتخاذ القرارات المستند إلى البيانات\nأتمتة العمليات\nنشر الذكاء الاصطناعي المخصص\nقابلية التوسع الشاملة مع الأمان\nتضمن CLUMOSS الراحة، والمرونة، والربحية عبر كل تنفيذ.",
+                "followUps": [
+                    { "text": "لماذا يجب أن أتعاون مع CLUMOSS؟", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "هل يمكن لـ CLUMOSS التكامل مع أنظمتي الحالية؟", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "ما مدى أمان منتجات CLUMOSS؟", "target": "productSecurity", "icon": "lock" }
+                ]
+            },
+            "profitableForInvestors": {
+                "question": "كيف تكون CLUMOSS مربحة للمستثمرين؟",
+                "text": "تعمل CLUMOSS على نظام بيئي للذكاء الاصطناعي قائم على الاشتراك، مما يضمن إيرادات متكررة متوقعة ونمو مستدام.\nقابلية توسع SaaS عالية الهامش\nتوسيع القطاعات B2B، B2C، و D2C\nالوصول إلى أسواق الذكاء الاصطناعي من الجيل التالي مع اعتماد متسارع\nفرص تكامل مؤسسي عالمي\n\nبالنسبة للمستثمرين، تمثل CLUMOSS نظامًا بيئيًا للذكاء الاصطناعي مدفوعًا بالابتكار وعالي العائد مبنيًا للقيمة طويلة الأجل.",
+                "followUps": [
+                    { "text": "هل تساعد CLUMOSS الشركات الناشئة والمستثمرين؟", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "لماذا يجب أن أتعاون مع CLUMOSS؟", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "ما الذي يجعل CLUMOSS مختلفة؟", "target": "whatMakesDifferent", "icon": "trophy" }
+                ]
+            },
+            "whatMakesDifferent": {
+                "question": "ما الذي يجعل CLUMOSS مختلفة؟",
+                "text": "تجمع CLUMOSS بين تطوير الذكاء الاصطناعي كامل المكدس، والأتمتة، والذكاء في التصميم — مما يجعلها واحدة من الأنظمة البيئية القليلة القادرة على تقديم تحول ذكاء اصطناعي شامل تحت سقف واحد.",
+                "followUps": [
+                    { "text": "لماذا يجب أن أتعاون مع CLUMOSS؟", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "كيف تكون CLUMOSS مفيدة للعملاء؟", "target": "clientBenefits", "icon": "star" },
+                    { "text": "ما نوع شركة CLUMOSS؟", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "systemIntegration": {
+                "question": "هل يمكن لـ CLUMOSS التكامل مع أنظمتي الحالية؟",
+                "text": "نعم! أطر الذكاء الاصطناعي والأتمتة لدينا قائمة على API ومتكاملة بالكامل — تتصل بسهولة مع أنظمة CRM، وقواعد البيانات، وأنظمة ERP، أو أي بنية تحتية مؤسسية حالية.",
+                "followUps": [
+                    { "text": "كيف تكون CLUMOSS مفيدة للعملاء؟", "target": "clientBenefits", "icon": "star" },
+                    { "text": "ما مدى أمان منتجات CLUMOSS؟", "target": "productSecurity", "icon": "lock" },
+                    { "text": "كيف أحجز استشارة؟", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "productSecurity": {
+                "question": "ما مدى أمان منتجات CLUMOSS؟",
+                "text": "نتبع بروتوكولات أمان بيانات على مستوى المؤسسات، بما في ذلك التشفير، وضوابط وصول المستخدم، والامتثال لمعايير GDPR و ISO — مما يضمن بقاء بياناتك آمنة في جميع الأوقات.",
+                "followUps": [
+                    { "text": "هل يمكن لـ CLUMOSS التكامل مع أنظمتي الحالية؟", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "كيف تكون CLUMOSS مفيدة للعملاء؟", "target": "clientBenefits", "icon": "star" },
+                    { "text": "ما هي الحلول التي تقدمها CLUMOSS؟", "target": "solutions", "icon": "sparkles" }
+                ]
+            }
+        },
+        "solutions": [
+            { "text": "الذكاء الاصطناعي الوكيلي", "url": "/services/agentic-ai", "icon": "robot" },
+            { "text": "تحليل البيانات والتعلم الآلي", "url": "/services/data-analytics", "icon": "chart" },
+            { "text": "أتمتة تدفق العمل", "url": "/services/automation", "icon": "zap" },
+            { "text": "تطوير الذكاء الاصطناعي التوليدي كامل المكدس", "url": "/services/generative-ai", "icon": "sparkles" },
+            { "text": "وكلاء الذكاء الاصطناعي المعززة بـ MCP وتنسيقها", "url": "/services/mcp-agents", "icon": "link" },
+            { "text": "تصميم واجهة مستخدم/تجربة مستخدم من الجيل التالي", "url": "/services/ui-ux", "icon": "palette" },
+            { "text": "حلول النماذج اللغوية الكبيرة المعدلة بدقة", "url": "/services/custom-models", "icon": "brain" },
+            { "text": "حماية البيانات والأمان", "url": "/services/security", "icon": "lock" },
+            { "text": "تطوير الويب المؤسسي", "url": "/services/web-dev", "icon": "globe" },
+            { "text": "وكلاء الصوت الحواري", "url": "/services/voice-ai", "icon": "microphone" }
+        ],
+        "industries": [
+            { "text": "الرعاية الصحية", "url": "/technologies/healthcare", "icon": "hospital" },
+            { "text": "الدفاع", "url": "/technologies/defense", "icon": "shield" },
+            { "text": "التصنيع", "url": "/technologies/manufacturing", "icon": "factory" },
+            { "text": "العقارات", "url": "/technologies/real-estate", "icon": "home" },
+            { "text": "الحكومة", "url": "/technologies/government", "icon": "building" },
+            { "text": "التجارة الإلكترونية والتجزئة", "url": "/technologies/ecommerce", "icon": "shopping-bag" },
+            { "text": "الزراعة", "url": "/technologies/agriculture", "icon": "seedling" },
+            { "text": "التعليم", "url": "/technologies/education", "icon": "graduation-cap" },
+            { "text": "الهجرة", "url": "/technologies/immigration", "icon": "passport" },
+            { "text": "الرياضة واللياقة البدنية", "url": "/technologies/sports-fitness", "icon": "dumbbell" },
+            { "text": "التكنولوجيا المالية", "url": "/technologies/fintech", "icon": "credit-card" },
+            { "text": "البنوك والتمويل", "url": "/technologies/banking-finance", "icon": "bank" },
+            { "text": "المبيعات", "url": "/technologies/sales", "icon": "chart-line" },
+            { "text": "الموسيقى والترفيه", "url": "/technologies/music-entertainment", "icon": "music" },
+            { "text": "القانون", "url": "/technologies/legal", "icon": "gavel" }
+        ],
+        "buttons": {
+            "callUs": "اتصل بنا",
+            "emailUs": "راسلنا بالبريد",
+            "bookNow": "احجز الآن",
+            "yesRedirect": "نعم، أعد توجيهي",
+            "notNow": "ليس الآن",
+            "viewTechnologies": "نعم، أرني",
+            "declineTechnologies": "لا، شكرًا"
+        }
+    },
+
     "terms": {
         "title": "شروط الاستخدام",
         "sections": {

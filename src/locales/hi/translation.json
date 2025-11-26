@@ -36,7 +36,7 @@
             { "name": "इंस्टाग्राम", "href": "#" }
         ],
         "copyright": {
-            "text": "क्लमॉस {year}",
+            "text": "क्लमॉस 2024",
             "designedBy": "क्लमॉस द्वारा डिज़ाइन, विकसित और रखरखाव किया गया"
         }
     },
@@ -47,6 +47,12 @@
             { "text": "उत्पादों का अन्वेषण करें" },
             { "text": "हमसे संपर्क करें" }
         ]
+    },
+
+    "serhead": {
+        "solutionsHeading": "समाधान",
+        "moreButton": "और",
+        "servicesPageHeading": "हमारी विविध सेवाओं की श्रृंखला"
     },
     "about": {
         "title": "क्लमॉस के बारे में",
@@ -938,6 +944,377 @@
             }
         }
     },
+
+    "chatbot": {
+        "title": "CLUMOSS AI",
+        "subtitle": "कार्यकारी सहायक",
+        "placeholder": "मुझसे कुछ भी पूछें...",
+        "thinking": "सोच रहा है...",
+        "speaking": "बोल रहा है...",
+        "listening": "सुन रहा है...",
+        "stopSpeaking": "बोलना बंद करें",
+        "closeAssistant": "सहायक बंद करें",
+        "startVoice": "वॉइस इनपुट शुरू करें",
+        "stopVoice": "वॉइस इनपुट बंद करें",
+        "sendMessage": "संदेश भेजें",
+        "cancelGeneration": "उत्तर जनरेशन रद्द करें",
+        "greeting": "नमस्ते और CLUMOSS में आपका स्वागत है — जहाँ नवाचार बुद्धिमत्ता से मिलता है! पहली बार आए हैं या कुछ खास ढूंढ रहे हैं?",
+        "reminder": "नमस्ते, क्या आप अभी भी यहाँ हैं? आप जो जानना चाहते हैं पूछ सकते हैं या बस सवाल या लिखकर पता कर सकते हैं",
+        "instantResponses": {
+            "greetingHi": {
+                "question": "नमस्ते, हाय, हेलो",
+                "text": "नमस्ते और CLUMOSS में आपका स्वागत है — जहाँ नवाचार बुद्धिमत्ता से मिलता है! पहली बार आए हैं या कुछ खास ढूंढ रहे हैं?",
+                "followUps": [
+                    { "text": "आप क्या कर सकते हैं?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "आप कौन हैं?", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "greetingTime": {
+                "question": "सुप्रभात, शुभ संध्या, नमस्कार",
+                "text": "CLUMOSS की ओर से अभिवादन, क्या आपको किसी खास चीज़ में मदद चाहिए?",
+                "followUps": [
+                    { "text": "आप क्या कर सकते हैं?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "आप कौन हैं?", "target": "whoAreYou", "icon": "waving-hand" }
+                ]
+            },
+            "whoAreYou": {
+                "question": "आप कौन हैं",
+                "text": "मैं CLUMOSS AI सहायक हूँ, MistrAI (CLUMOSS की मुख्य सहायक कंपनी) द्वारा विकसित — CLUMOSS, उसकी सहायक कंपनियों, उत्पादों और सेवाओं के बारे में आपको मार्गदर्शन देने के लिए यहाँ हूँ।",
+                "followUps": [
+                    { "text": "आप क्या कर सकते हैं?", "target": "whatDoYouDo", "icon": "robot" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "whatDoYouDo": {
+                "question": "आप क्या कर सकते हैं",
+                "text": "मैं क्या कर सकता हूँ\n\nCLUMOSS इकोसिस्टम में आपका मार्गदर्शन:\nCLUMOSS, उसकी सहायक कंपनियाँ — MistrAI और NeuroForgeAI — और हम सभी उद्योगों में AI को कैसे क्रांतिकारी बना रहे हैं, जानें।\n\nव्यावसायिक प्रभाव दिखाएँ:\nहमारे समाधान आपके व्यवसाय को तेज़, स्मार्ट और लागत-कुशल कैसे बनाते हैं — श्रम लागत कम और उत्पादकता बढ़ाएँ।\n\nहमारी टीम से जोड़ें:\nमीटिंग या परामर्श आसानी से बुक करें ताकि CLUMOSS आपको स्मार्ट ऑटोमेशन और नवाचार के साथ स्केल करने में कैसे मदद कर सकता है, जान सकें।",
+                "followUps": [
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS की सहायक कंपनियाँ क्या हैं?", "target": "whatAreSubsidiaries", "icon": "building" },
+                    { "text": "परामर्श कैसे बुक करें?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whatIsClumoss": {
+                "question": "CLUMOSS क्या है?",
+                "text": "CLUMOSS एक हाइब्रिड AI कंपनी है जो उन्नत जेनरेटिव AI SaaS उत्पाद, ऑटोमेटेड वर्कफ़्लो, प्लेटफ़ॉर्म और स्मार्ट बिज़नेस समाधान बनाती है। यह MistrAI और NeuroForgeAI की मूल कंपनी है — डिजिटल और फिजिकल AI डोमेन में विशेषज्ञ दो सहायक कंपनियाँ। साथ में, वे नवाचार, स्केलेबिलिटी और वास्तविक दुनिया के प्रभाव पर केंद्रित एक पूर्ण AI इकोसिस्टम बनाते हैं।",
+                "followUps": [
+                    { "text": "CLUMOSS का पूरा रूप क्या है?", "target": "fullFormClumoss", "icon": "magnifying-glass" },
+                    { "text": "CLUMOSS की स्थापना किसने की?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS कब स्थापित हुई?", "target": "whenEstablished", "icon": "calendar" }
+                ]
+            },
+            "fullFormClumoss": {
+                "question": "CLUMOSS का पूरा रूप क्या है?",
+                "text": "CLUMOSS का पूरा रूप है \"Cluster of Multi Organizations for Support & Services\"।\n\nयह कई विशेषज्ञ संस्थाओं का एकीकृत इकोसिस्टम है जो एक साथ काम करती हैं ताकि अत्याधुनिक AI उत्पाद, एंटरप्राइज़ समाधान और ऑटोमेशन सेवाएँ प्रदान कर सकें — सभी एक शक्तिशाली छत के नीचे नवाचार, दक्षता और सभी उद्योगों में उत्कृष्टता सुनिश्चित करने के लिए।",
+                "followUps": [
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS की स्थापना किसने की?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS की सहायक कंपनियाँ क्या हैं?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whoFoundedClumoss": {
+                "question": "CLUMOSS की स्थापना किसने की, CLUMOSS का संस्थापक/मालिक कौन है",
+                "text": "CLUMOSS की स्थापना करण भट्ट ने की, जो एक भारतीय टेक उद्यमी और EDM म्यूज़िक प्रोड्यूसर हैं। वर्तमान में वे CLUMOSS और उसकी सहायक कंपनियों MistrAI और NeuroForgeAI के पूर्ण मालिक हैं।",
+                "followUps": [
+                    { "text": "CLUMOSS कब स्थापित हुई?", "target": "whenEstablished", "icon": "calendar" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS की सहायक कंपनियाँ क्या हैं?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whenEstablished": {
+                "question": "CLUMOSS कब स्थापित हुई",
+                "text": "CLUMOSS की स्थापना 18 जुलाई 2023 को हुई",
+                "followUps": [
+                    { "text": "CLUMOSS की स्थापना किसने की?", "target": "whoFoundedClumoss", "icon": "person" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" },
+                    { "text": "CLUMOSS कौन-से समाधान प्रदान करता है?", "target": "solutions", "icon": "sparkles" }
+                ]
+            },
+            "solutions": {
+                "question": "CLUMOSS कौन-से समाधान प्रदान करता है? क्या प्रकार के समाधान प्रदान करते हैं? CLUMOSS कौन-सी सेवाएँ प्रदान करता है",
+                "text": "CLUMOSS AI-आधारित समाधानों का एक व्यापक पोर्टफोलियो प्रदान करता है जो सभी उद्योगों में विविध व्यावसायिक चुनौतियों का समाधान करने के लिए डिज़ाइन किए गए हैं। यहाँ हमारे मुख्य ऑफरिंग्स का संगठित अवलोकन है:\n\nमुख्य AI समाधान:\n\n1) एजेंटिक AI\n2) डेटा एनालिटिक्स & मशीन लर्निंग\n3) वर्कफ़्लो ऑटोमेशन\n4) फुल-स्टैक जेनरेटिव AI डेवलपमेंट\n5) MCP-संचालित AI एजेंट्स & ऑर्केस्ट्रेशन\n6) नेक्स्ट-जेन UI/UX डिज़ाइन\n7) फाइन-ट्यून्ड LLM समाधान\n8) डेटा प्रोटेक्शन & सिक्योरिटी\n9) एंटरप्राइज़ वेब डेवलपमेंट\n10) कन्वर्सेशनल वॉइस एजेंट्स",
+                "showSolutions": true,
+                "followUps": [
+                    { "text": "आप किन उद्योगों की सेवा करते हैं?", "target": "industries", "icon": "globe" },
+                    { "text": "CLUMOSS किस प्रकार की कंपनी है?", "target": "clumossCompanyType", "icon": "question" },
+                    { "text": "क्या आप मुझे समाधान पेज दिखा सकते हैं?", "target": "redirectSolutions", "icon": "arrow-right" }
+                ]
+            },
+            "industries": {
+                "question": "आप किन डोमेन या सेक्टरों की सेवा करते हैं? आप किसे सेवा देते हैं, कौन-सी सेवाएँ प्रदान करते हैं? किन क्षेत्रों में सेवाएँ प्रदान करते हैं?",
+                "text": "स्वास्थ्य सेवा\nरक्षा\nनिर्माण\nरियल एस्टेट\nसरकार\nई-कॉमर्स & रिटेल\nकृषि\nशिक्षा\nआप्रवासन\nखेल & फिटनेस\nफिनटेक\nबैंकिंग & फाइनेंस\nबिक्री\nसंगीत & मनोरंजन\nकानूनी",
+                "showIndustries": true,
+                "followUps": [
+                    { "text": "CLUMOSS कौन-से समाधान प्रदान करता है?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "क्या आप मुझे सेवाएँ पेज दिखा सकते हैं?", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?", "target": "clientBenefits", "icon": "star" }
+                ]
+            },
+            "hasSubsidiaries": {
+                "question": "क्या CLUMOSS के पास सहायक कंपनियाँ हैं?",
+                "text": "हाँ, CLUMOSS के पास दो मुख्य सहायक कंपनियाँ हैं — MistrAI और NeuroForgeAI।\n\nMistrAI: फुल-स्टैक जेनरेटिव AI SaaS उत्पादों, प्लेटफ़ॉर्म्स और वर्कफ़्लो ऑटोमेशन टूल्स में विशेषज्ञ — सुरक्षित, सब्स्क्रिप्शन-आधारित और ग्राहक आवश्यकताओं के अनुसार अनुकूलन योग्य।\n\nNeuroForgeAI: फिजिकल AI में विशेषज्ञ, बैकएंड लॉजिक, न्यूरल फ्रेमवर्क और स्मार्ट प्रोटोटाइप विकसित करता है जो मशीनों को अपने परिवेश को समझने, समझने और उसके साथ बातचीत करने में सक्षम बनाता है।\n\nसाथ में, वे CLUMOSS इकोसिस्टम के तहत काम करते हैं, डिजिटल और फिजिकल AI डोमेन में नवाचार को बढ़ावा देते हैं।",
+                "followUps": [
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS की सहायक कंपनियाँ क्या हैं?", "target": "whatAreSubsidiaries", "icon": "building" }
+                ]
+            },
+            "whatAreSubsidiaries": {
+                "question": "CLUMOSS की सहायक कंपनियाँ क्या हैं?",
+                "text": "CLUMOSS अपनी दो शक्तिशाली सहायक कंपनियों — MistrAI और NeuroForgeAI — के माध्यम से काम करता है — प्रत्येक CLUMOSS के एकीकृत इकोसिस्टम के तहत AI की एक अलग सीमा को आगे बढ़ा रही है।\n\nMistrAI: फुल-स्टैक जेनरेटिव AI SaaS उत्पाद, प्लेटफ़ॉर्म और वर्कफ़्लो ऑटोमेशन टूल्स विकसित करता है — सुरक्षित, सब्स्क्रिप्शन-आधारित और पूरी तरह से ग्राहक आवश्यकताओं के अनुसार अनुकूलन योग्य।\n\nNeuroForgeAI: फिजिकल AI सिस्टम के लिए बैकएंड लॉजिक, न्यूरल फ्रेमवर्क और प्रोटोटाइप बनाता है — मशीनों को बाहरी वातावरण को समझने, समझने और उसके साथ बातचीत करने में सक्षम बनाता है।\n\nसाथ में, वे CLUMOSS के नवाचार के मूल का प्रतिनिधित्व करते हैं — जहाँ डिजिटल बुद्धिमत्ता फिजिकल ऑटोमेशन से मिलती है, AI-संचालित परिवर्तन के भविष्य को आकार देती है।",
+                "followUps": [
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "क्या CLUMOSS के पास सहायक कंपनियाँ हैं?", "target": "hasSubsidiaries", "icon": "question" }
+                ]
+            },
+            "whatIsMistrAI": {
+                "question": "MistrAI क्या है",
+                "text": "MistrAI CLUMOSS की मुख्य सहायक कंपनी है, जो जेनरेटिव AI और SaaS उत्पाद विकास में विशेषज्ञ है। यह सुरक्षित, अनुकूलन योग्य और तैनाती के लिए तैयार सब्स्क्रिप्शन-आधारित AI प्लेटफ़ॉर्म बनाता है। CLUMOSS के मुख्य नवाचार हाथ के रूप में, MistrAI एंड-टू-एंड AI समाधान प्रदान करता है जो व्यावसायिक प्रक्रियाओं को स्वचालित करता है, लागत कम करता है और डेटा-संचालित निर्णय लेने को बढ़ावा देता है।",
+                "followUps": [
+                    { "text": "MistrAI कैसे काम करता है?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "क्या MistrAI उत्पाद- या सेवा-आधारित है?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "MistrAI से कैसे संपर्क करें?", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howMistrAIWorks": {
+                "question": "MistrAI कैसे काम करता है",
+                "text": "MistrAI अपने स्वयं के सब्स्क्रिप्शन-आधारित AI SaaS उत्पाद, वर्कफ़्लो ऑटोमेशन और प्लेटफ़ॉर्म विकसित करता है — सुरक्षित, स्केलेबल और अनुकूलन योग्य। ये उत्पाद तुरंत उपयोग के लिए तैयार हैं या ग्राहक की विशिष्ट आवश्यकताओं के अनुसार अनुकूलित किए जा सकते हैं।\n\nजब ग्राहकों को अतिरिक्त अनुकूलन की आवश्यकता होती है, तो MistrAI टीम उत्पाद को उनके लक्ष्यों के साथ पूरी तरह से संरेखित करने के लिए अनुकूलित और सुधारती है। जटिल या बड़े पैमाने पर संशोधनों के लिए जो MistrAI के परिचालन दायरे से परे हैं, प्रोजेक्ट को CLUMOSS के पास रणनीतिक निष्पादन और डिलीवरी के लिए बढ़ाया जाता है।",
+                "followUps": [
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "क्या MistrAI उत्पाद- या सेवा-आधारित है?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "isMistrAIProductOrService": {
+                "question": "क्या MistrAI उत्पाद- या सेवा-आधारित है?",
+                "text": "MistrAI मुख्य रूप से उत्पाद-आधारित कंपनी है जो अनुकूलन सेवाएँ भी प्रदान करती है।\n\nयह स्वामित्व वाले, सब्स्क्रिप्शन-आधारित AI SaaS उत्पाद और प्लेटफ़ॉर्म विकसित करती है — सुरक्षित, स्केलेबल और तुरंत उपयोग के लिए तैयार। हालांकि, जब ग्राहकों को अनुकूलित समाधान या एकीकरण की आवश्यकता होती है, तो MistrAI अपने सेवा हाथ को बढ़ाता है ताकि उन उत्पादों को विशिष्ट व्यावसायिक आवश्यकताओं के अनुसार अनुकूलित किया जा सके।\n\nनिष्कर्ष: MistrAI एक हाइब्रिड कंपनी है, लेकिन उसकी मुख्य पहचान उत्पाद-आधारित है।",
+                "followUps": [
+                    { "text": "MistrAI कैसे काम करता है?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" },
+                    { "text": "CLUMOSS किस प्रकार की कंपनी है?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "whatIsNeuroForgeAI": {
+                "question": "NeuroForgeAI क्या है",
+                "text": "NeuroForgeAI CLUMOSS की एक सहायक कंपनी है जो फिजिकल AI सिस्टम के लिए बैकएंड बुद्धिमत्ता विकसित करने पर केंद्रित है। यह कोर लॉजिक, न्यूरल फ्रेमवर्क और एडाप्टिव कंट्रोल तंत्र बनाता है जो मशीनों को स्वायत्त रूप से समझने, बातचीत करने और कार्य करने में सक्षम बनाता है। NeuroForgeAI अपनी नवाचारों को कार्यात्मक प्रोटोटाइप और डेमो के माध्यम से प्रस्तुत करता है, जिससे व्यवसाय वास्तविक दुनिया में AI एकीकरण का अनुभव कर सकते हैं। इसका नारा — \"हम फिजिकल AI को जो चाहिए, वही प्रदान करते हैं\" — स्मार्ट रोबोटिक्स और ऑटोमेशन के पीछे के दिमाग को शक्ति देने की उसकी मिशन को परिभाषित करता है।",
+                "followUps": [
+                    { "text": "NeuroForgeAI कैसे काम करता है?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "क्या NeuroForgeAI उत्पाद- या सेवा-आधारित है?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "NeuroForgeAI से कैसे संपर्क करें?", "target": "contactNeuroForgeAI", "icon": "phone" }
+                ]
+            },
+            "howNeuroForgeAIWorks": {
+                "question": "NeuroForgeAI कैसे काम करता है",
+                "text": "NeuroForgeAI फिजिकल AI सिस्टम की बैकएंड बुद्धिमत्ता को संचालित करता है — मूल रूप से वास्तविक दुनिया की मशीनों को चलाने वाला दिमाग। यह कोर लॉजिक, न्यूरल कंट्रोल और निर्णय लेने की प्रणालियाँ विकसित करता है जो किसी फिजिकल बॉडी या डिवाइस को अपने परिवेश को सटीक और स्वायत्त रूप से समझने, पहचानने, बातचीत करने और प्रतिक्रिया देने में सक्षम बनाता है।\n\nनारा: \"हम फिजिकल AI को जो चाहिए, वही प्रदान करते हैं।\"",
+                "followUps": [
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "क्या NeuroForgeAI उत्पाद- या सेवा-आधारित है?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "isNeuroForgeAIProductOrService": {
+                "question": "क्या NeuroForgeAI उत्पाद- या सेवा-आधारित है?",
+                "text": "NeuroForgeAI एक हाइब्रिड कंपनी है, जो फिजिकल AI डोमेन में उत्पाद विकास और सेवा वितरण दोनों को जोड़ती है।\n\nयह मुख्य रूप से बैकएंड लॉजिक और न्यूरल फ्रेमवर्क विकसित करने पर केंद्रित है जो फिजिकल AI सिस्टम के लिए दिमाग के रूप में कार्य करता है — मशीनों को अपने परिवेश को बुद्धिमानी से समझने, बातचीत करने और प्रतिक्रिया देने में सक्षम बनाता है।\nNeuroForgeAI अपनी नवाचारों को प्रोटोटाइप के माध्यम से प्रस्तुत करता है, जिन्हें व्यवसाय उपयोग या अपने स्वयं के सिस्टम में एकीकृत कर सकते हैं।\n\nनिष्कर्ष: NeuroForgeAI अनुकूलन योग्य प्रोटोटाइप (उत्पाद) और अनुकूलित AI लॉजिक एकीकरण (सेवा) दोनों प्रदान करता है — इसे स्मार्ट फिजिकल ऑटोमेशन के क्षेत्र में पूर्ण हाइब्रिड बनाता है।",
+                "followUps": [
+                    { "text": "NeuroForgeAI कैसे काम करता है?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" },
+                    { "text": "CLUMOSS किस प्रकार की कंपनी है?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "contactClumoss": {
+                "question": "आपसे कैसे संपर्क करें? CLUMOSS से कैसे संपर्क करें?",
+                "text": "आप हमसे संपर्क कर सकते हैं:\n+91 7622817924\ninfo@clumoss.com",
+                "showContactButtons": true,
+                "showContactRedirect": true,
+                "followUps": [
+                    { "text": "MistrAI से कैसे संपर्क करें?", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "NeuroForgeAI से कैसे संपर्क करें?", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "क्या आप मुझे संपर्क पेज पर ले जा सकते हैं?", "target": "redirectContact", "icon": "arrow-right" }
+                ]
+            },
+            "contactMistrAI": {
+                "question": "MistrAI से कैसे संपर्क करें?",
+                "text": "आप MistrAI से ईमेल द्वारा संपर्क कर सकते हैं: info@mistrai.com या +91 7622817924 पर",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "NeuroForgeAI से कैसे संपर्क करें?", "target": "contactNeuroForgeAI", "icon": "phone" },
+                    { "text": "CLUMOSS से कैसे संपर्क करें?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "MistrAI क्या है?", "target": "whatIsMistrAI", "icon": "brain" }
+                ]
+            },
+            "contactNeuroForgeAI": {
+                "question": "NeuroForgeAI से कैसे संपर्क करें?",
+                "text": "आप NeuroForgeAI से ईमेल द्वारा संपर्क कर सकते हैं: info@neuroforgeai.com या +91 7622817924 पर",
+                "showContactButtons": true,
+                "followUps": [
+                    { "text": "MistrAI से कैसे संपर्क करें?", "target": "contactMistrAI", "icon": "phone" },
+                    { "text": "CLUMOSS से कैसे संपर्क करें?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "NeuroForgeAI क्या है?", "target": "whatIsNeuroForgeAI", "icon": "robot" }
+                ]
+            },
+            "bookConsultation": {
+                "question": "परामर्श कैसे बुक करें?",
+                "text": "आप अपनी पसंदीदा तारीख और समय साझा करके या सीधे \"अभी बुक करें\" पर क्लिक करके परामर्श बुक कर सकते हैं — मैं आपको हमारी बुकिंग पेज पर ले जाऊँगा।",
+                "showScheduleButton": true,
+                "followUps": [
+                    { "text": "CLUMOSS से कैसे संपर्क करें?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "CLUMOSS के साथ साझेदारी क्यों करें?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "क्या CLUMOSS स्टार्टअप्स और निवेशकों की मदद करता है?", "target": "helpStartupsInvestors", "icon": "rocket" }
+                ]
+            },
+            "redirectSolutions": {
+                "question": "मुझे समाधान पेज पर रीडायरेक्ट करें",
+                "text": "ज़रूर! मैं आपको हमारे समाधान पेज पर रीडायरेक्ट कर रहा हूँ जहाँ आप हमारे सभी AI ऑफरिंग्स और सेवाओं का पता लगा सकते हैं।",
+                "followUps": [
+                    { "text": "CLUMOSS कौन-से समाधान प्रदान करता है?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "क्या आप मुझे सेवाएँ पेज दिखा सकते हैं?", "target": "redirectServices", "icon": "arrow-right" },
+                    { "text": "आप किन उद्योगों की सेवा करते हैं?", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectServices": {
+                "question": "मुझे सेवाएँ पेज पर रीडायरेक्ट करें",
+                "text": "बेशक! मैं आपको हमारी सेवाएँ सेक्शन पर रीडायरेक्ट कर रहा हूँ जो स्मार्ट ऑटोमेशन और AI सिस्टम का हमारा पूरा सेट दिखाता है।",
+                "followUps": [
+                    { "text": "CLUMOSS कौन-से समाधान प्रदान करता है?", "target": "solutions", "icon": "sparkles" },
+                    { "text": "क्या आप मुझे समाधान पेज दिखा सकते हैं?", "target": "redirectSolutions", "icon": "arrow-right" },
+                    { "text": "आप किन उद्योगों की सेवा करते हैं?", "target": "industries", "icon": "globe" }
+                ]
+            },
+            "redirectContact": {
+                "question": "मुझे संपर्क पेज पर रीडायरेक्ट करें",
+                "text": "बेशक! मैं आपको संपर्क पेज पर रीडायरेक्ट कर रहा हूँ ताकि आप साझेदारी या सहयोग के लिए हमारी टीम तक तुरंत पहुँच सकें।",
+                "followUps": [
+                    { "text": "CLUMOSS से कैसे संपर्क करें?", "target": "contactClumoss", "icon": "phone" },
+                    { "text": "परामर्श कैसे बुक करें?", "target": "bookConsultation", "icon": "calendar" },
+                    { "text": "MistrAI से कैसे संपर्क करें?", "target": "contactMistrAI", "icon": "phone" }
+                ]
+            },
+            "howClumossWorks": {
+                "question": "CLUMOSS कैसे काम करता है? CLUMOSS ग्राहक आवश्यकताओं और प्रोजेक्ट निष्पादन का प्रबंधन कैसे करता है?",
+                "text": "सभी नई या प्रत्यक्ष ग्राहक आवश्यकताएँ CLUMOSS द्वारा प्रबंधित और वितरित की जाती हैं, जो प्रत्येक प्रोजेक्ट को रणनीति से निष्पादन तक पूर्ण अधिकार के साथ देखरेख करता है।\n\nयदि कोई ग्राहक MistrAI के माध्यम से किसी मौजूदा उत्पाद या अनुकूलन के लिए आता है, तो MistrAI टीम इसे संभालती है। उन्नत या दायरे से बाहर की आवश्यकताओं के लिए, प्रोजेक्ट को CLUMOSS के पास रणनीतिक निष्पादन के लिए बढ़ाया जाता है। NeuroForgeAI के लिए भी यही लागू होता है — यह अपनी फिजिकल AI और रोबोटिक्स समाधान प्रबंधित करता है जब तक कि अनुरोध व्यापक एकीकरण या उच्च जटिलता की माँग न करे, तब CLUMOSS नियंत्रण लेता है।\n\nसभी मामलों में, CLUMOSS किसी भी प्रोजेक्ट का मूल्यांकन, निर्देशन और MistrAI या NeuroForgeAI को आवंटित करने की अंतिम प्राधिकारी रखता है — अपने पूरे इकोसिस्टम में उत्कृष्टता, सटीकता और निर्बाध डिलीवरी सुनिश्चित करता है।",
+                "followUps": [
+                    { "text": "MistrAI कैसे काम करता है?", "target": "howMistrAIWorks", "icon": "gear" },
+                    { "text": "NeuroForgeAI कैसे काम करता है?", "target": "howNeuroForgeAIWorks", "icon": "gear" },
+                    { "text": "CLUMOSS किस प्रकार की कंपनी है?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "clumossCompanyType": {
+                "question": "CLUMOSS किस प्रकार की कंपनी है — उत्पाद- या सेवा-आधारित?",
+                "text": "हाइब्रिड कंपनी:\nCLUMOSS एक हाइब्रिड AI और टेक्नोलॉजी कंपनी है, जो उत्पाद और सेवा दोनों के रूप में काम करती है। यह स्मार्ट AI उत्पाद बनाने के साथ-साथ दुनिया भर के ग्राहकों को पूर्ण और अनुकूलित टेक्नोलॉजी समाधान प्रदान करके नवाचार और निष्पादन को एकजुट करती है।\n\nउत्पाद-आधारित:\nअपनी सहायक कंपनियों — MistrAI और NeuroForgeAI — के माध्यम से CLUMOSS फुल-स्टैक जेनरेटिव AI SaaS उत्पाद, वर्कफ़्लो ऑटोमेशन प्लेटफ़ॉर्म और फिजिकल AI सिस्टम विकसित करता है। सभी उत्पाद सब्स्क्रिप्शन-आधारित, स्केलेबल और व्यावसायिक आवश्यकताओं के अनुसार अनुकूलन योग्य हैं।\n\nसेवा-आधारित:\nCLUMOSS ब्रांड के तहत, यह एंड-टू-एंड एंटरप्राइज़ सॉफ्टवेयर और AI समाधान प्रदान करता है — आवश्यकता विश्लेषण और डिज़ाइन से लेकर फुल-स्टैक विकास, ऑटोमेशन और तैनाती तक सब कुछ संभालता है।\n\nनिष्कर्ष:\nCLUMOSS अगली पीढ़ी की हाइब्रिड AI कंपनी है, जो उत्पाद नवाचार को अनुकूलित समाधान वितरण के साथ जोड़ती है, और प्रोजेक्ट आवश्यकताओं और डोमेन फिट के आधार पर अपनी सहायक कंपनियों — MistrAI या NeuroForgeAI — को प्रोजेक्ट आवंटित करने की अंतिम प्राधिकारी रखती है।",
+                "followUps": [
+                    { "text": "क्या MistrAI उत्पाद- या सेवा-आधारित है?", "target": "isMistrAIProductOrService", "icon": "question" },
+                    { "text": "क्या NeuroForgeAI उत्पाद- या सेवा-आधारित है?", "target": "isNeuroForgeAIProductOrService", "icon": "question" },
+                    { "text": "CLUMOSS क्या है?", "target": "whatIsClumoss", "icon": "lightbulb" }
+                ]
+            },
+            "helpStartupsInvestors": {
+                "question": "क्या CLUMOSS स्टार्टअप्स और निवेशकों की मदद करता है?",
+                "text": "हाँ — CLUMOSS अपनी AI इंफ्रास्ट्रक्चर और ऑटोमेशन फ्रेमवर्क तक पहुँच प्रदान करके स्टार्टअप्स, संस्थापकों और निवेशकों को सशक्त बनाता है।\nस्टार्टअप्स को तेज़ उत्पाद विकास, कम लागत और उच्च स्केलेबिलिटी मिलती है, जबकि निवेशक लंबी अवधि के विकास, अनुमानित रिटर्न और विस्तार करने वाले AI बाजारों तक पहुँच प्राप्त करते हैं।\n\nCLUMOSS नवाचार और निवेश सफलता के बीच की खाई को पाटता है।",
+                "followUps": [
+                    { "text": "CLUMOSS निवेशकों के लिए कैसे लाभदायक है?", "target": "profitableForInvestors", "icon": "chart" },
+                    { "text": "CLUMOSS के साथ साझेदारी क्यों करें?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "परामर्श कैसे बुक करें?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "whyPartner": {
+                "question": "CLUMOSS के साथ साझेदारी क्यों करें?",
+                "text": "CLUMOSS के साथ साझेदारी का मतलब है कि आप भविष्य-उन्मुख AI पावरहाउस में शामिल हों — विकास और वैश्विक प्रभुत्व के लिए बनाया गया।\nविश्वस्तरीय AI समाधान और स्मार्ट ऑटोमेशन तक पहुँच\nश्रम लागत में कमी, दक्षता में वृद्धि और प्रोजेक्ट डिलीवरी तेज़\nस्टार्टअप्स, उद्यमों और निवेशकों के लिए लचीले साझेदारी मॉडल\nMistrAI, Automata और NeuroForgeAI सहित नवाचार इकोसिस्टम का समर्थन\n\nCLUMOSS सिर्फ़ एक साझेदार नहीं — यह AI क्रांति में आपका प्रतिस्पर्धी लाभ है।",
+                "followUps": [
+                    { "text": "क्या CLUMOSS स्टार्टअप्स और निवेशकों की मदद करता है?", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "परामर्श कैसे बुक करें?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "clientBenefits": {
+                "question": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?",
+                "text": "ग्राहकों को मिलता है:\nपरिचालन लागत में कमी\nडेटा-संचालित निर्णय बुद्धिमत्ता\nप्रक्रिया ऑटोमेशन\nअनुकूलित AI तैनाती\nपूर्ण स्केलेबिलिटी के साथ सुरक्षा\nCLUMOSS हर कार्यान्वयन में आराम, लचीलापन और लागत-प्रभावशीलता सुनिश्चित करता है।",
+                "followUps": [
+                    { "text": "CLUMOSS के साथ साझेदारी क्यों करें?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "क्या CLUMOSS मेरे मौजूदा सिस्टम से एकीकृत हो सकता है?", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "CLUMOSS के उत्पाद कितने सुरक्षित हैं?", "target": "productSecurity", "icon": "lock" }
+                ]
+            },
+            "profitableForInvestors": {
+                "question": "CLUMOSS निवेशकों के लिए कैसे लाभदायक है?",
+                "text": "CLUMOSS सब्स्क्रिप्शन-आधारित AI इकोसिस्टम के साथ काम करता है, जो अनुमानित आवर्ती राजस्व और टिकाऊ विकास सुनिश्चित करता है।\nउच्च मार्जिन SaaS स्केलेबिलिटी\nB2B, B2C और D2C वर्टिकल में विस्तार\nअनुप्रयोग में तेज़ वृद्धि वाले अगली पीढ़ी के AI बाजारों तक पहुँच\nवैश्विक एंटरप्राइज़ एकीकरण के अवसर\n\nनिवेशकों के लिए, CLUMOSS एक नवाचार-संचालित, उच्च-रिटर्न AI इकोसिस्टम है — दीर्घकालिक मूल्य के लिए बनाया गया।",
+                "followUps": [
+                    { "text": "क्या CLUMOSS स्टार्टअप्स और निवेशकों की मदद करता है?", "target": "helpStartupsInvestors", "icon": "rocket" },
+                    { "text": "CLUMOSS के साथ साझेदारी क्यों करें?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS को क्या अलग बनाता है?", "target": "whatMakesDifferent", "icon": "trophy" }
+                ]
+            },
+            "whatMakesDifferent": {
+                "question": "CLUMOSS को क्या अलग बनाता है?",
+                "text": "CLUMOSS फुल-स्टैक AI विकास, ऑटोमेशन और डिज़ाइन बुद्धिमत्ता को जोड़ता है — एक ही छत के नीचे पूर्ण AI परिवर्तन प्रदान करने वाले कुछ इकोसिस्टम में से एक।",
+                "followUps": [
+                    { "text": "CLUMOSS के साथ साझेदारी क्यों करें?", "target": "whyPartner", "icon": "handshake" },
+                    { "text": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS किस प्रकार की कंपनी है?", "target": "clumossCompanyType", "icon": "question" }
+                ]
+            },
+            "systemIntegration": {
+                "question": "क्या CLUMOSS मेरे मौजूदा सिस्टम से एकीकृत हो सकता है?",
+                "text": "हाँ! हमारे AI और ऑटोमेशन फ्रेमवर्क API-फर्स्ट और पूरी तरह से एकीकृत हैं — CRM, डेटाबेस, ERP सिस्टम या किसी भी मौजूदा एंटरप्राइज़ इंफ्रास्ट्रक्चर से आसानी से जुड़ते हैं।",
+                "followUps": [
+                    { "text": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS के उत्पाद कितने सुरक्षित हैं?", "target": "productSecurity", "icon": "lock" },
+                    { "text": "परामर्श कैसे बुक करें?", "target": "bookConsultation", "icon": "calendar" }
+                ]
+            },
+            "productSecurity": {
+                "question": "CLUMOSS के उत्पाद कितने सुरक्षित हैं?",
+                "text": "हम एंटरप्राइज़-स्तरीय डेटा सुरक्षा प्रोटोकॉल का पालन करते हैं, जिसमें एन्क्रिप्शन, उपयोगकर्ता पहुँच नियंत्रण और GDPR तथा ISO मानकों का अनुपालन शामिल है — यह सुनिश्चित करता है कि आपका डेटा हर समय सुरक्षित रहे।",
+                "followUps": [
+                    { "text": "क्या CLUMOSS मेरे मौजूदा सिस्टम से एकीकृत हो सकता है?", "target": "systemIntegration", "icon": "plug" },
+                    { "text": "CLUMOSS ग्राहकों को कैसे लाभ पहुँचाता है?", "target": "clientBenefits", "icon": "star" },
+                    { "text": "CLUMOSS कौन-से समाधान प्रदान करता है?", "target": "solutions", "icon": "sparkles" }
+                ]
+            }
+        },
+        "solutions": [
+            { "text": "एजेंटिक AI", "url": "/services/agentic-ai", "icon": "robot" },
+            { "text": "डेटा एनालिटिक्स & मशीन लर्निंग", "url": "/services/data-analytics", "icon": "chart" },
+            { "text": "वर्कफ़्लो ऑटोमेशन", "url": "/services/automation", "icon": "zap" },
+            { "text": "फुल-स्टैक जेनरेटिव AI डेवलपमेंट", "url": "/services/generative-ai", "icon": "sparkles" },
+            { "text": "MCP-संचालित AI एजेंट्स & ऑर्केस्ट्रेशन", "url": "/services/mcp-agents", "icon": "link" },
+            { "text": "नेक्स्ट-जेन UI/UX डिज़ाइन", "url": "/services/ui-ux", "icon": "palette" },
+            { "text": "फाइन-ट्यून्ड LLM समाधान", "url": "/services/custom-models", "icon": "brain" },
+            { "text": "डेटा प्रोटेक्शन & सिक्योरिटी", "url": "/services/security", "icon": "lock" },
+            { "text": "एंटरप्राइज़ वेब डेवलपमेंट", "url": "/services/web-dev", "icon": "globe" },
+            { "text": "कन्वर्सेशनल वॉइस एजेंट्स", "url": "/services/voice-ai", "icon": "microphone" }
+        ],
+        "industries": [
+            { "text": "स्वास्थ्य सेवा", "url": "/technologies/healthcare", "icon": "hospital" },
+            { "text": "रक्षा", "url": "/technologies/defense", "icon": "shield" },
+            { "text": "निर्माण", "url": "/technologies/manufacturing", "icon": "factory" },
+            { "text": "रियल एस्टेट", "url": "/technologies/real-estate", "icon": "home" },
+            { "text": "सरकार", "url": "/technologies/government", "icon": "building" },
+            { "text": "ई-कॉमर्स & रिटेल", "url": "/technologies/ecommerce", "icon": "shopping-bag" },
+            { "text": "कृषि", "url": "/technologies/agriculture", "icon": "seedling" },
+            { "text": "शिक्षा", "url": "/technologies/education", "icon": "graduation-cap" },
+            { "text": "आप्रवासन", "url": "/technologies/immigration", "icon": "passport" },
+            { "text": "खेल & फिटनेस", "url": "/technologies/sports-fitness", "icon": "dumbbell" },
+            { "text": "फिनटेक", "url": "/technologies/fintech", "icon": "credit-card" },
+            { "text": "बैंकिंग & फाइनेंस", "url": "/technologies/banking-finance", "icon": "bank" },
+            { "text": "बिक्री", "url": "/technologies/sales", "icon": "chart-line" },
+            { "text": "संगीत & मनोरंजन", "url": "/technologies/music-entertainment", "icon": "music" },
+            { "text": "कानूनी", "url": "/technologies/legal", "icon": "gavel" }
+        ],
+        "buttons": {
+            "callUs": "हमें कॉल करें",
+            "emailUs": "हमें ईमेल करें",
+            "bookNow": "अभी बुक करें",
+            "yesRedirect": "हाँ, मुझे रीडायरेक्ट करें",
+            "notNow": "अभी नहीं",
+            "viewTechnologies": "हाँ, दिखाएँ",
+            "declineTechnologies": "नहीं, धन्यवाद"
+        }
+    },
+
     "terms": {
         "title": "नियम और शर्तें",
         "sections": {

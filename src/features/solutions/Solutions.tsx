@@ -44,7 +44,7 @@ export default function Solutions() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>{t('solutionsHeading')}</h2>
+      <h2 className={styles.heading}>{t('serhead.solutionsHeading')}</h2>
       <div className={styles.grid}>
         {displayedSolutions.map((sol, idx) => (
           <SolutionCard
@@ -61,7 +61,7 @@ export default function Solutions() {
       </div>
 
       <div className={styles.moreButtonWrapper}>
-        <Button text={t('moreButton')} onClick={handleMoreClick} />
+        <Button text={t('serhead.moreButton')} onClick={handleMoreClick} />
       </div>
     </section>
   );
