@@ -90,7 +90,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/send-email', {
+      const response = await fetch('https://contat-email-backend.vercel.app/api/send-email', {
         method: 'POST',
         body: submitData,
       });

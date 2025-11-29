@@ -87,9 +87,9 @@ export default function ServicesPage() {
                 <div className="text-4xl mb-4 relative z-10">{sol.icon}</div>
                 <h3 className="text-xl font-bold mb-4 relative z-10">{sol.title}</h3>
                 <p className="text-base text-white/80 mb-6 relative z-10">{sol.description}</p>
-                <button className="bg-white/10 text-white py-2 px-5 rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-white/20 relative z-10 mt-auto">
+                {/* <button className="bg-white/10 text-white py-2 px-5 rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-white/20 relative z-10 mt-auto">
                   {sol.button}
-                </button>
+                </button> */}
               </motion.div>
             ))}
           </div>

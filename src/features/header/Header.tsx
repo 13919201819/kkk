@@ -10,7 +10,6 @@ import styles from './header.module.css';
 const navItems = [
   { name: 'header.home', href: '/' },
   { name: 'header.about', href: '/about' },
-  { name: 'header.projects', href: '/projects' },
   { name: 'header.solutions', href: '/services' },
   { name: 'header.whoWeServe', href: '/technologies' },
   { name: 'header.contact', href: '/contact' },
