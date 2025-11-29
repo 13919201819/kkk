@@ -958,6 +958,8 @@
         "redirecting": "Redirecting",
         "startVoice": "Start voice input",
         "confirmRedirect": "Confirm Redirect",
+        "confirmRedirectQuestion": "Confirm Redirect",
+        "redirectCanceled": "Redirect Canceled",
         "viewsolutions": "View All Solutions",
         "viewindustries": "Domains We Server",
         "stopVoice": "Stop voice input",
