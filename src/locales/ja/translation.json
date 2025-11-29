@@ -1276,15 +1276,15 @@
         },
         "solutions": [
             { "text": "エージェントAI", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "データ分析 & 機械学習", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "ワークフローオートメーション", "url": "/services/automation", "icon": "zap" },
-            { "text": "フルスタック生成AI開発", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP駆動AIエージェント & オーケストレーション", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "次世代UI/UXデザイン", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "ファインチューニングLLMソリューション", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "データ保護 & セキュリティ", "url": "/services/security", "icon": "lock" },
-            { "text": "エンタープライズWeb開発", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "会話型ボイスエージェント", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "データ分析 & 機械学習", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "ワークフローオートメーション", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "フルスタック生成AI開発", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP駆動AIエージェント & オーケストレーション", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "次世代UI/UXデザイン", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "ファインチューニングLLMソリューション", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "データ保護 & セキュリティ", "url": "/services/data-security", "icon": "lock" },
+            { "text": "エンタープライズWeb開発", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "会話型ボイスエージェント", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "医療", "url": "/technologies/healthcare", "icon": "hospital" },

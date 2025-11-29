@@ -955,7 +955,11 @@
         "listening": "Listening...",
         "stopSpeaking": "Stop Speaking",
         "closeAssistant": "Close Assistant",
+        "redirecting": "Redirecting",
         "startVoice": "Start voice input",
+        "confirmRedirect": "Confirm Redirect",
+        "viewsolutions": "View All Solutions",
+        "viewindustries": "Domains We Server",
         "stopVoice": "Stop voice input",
         "sendMessage": "Send message",
         "cancelGeneration": "Cancel response generation",
@@ -1278,15 +1282,15 @@
         },
         "solutions": [
             { "text": "Agentic AI", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "Data Analytics & Machine Learning", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "Workflow Automation", "url": "/services/automation", "icon": "zap" },
-            { "text": "Full-Stack Generative AI Development", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP-Powered AI Agents & Orchestration", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "Next-Gen UI/UX Design", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "Fine-Tuned LLM Solutions", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "Data Protection & Security", "url": "/services/security", "icon": "lock" },
-            { "text": "Enterprise Web Development", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "Conversational Voice Agents", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "Data Analytics & Machine Learning", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "Workflow Automation", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "Full-Stack Generative AI Development", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP-Powered AI Agents & Orchestration", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "Next-Gen UI/UX Design", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "Fine-Tuned LLM Solutions", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "Data Protection & Security", "url": "/services/data-security", "icon": "lock" },
+            { "text": "Enterprise Web Development", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "Conversational Voice Agents", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "Healthcare", "url": "/technologies/healthcare", "icon": "hospital" },
@@ -1312,7 +1316,10 @@
             "yesRedirect": "Yes, redirect me",
             "notNow": "Not now",
             "viewTechnologies": "Yes, show me",
-            "declineTechnologies": "No, thanks"
+            "viewServices": "View Solutions",
+            "contactUs": "Contact Us",
+            "declineTechnologies": "No, thanks",
+            "redirecting": "Redirecting"
         }
     },
 

@@ -1277,15 +1277,15 @@
         },
         "solutions": [
             { "text": "एजेंटिक AI", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "डेटा एनालिटिक्स & मशीन लर्निंग", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "वर्कफ़्लो ऑटोमेशन", "url": "/services/automation", "icon": "zap" },
-            { "text": "फुल-स्टैक जेनरेटिव AI डेवलपमेंट", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP-संचालित AI एजेंट्स & ऑर्केस्ट्रेशन", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "नेक्स्ट-जेन UI/UX डिज़ाइन", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "फाइन-ट्यून्ड LLM समाधान", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "डेटा प्रोटेक्शन & सिक्योरिटी", "url": "/services/security", "icon": "lock" },
-            { "text": "एंटरप्राइज़ वेब डेवलपमेंट", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "कन्वर्सेशनल वॉइस एजेंट्स", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "डेटा एनालिटिक्स & मशीन लर्निंग", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "वर्कफ़्लो ऑटोमेशन", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "फुल-स्टैक जेनरेटिव AI डेवलपमेंट", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP-संचालित AI एजेंट्स & ऑर्केस्ट्रेशन", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "नेक्स्ट-जेन UI/UX डिज़ाइन", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "फाइन-ट्यून्ड LLM समाधान", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "डेटा प्रोटेक्शन & सिक्योरिटी", "url": "/services/data-security", "icon": "lock" },
+            { "text": "एंटरप्राइज़ वेब डेवलपमेंट", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "कन्वर्सेशनल वॉइस एजेंट्स", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "स्वास्थ्य सेवा", "url": "/technologies/healthcare", "icon": "hospital" },

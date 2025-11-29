@@ -1278,15 +1278,15 @@
         },
         "solutions": [
             { "text": "IA Agentica", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "Análisis de Datos y Machine Learning", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "Automatización de Flujos de Trabajo", "url": "/services/automation", "icon": "zap" },
-            { "text": "Desarrollo Full-Stack de IA Generativa", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "Agentes IA con MCP y Orquestación", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "Diseño UI/UX de Próxima Generación", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "Soluciones LLM Ajustadas", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "Protección y Seguridad de Datos", "url": "/services/security", "icon": "lock" },
-            { "text": "Desarrollo Web Empresarial", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "Agentes de Voz Conversacionales", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "Análisis de Datos y Machine Learning", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "Automatización de Flujos de Trabajo", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "Desarrollo Full-Stack de IA Generativa", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "Agentes IA con MCP y Orquestación", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "Diseño UI/UX de Próxima Generación", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "Soluciones LLM Ajustadas", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "Protección y Seguridad de Datos", "url": "/services/data-security", "icon": "lock" },
+            { "text": "Desarrollo Web Empresarial", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "Agentes de Voz Conversacionales", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "Salud", "url": "/technologies/healthcare", "icon": "hospital" },

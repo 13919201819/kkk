@@ -1278,15 +1278,15 @@
         },
         "solutions": [
             { "text": "الذكاء الاصطناعي الوكيلي", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "تحليل البيانات والتعلم الآلي", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "أتمتة تدفق العمل", "url": "/services/automation", "icon": "zap" },
-            { "text": "تطوير الذكاء الاصطناعي التوليدي كامل المكدس", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "وكلاء الذكاء الاصطناعي المعززة بـ MCP وتنسيقها", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "تصميم واجهة مستخدم/تجربة مستخدم من الجيل التالي", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "حلول النماذج اللغوية الكبيرة المعدلة بدقة", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "حماية البيانات والأمان", "url": "/services/security", "icon": "lock" },
-            { "text": "تطوير الويب المؤسسي", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "وكلاء الصوت الحواري", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "تحليل البيانات والتعلم الآلي", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "أتمتة تدفق العمل", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "تطوير الذكاء الاصطناعي التوليدي كامل المكدس", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "وكلاء الذكاء الاصطناعي المعززة بـ MCP وتنسيقها", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "تصميم واجهة مستخدم/تجربة مستخدم من الجيل التالي", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "حلول النماذج اللغوية الكبيرة المعدلة بدقة", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "حماية البيانات والأمان", "url": "/services/data-security", "icon": "lock" },
+            { "text": "تطوير الويب المؤسسي", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "وكلاء الصوت الحواري", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "الرعاية الصحية", "url": "/technologies/healthcare", "icon": "hospital" },

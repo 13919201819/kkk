@@ -1279,15 +1279,15 @@
         },
         "solutions": [
             { "text": "Agentische KI", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "Datenanalyse & maschinelles Lernen", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "Workflow-Automatisierung", "url": "/services/automation", "icon": "zap" },
-            { "text": "Full-Stack-Generative-KI-Entwicklung", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP-gestützte KI-Agenten & Orchestrierung", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "Next-Gen UI/UX-Design", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "Feinabgestimmte LLM-Lösungen", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "Datenschutz & Sicherheit", "url": "/services/security", "icon": "lock" },
-            { "text": "Unternehmens-Webentwicklung", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "Konversationelle Sprachagenten", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "Datenanalyse & maschinelles Lernen", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "Workflow-Automatisierung", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "Full-Stack-Generative-KI-Entwicklung", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP-gestützte KI-Agenten & Orchestrierung", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "Next-Gen UI/UX-Design", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "Feinabgestimmte LLM-Lösungen", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "Datenschutz & Sicherheit", "url": "/services/data-security", "icon": "lock" },
+            { "text": "Unternehmens-Webentwicklung", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "Konversationelle Sprachagenten", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "Gesundheitswesen", "url": "/technologies/healthcare", "icon": "hospital" },

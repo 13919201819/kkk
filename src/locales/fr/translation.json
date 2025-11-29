@@ -1278,15 +1278,15 @@
         },
         "solutions": [
             { "text": "IA Agentique", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "Analyse de Données & Machine Learning", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "Automatisation de Flux de Travail", "url": "/services/automation", "icon": "zap" },
-            { "text": "Développement Full-Stack d'IA Générative", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "Agents IA MCP & Orchestration", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "Design UI/UX de Nouvelle Génération", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "Solutions LLM Finement Ajustées", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "Protection et Sécurité des Données", "url": "/services/security", "icon": "lock" },
-            { "text": "Développement Web d'Entreprise", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "Agents Vocaux Conversationnels", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "Analyse de Données & Machine Learning", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "Automatisation de Flux de Travail", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "Développement Full-Stack d'IA Générative", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "Agents IA MCP & Orchestration", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "Design UI/UX de Nouvelle Génération", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "Solutions LLM Finement Ajustées", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "Protection et Sécurité des Données", "url": "/services/data-security", "icon": "lock" },
+            { "text": "Développement Web d'Entreprise", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "Agents Vocaux Conversationnels", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "Santé", "url": "/technologies/healthcare", "icon": "hospital" },

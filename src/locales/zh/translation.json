@@ -1277,15 +1277,15 @@
         },
         "solutions": [
             { "text": "代理 AI", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "数据分析 & 机器学习", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "工作流自动化", "url": "/services/automation", "icon": "zap" },
-            { "text": "全栈生成式 AI 开发", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP 驱动 AI 代理 & 编排", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "下一代 UI/UX 设计", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "微调 LLM 解决方案", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "数据保护 & 安全", "url": "/services/security", "icon": "lock" },
-            { "text": "企业级 Web 开发", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "会话式语音代理", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "数据分析 & 机器学习", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "工作流自动化", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "全栈生成式 AI 开发", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP 驱动 AI 代理 & 编排", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "下一代 UI/UX 设计", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "微调 LLM 解决方案", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "数据保护 & 安全", "url": "/services/data-security", "icon": "lock" },
+            { "text": "企业级 Web 开发", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "会话式语音代理", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "医疗保健", "url": "/technologies/healthcare", "icon": "hospital" },

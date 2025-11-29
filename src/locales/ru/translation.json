@@ -1276,15 +1276,15 @@
         },
         "solutions": [
             { "text": "Агентный ИИ", "url": "/services/agentic-ai", "icon": "robot" },
-            { "text": "Аналитика данных и машинное обучение", "url": "/services/data-analytics", "icon": "chart" },
-            { "text": "Автоматизация рабочих процессов", "url": "/services/automation", "icon": "zap" },
-            { "text": "Полноценная разработка генеративного ИИ", "url": "/services/generative-ai", "icon": "sparkles" },
-            { "text": "MCP-драйвенные ИИ-агенты и оркестрация", "url": "/services/mcp-agents", "icon": "link" },
-            { "text": "Дизайн UI/UX следующего поколения", "url": "/services/ui-ux", "icon": "palette" },
-            { "text": "Тонко настроенные LLM-решения", "url": "/services/custom-models", "icon": "brain" },
-            { "text": "Защита данных и безопасность", "url": "/services/security", "icon": "lock" },
-            { "text": "Корпоративная веб-разработка", "url": "/services/web-dev", "icon": "globe" },
-            { "text": "Разговорные голосовые агенты", "url": "/services/voice-ai", "icon": "microphone" }
+            { "text": "Аналитика данных и машинное обучение", "url": "/services/data-analytics-ml", "icon": "chart" },
+            { "text": "Автоматизация рабочих процессов", "url": "/services/workflow-automation", "icon": "zap" },
+            { "text": "Полноценная разработка генеративного ИИ", "url": "/services/generative-ai-development", "icon": "sparkles" },
+            { "text": "MCP-драйвенные ИИ-агенты и оркестрация", "url": "/services/mcp-ai-orchestration", "icon": "link" },
+            { "text": "Дизайн UI/UX следующего поколения", "url": "/services/ui-ux-design", "icon": "palette" },
+            { "text": "Тонко настроенные LLM-решения", "url": "/services/fine-tuned-llm", "icon": "brain" },
+            { "text": "Защита данных и безопасность", "url": "/services/data-security", "icon": "lock" },
+            { "text": "Корпоративная веб-разработка", "url": "/services/enterprise-web-dev", "icon": "globe" },
+            { "text": "Разговорные голосовые агенты", "url": "/services/voice-agents", "icon": "microphone" }
         ],
         "industries": [
             { "text": "Здравоохранение", "url": "/technologies/healthcare", "icon": "hospital" },
