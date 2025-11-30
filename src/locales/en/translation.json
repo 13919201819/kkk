@@ -1023,7 +1023,7 @@
             },
             "whoFoundedClumoss": {
                 "question": "Who founded CLUMOSS, Who is the founder/owner of CLUMOSS",
-                "text": "CLUMOSS was founded by Karan Bhatt, an Indian tech entrepreneur and EDM music producer. He is currently holding the complete ownership of CLUMOSS and it subsidiaries MistrAI(link) and NeuroForgeAI(Link).",
+                "text": "CLUMOSS was founded by Karan Bhatt, an Indian tech entrepreneur and EDM music producer. He is currently holding the complete ownership of CLUMOSS and it subsidiaries MistrAI and NeuroForgeAI.",
                 "followUps": [
                     { "text": "When was CLUMOSS established?", "target": "whenEstablished", "icon": "calendar" },
                     { "text": "What is CLUMOSS?", "target": "whatIsClumoss", "icon": "lightbulb" },
