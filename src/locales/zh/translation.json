@@ -17,8 +17,7 @@
             "title": "公司",
             "links": [
                 { "name": "关于我们", "href": "/about" },
-                { "name": "职业机会", "href": "/careers" },
-                { "name": "产品组合", "href": "/portfolio" },
+                { "name": "投资者", "href": "/investors" },
                 { "name": "博客", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "CLUMOSS 2024",
+            "text": "CLUMOSS 2025",
             "designedBy": "由CLUMOSS设计、开发和维护"
         }
     },

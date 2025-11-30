@@ -17,8 +17,7 @@
             "title": "Company",
             "links": [
                 { "name": "About Us", "href": "/about" },
-                { "name": "Careers", "href": "/careers" },
-                { "name": "Portfolio", "href": "/portfolio" },
+                { "name": "Investors", "href": "/investors" },
                 { "name": "Blogs", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "CLUMOSS 2024",
+            "text": "CLUMOSS 2025",
             "designedBy": "Designed, Developed and Maintained by CLUMOSS"
         }
     },

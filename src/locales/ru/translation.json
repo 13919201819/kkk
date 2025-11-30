@@ -17,8 +17,7 @@
             "title": "Компания",
             "links": [
                 { "name": "О нас", "href": "/about" },
-                { "name": "Карьера", "href": "/careers" },
-                { "name": "Портфолио", "href": "/portfolio" },
+                { "name": "Инвесторы", "href": "/investors" },
                 { "name": "Блог", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "Клумосс 2024",
+            "text": "Клумосс 2025",
             "designedBy": "Разработано, создано и поддерживается Клумосс"
         }
     },

@@ -17,8 +17,7 @@
             "title": "会社",
             "links": [
                 { "name": "会社概要", "href": "/about" },
-                { "name": "キャリア", "href": "/careers" },
-                { "name": "ポートフォリオ", "href": "/portfolio" },
+                { "name": "投資家", "href": "/investors" },
                 { "name": "ブログ", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "クルモス 2024",
+            "text": "クルモス 2025",
             "designedBy": "クルモスによって設計、開発、維持されています"
         }
     },

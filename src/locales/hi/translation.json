@@ -17,8 +17,7 @@
             "title": "कंपनी",
             "links": [
                 { "name": "हमारे बारे में", "href": "/about" },
-                { "name": "करियर", "href": "/careers" },
-                { "name": "पोर्टफोलियो", "href": "/portfolio" },
+                { "name": "निवेशक", "href": "/investors" },
                 { "name": "ब्लॉग", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "इंस्टाग्राम", "href": "#" }
         ],
         "copyright": {
-            "text": "क्लमॉस 2024",
+            "text": "क्लमॉस 2025",
             "designedBy": "क्लमॉस द्वारा डिज़ाइन, विकसित और रखरखाव किया गया"
         }
     },

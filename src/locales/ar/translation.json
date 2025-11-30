@@ -17,8 +17,7 @@
             "title": "الشركة",
             "links": [
                 { "name": "عن الشركة", "href": "/about" },
-                { "name": "الوظائف", "href": "/careers" },
-                { "name": "الملف الاستثماري", "href": "/portfolio" },
+                { "name": "المستثمرون", "href": "/investors" },
                 { "name": "المدونة", "href": "/blogs" }
             ]
         },
@@ -36,7 +35,7 @@
             { "name": "Instagram", "href": "#" }
         ],
         "copyright": {
-            "text": "كلوموس 2024",
+            "text": "كلوموس 2025",
             "designedBy": "صمم وطور ويتم صيانته بواسطة كلوموس"
         }
     },
