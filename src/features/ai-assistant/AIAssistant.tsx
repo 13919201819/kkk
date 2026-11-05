@@ -1608,6 +1608,825 @@
 
 
 
+// 'use client';
+
+// import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
+// import { Mic, X, Send, Sparkles, Volume2, VolumeX, Phone, Mail, Calendar, ExternalLink, ArrowRight } from 'lucide-react'; 
+// import { useTranslation } from 'react-i18next';
+// import styles from './ai-assistant.module.css';
+
+// // --- Type Definitions for Speech API to satisfy ESLint ---
+
+// interface WindowWithWebkit extends Window {
+//   webkitSpeechRecognition: new () => SpeechRecognition;
+// }
+
+// interface SpeechEvent extends Event {
+//   results: {
+//     [index: number]: {
+//       [index: number]: {
+//         transcript: string;
+//       };
+//     };
+//   };
+// }
+
+// // --- Standard Type Definitions ---
+// type RedirectTarget = 'contact' | 'services' | 'domains' | 'schedule';
+
+// interface FollowUp {
+//   text: string;
+//   key?: string;
+//   target?: string;
+// }
+
+// interface Message {
+//   type: 'user' | 'bot';
+//   text: string;
+//   id: string;
+//   isVoice?: boolean;
+//   followUps?: FollowUp[];
+//   showSolutions?: boolean;
+//   showIndustries?: boolean;
+//   showContactButtons?: boolean;
+//   showScheduleButton?: boolean;
+//   autoRedirect?: RedirectTarget;
+//   showRedirectConfirmation?: RedirectTarget; 
+// }
+
+// interface InstantResponse {
+//   key: string;
+//   question?: string | string[]; 
+//   text: string;
+//   followUps?: FollowUp[];
+//   showSolutions?: boolean;
+//   showIndustries?: boolean;
+//   showContactButtons?: boolean;
+//   showScheduleButton?: boolean; 
+//   autoRedirect?: RedirectTarget;
+//   redirectTarget?: RedirectTarget;
+// }
+
+// interface Solution {
+//   text: string;
+//   url: string;
+// }
+
+// interface Industry {
+//   text: string;
+//   url?: string;
+// }
+
+// interface InstantResponseSource {
+//   question?: string | string[];
+//   text: string;
+//   followUps?: FollowUp[];
+//   showSolutions?: boolean;
+//   showIndustries?: boolean;
+//   showContactButtons?: boolean;
+//   showScheduleButton?: boolean; 
+// }
+
+// export default function AIAssistant() {
+//   const { t, i18n } = useTranslation();
+
+//   // --- State ---
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [message, setMessage] = useState('');
+//   const [messages, setMessages] = useState<Message[]>([]);
+//   const [isListening, setIsListening] = useState(false);
+//   const [isTyping, setIsTyping] = useState(false);
+//   const [isSpeaking, setIsSpeaking] = useState(false);
+//   const [isVoiceMode, setIsVoiceMode] = useState(false);
+//   const [hasGreeted, setHasGreeted] = useState(false);
+
+//   // --- Refs ---
+//   const messagesEndRef = useRef<HTMLDivElement>(null);
+//   const recognitionRef = useRef<SpeechRecognition | null>(null); 
+//   const currentUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+//   const abortControllerRef = useRef<AbortController | null>(null);
+//   const voiceLoopTimerRef = useRef<NodeJS.Timeout | null>(null);
+//   const inactivityTimerRef = useRef<NodeJS.Timeout | null>(null);
+//   const messageIdCounter = useRef(0);
+//   const inputRef = useRef<HTMLInputElement>(null);
+
+//   const API_URL = 'https://contat-email-backend.vercel.app/api/ask';
+
+//   // === Preload and Memoize Data ===
+//   const { instantResponsesMap, solutions, industries } = useMemo(() => {
+//     const responses = t('chatbot.instantResponses', { returnObjects: true }) as Record<string, InstantResponseSource>;
+//     const map = new Map<string, InstantResponse>();
+
+//     Object.entries(responses).forEach(([key, value]) => {
+//       let target: RedirectTarget | undefined;
+//       if (key.includes('redirectSolutions') || key.includes('redirectServices')) target = 'services';
+//       if (key.includes('redirectContact')) target = 'contact';
+//       if (key.includes('bookConsultation')) target = 'schedule';
+//       if (key.includes('industries')) target = 'domains';
+      
+//       const instantValue: InstantResponse = { 
+//         key, 
+//         redirectTarget: target, 
+//         ...value 
+//       } as InstantResponse;
+      
+//       map.set(key, instantValue);
+      
+//       if (value.question) {
+//         const questionString = Array.isArray(value.question) ? value.question.join(',') : value.question;
+//         const questions = questionString
+//           .toLowerCase()
+//           .split(',')
+//           .map((q: string) => q.trim().replace(/[?.,!]/g, ''))
+//           .filter((q: string) => q);
+//         questions.forEach((q: string) => map.set(q, instantValue));
+//       }
+//     });
+
+//     return {
+//       instantResponsesMap: map,
+//       solutions: (t('chatbot.solutions', { returnObjects: true }) as Solution[] | undefined) ?? [], 
+//       industries: (t('chatbot.industries', { returnObjects: true }) as Industry[] | undefined) ?? [], 
+//     };
+//   }, [t]);
+
+//   // === Utility Functions ===
+//   const normalize = (text: string): string => {
+//     return text.toLowerCase().replace(/[?.,!;:]/g, '').replace(/\s+/g, ' ').trim();
+//   };
+
+//   const findInstantResponse = (input: string): InstantResponse | null => {
+//     const normalized = normalize(input);
+//     const exactMatch = instantResponsesMap.get(normalized);
+//     if (exactMatch) return exactMatch;
+
+//     let instantResponse: InstantResponse | undefined;
+
+//     if (normalized.includes('consultation') || normalized.includes('book') || normalized.includes('schedule')) {
+//       instantResponse = instantResponsesMap.get('bookConsultation');
+//       if (instantResponse) return { ...instantResponse, showScheduleButton: true, redirectTarget: 'schedule' };
+//     }
+
+//     if (normalized.includes('service') || normalized.includes('solution') || normalized.includes('what do you do')) {
+//       instantResponse = instantResponsesMap.get('solutions');
+//       if (instantResponse) return { ...instantResponse, showSolutions: true, redirectTarget: 'services' };
+//     }
+    
+//     if (normalized.includes('industry') || normalized.includes('domain') || normalized.includes('sector')) {
+//       instantResponse = instantResponsesMap.get('industries');
+//       if (instantResponse) return { ...instantResponse, showIndustries: true, redirectTarget: 'domains' };
+//     }
+
+//     if (normalized.includes('contact') || normalized.includes('talk to human') || normalized.includes('phone') || normalized.includes('email')) {
+//       instantResponse = instantResponsesMap.get('contactClumoss');
+//       if (instantResponse) return { ...instantResponse, showContactButtons: true, redirectTarget: 'contact' };
+//     }
+    
+//     return null;
+//   };
+
+//   const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+//   useEffect(() => {
+//     scrollToBottom();
+//   }, [messages]);
+
+//   // === Prevent body scroll when modal is open ===
+//   useEffect(() => {
+//     if (isOpen) {
+//       document.body.style.overflow = 'hidden';
+//       document.body.style.position = 'fixed';
+//       document.body.style.width = '100%';
+//     } else {
+//       document.body.style.overflow = '';
+//       document.body.style.position = '';
+//       document.body.style.width = '';
+//     }
+//     return () => {
+//       document.body.style.overflow = '';
+//       document.body.style.position = '';
+//       document.body.style.width = '';
+//     };
+//   }, [isOpen]);
+
+//   // === Voice Synthesis (Speak) Logic ===
+//   const stopSpeaking = useCallback(() => {
+//     if (speechSynthesis.speaking) speechSynthesis.cancel();
+//     setIsSpeaking(false);
+//     currentUtteranceRef.current = null;
+//   }, []);
+
+//   const cleanForSpeech = (txt: string) =>
+//     txt.replace(/\*\*/g, '').replace(/\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[\u{1F300}-\u{1F9FF}]/gu, '').replace(/\n{3,}/g, '\n\n').trim();
+
+//   const speak = useCallback((text: string) => {
+//     stopSpeaking();
+//     if (!text) return;
+
+//     const utter = new SpeechSynthesisUtterance(cleanForSpeech(text));
+//     const voices = speechSynthesis.getVoices();
+//     const lang = i18n.language.split('-')[0];
+
+//     const voice = voices.find(v => v.lang.startsWith(lang) && /female|samantha|karen|helena/i.test(v.name)) ||
+//       voices.find(v => v.lang.startsWith(lang)) || null;
+
+//     if (voice) utter.voice = voice;
+//     utter.rate = 1.15;
+//     utter.pitch = 1.3;
+//     utter.volume = 1.0;
+
+//     utter.onstart = () => setIsSpeaking(true);
+//     utter.onend = () => {
+//       setIsSpeaking(false);
+//       if (isVoiceMode && !isTyping) {
+//         voiceLoopTimerRef.current = setTimeout(startVoiceLoop, 600);
+//       }
+//     };
+
+//     currentUtteranceRef.current = utter;
+//     speechSynthesis.speak(utter);
+//   }, [i18n.language, stopSpeaking, isVoiceMode, isTyping]);
+
+//   // === Voice Recognition (Listen) Logic ===
+//   const stopVoiceLoop = useCallback(() => {
+//     clearTimeout(voiceLoopTimerRef.current!);
+//     recognitionRef.current?.stop();
+//     setIsListening(false);
+//   }, []);
+
+//   const startVoiceLoop = useCallback(() => {
+//     if (!recognitionRef.current || !isVoiceMode || isListening) return;
+//     clearTimeout(voiceLoopTimerRef.current!);
+//     try {
+//       recognitionRef.current.start();
+//       setIsListening(true);
+//     } catch (e) { 
+//       void e; 
+//       voiceLoopTimerRef.current = setTimeout(startVoiceLoop, 1000);
+//     }
+//   }, [isVoiceMode, isListening]);
+
+//   const toggleVoiceMode = () => {
+//     stopSpeaking();
+//     if (isVoiceMode) {
+//       stopVoiceLoop();
+//       setIsVoiceMode(false);
+//     } else {
+//       setIsVoiceMode(true);
+//       startVoiceLoop();
+//     }
+//   };
+
+//   useEffect(() => {
+//     const win = window as unknown as WindowWithWebkit;
+//     if (!('SpeechRecognition' in win || 'webkitSpeechRecognition' in win)) return;
+//     const SR = win.SpeechRecognition || win.webkitSpeechRecognition;
+    
+//     if (SR) recognitionRef.current = new SR(); 
+    
+//     if (recognitionRef.current) {
+//         recognitionRef.current.continuous = false;
+//         recognitionRef.current.interimResults = false;
+//         recognitionRef.current.lang = i18n.language;
+
+//         recognitionRef.current.onresult = (e: SpeechEvent) => { 
+//           const transcript = e.results[0][0].transcript.trim();
+//           if (transcript) {
+//             setMessage(transcript);
+//             stopVoiceLoop();
+//             setTimeout(() => handleSend(transcript, true), 100);
+//           }
+//         };
+
+//         recognitionRef.current.onerror = () => {
+//           setIsListening(false);
+//           if (isVoiceMode) voiceLoopTimerRef.current = setTimeout(startVoiceLoop, 1000);
+//         };
+
+//         recognitionRef.current.onend = () => {
+//           setIsListening(false);
+//           if (isVoiceMode && !isTyping && !isSpeaking) voiceLoopTimerRef.current = setTimeout(startVoiceLoop, 300);
+//         };
+//     }
+
+//     return () => {
+//       stopVoiceLoop();
+//       stopSpeaking();
+//       clearTimeout(inactivityTimerRef.current!);
+//     };
+//   }, [isVoiceMode, i18n.language, startVoiceLoop, stopVoiceLoop, stopSpeaking, isTyping, isSpeaking]);
+
+
+//   // === Inactivity and Greeting Logic ===
+//   const resetInactivity = useCallback(() => {
+//     if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
+//     const tId = setTimeout(() => {
+//       if (messages.length <= 1 && !isSpeaking && !isListening && isOpen) {
+//         const reminder: Message = {
+//           type: 'bot',
+//           text: t('chatbot.reminder'),
+//           id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//           followUps: instantResponsesMap.get('greetingHi')?.followUps ?? [], 
+//         };
+//         setMessages(m => [...m, reminder]);
+//         speak(reminder.text);
+//       }
+//     }, 10000);
+//     inactivityTimerRef.current = tId;
+//   }, [messages.length, isSpeaking, isListening, isOpen, t, speak, instantResponsesMap]);
+
+//   useEffect(() => {
+//     if (!isOpen || hasGreeted) return;
+//     const greet = () => {
+//       const greeting: Message = {
+//         type: 'bot',
+//         text: t('chatbot.greeting'),
+//         id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//         followUps: instantResponsesMap.get('greetingHi')?.followUps ?? [],
+//       };
+//       setMessages([greeting]);
+//       setHasGreeted(true);
+//       speak(greeting.text);
+//       resetInactivity();
+//     };
+//     const timer = setTimeout(greet, 500);
+//     return () => clearTimeout(timer);
+//   }, [isOpen, hasGreeted, t, speak, resetInactivity, instantResponsesMap]);
+
+//   // === API Call Handler ===
+//   const callAPI = async (query: string): Promise<{ text: string, followUps: FollowUp[] } | null> => {
+//     if (abortControllerRef.current) abortControllerRef.current.abort();
+//     abortControllerRef.current = new AbortController();
+
+//     try {
+//       const res = await fetch(API_URL, {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ query }),
+//         signal: abortControllerRef.current.signal,
+//       });
+//       const data = await res.json();
+//       return { text: data.response || t('chatbot.apiError'), followUps: [] };
+//     } catch (e: unknown) { 
+//       if (e instanceof Error && e.name === 'AbortError') return null;
+//       console.error('API Error:', e);
+//       return { text: t('chatbot.connectionError'), followUps: [] };
+//     }
+//   };
+
+//   // --- Redirect Handlers ---
+//   const executeRedirect = (type: RedirectTarget) => {
+//     const map: Record<RedirectTarget, string> = {
+//       contact: '/contact',
+//       services: '/services',
+//       domains: '/technologies',
+//       schedule: '/scheduler', 
+//     };
+//     const url = map[type];
+//     const msg: Message = {
+//       type: 'bot',
+//       text: t('chatbot.redirecting', { page: type }),
+//       id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//     };
+//     setMessages(m => [...m, msg]);
+//     speak(msg.text);
+//     setTimeout(() => window.open(url, '_blank'), 1500);
+//   };
+
+//   const handleActionRedirect = (type: RedirectTarget) => {
+//     const confirmationMsg: Message = {
+//       type: 'bot',
+//       text: t('chatbot.confirmRedirectQuestion', { page: type.toUpperCase() }),
+//       id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//       showRedirectConfirmation: type,
+//       followUps: [], 
+//       showSolutions: false,
+//       showIndustries: false,
+//       showContactButtons: false,
+//       showScheduleButton: false,
+//     };
+//     setMessages(m => [...m, confirmationMsg]);
+//   };
+
+//   const handleRedirectConfirmation = (target: RedirectTarget, confirmed: boolean) => {
+//     if (confirmed) {
+//       executeRedirect(target);
+//     } else {
+//       const followUpMsg: Message = {
+//         type: 'bot',
+//         text: t('chatbot.redirectCanceled'),
+//         id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//         followUps: instantResponsesMap.get('greetingHi')?.followUps ?? [], 
+//       };
+//       setMessages(m => [...m, followUpMsg]);
+//     }
+//   };
+
+//   // === Main Send Handler ===
+//   const handleSend = async (text: string, fromVoice = false) => {
+//     if (!text.trim() || isTyping) return;
+//     resetInactivity();
+//     stopVoiceLoop();
+//     stopSpeaking();
+
+//     const userMsg: Message = {
+//       type: 'user',
+//       text,
+//       id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//       isVoice: fromVoice,
+//     };
+//     setMessages(m => [...m, userMsg]);
+//     setMessage('');
+
+//     const instant = findInstantResponse(text);
+//     if (instant) {
+//       const botMsg: Message = {
+//         type: 'bot',
+//         text: instant.text,
+//         id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//         followUps: instant.followUps ?? [],
+//         showSolutions: instant.showSolutions,
+//         showIndustries: instant.showIndustries,
+//         showContactButtons: instant.showContactButtons,
+//         showScheduleButton: instant.showScheduleButton,
+//         autoRedirect: instant.autoRedirect, 
+//       };
+
+//       if (instant.redirectTarget) {
+//         if (instant.key && instant.key.startsWith('redirect')) {
+//           botMsg.showRedirectConfirmation = instant.redirectTarget;
+//           botMsg.followUps = []; 
+//           botMsg.showSolutions = false;
+//           botMsg.showIndustries = false;
+//           botMsg.showContactButtons = false;
+//           botMsg.showScheduleButton = false;
+//         } 
+//       }
+//       setMessages(m => [...m, botMsg]);
+//       if (fromVoice) speak(botMsg.text);
+//       if (botMsg.autoRedirect) executeRedirect(botMsg.autoRedirect);
+//       return;
+//     }
+
+//     setIsTyping(true);
+//     const apiRes = await callAPI(text);
+//     setIsTyping(false);
+    
+//     if (apiRes) {
+//       const botMsg: Message = {
+//         type: 'bot',
+//         text: apiRes.text,
+//         id: `msg-${Date.now()}-${messageIdCounter.current++}`,
+//         followUps: [
+//           { text: t('chatbot.buttons.viewServices'), key: 'solutions' }, 
+//           { text: t('chatbot.buttons.contactUs'), key: 'contactClumoss' },
+//         ],
+//       };
+//       setMessages(m => [...m, botMsg]);
+//       if (fromVoice) speak(botMsg.text);
+//     }
+//   };
+
+//   const handleFollowUp = (suggestion: FollowUp) => {
+//     setIsVoiceMode(false);
+//     const text = suggestion.text;
+//     const key = suggestion.key || suggestion.target; 
+//     if (key) {
+//       const instant = instantResponsesMap.get(key);
+//       const questionString = instant?.question;
+//       const triggerText = (questionString ? (Array.isArray(questionString) ? questionString[0] : questionString.split(',')[0]).trim() : instant?.text?.split('\n')[0].trim()) || text;
+//       handleSend(triggerText, false); 
+//       return;
+//     }
+//     handleSend(text, false);
+//   };
+
+//   // --- RENDER ---
+//   return (
+//     <>
+//       {/* FAB: Hidden when isOpen is true */}
+//       <AnimatePresence>
+//         {!isOpen && (
+//           <motion.div
+//             className={styles.fabWrapper}
+//             initial={{ scale: 0, opacity: 0 }} 
+//             animate={{ scale: 1, opacity: 1 }} 
+//             exit={{ scale: 0, opacity: 0 }}
+//             transition={{ type: 'spring', stiffness: 260, damping: 20 }}>
+//             <motion.button
+//               onClick={() => { setIsOpen(true); resetInactivity(); }}
+//               className={styles.fabButton}
+//               whileHover={{ scale: 1.05 }}
+//               whileTap={{ scale: 0.95 }}
+//               aria-label="Open AI Assistant">
+//               <motion.div
+//                 className={styles.fabSpinner}
+//                 animate={{ rotate: 360 }}
+//                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }} />
+//               <div className={styles.fabInner}>
+//                 <Sparkles
+//                   className={styles.fabIcon}
+//                   strokeWidth={2.5} />
+//               </div>
+//             </motion.button>
+//           </motion.div>
+//         )}
+//       </AnimatePresence>
+
+//       <AnimatePresence>
+//         {isOpen && (
+//           <motion.div
+//             className={styles.overlay}
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: 1 }}
+//             exit={{ opacity: 0 }}
+//             onClick={() => { stopVoiceLoop(); stopSpeaking(); setIsOpen(false); }}>
+
+//             {/* Backdrop */}
+//             <div className={styles.backdrop} />
+
+//             {/* Modal */}
+//             <motion.div
+//               className={styles.modal}
+//               initial={{ y: '100%', opacity: 0 }}
+//               animate={{ y: 0, opacity: 1 }}
+//               exit={{ y: '100%', opacity: 0 }}
+//               transition={{ type: 'spring', damping: 28, stiffness: 320 }}
+//               onClick={e => e.stopPropagation()}>
+
+//               {/* Drag handle (mobile only) */}
+//               <div className={styles.dragHandleWrap}>
+//                 <div className={styles.dragHandle} />
+//               </div>
+
+//               {/* Header */}
+//               <div className={styles.header}>
+//                 <div className={styles.headerLeft}>
+//                   <div className={styles.headerLogo}>
+//                     <Sparkles className={styles.headerLogoIcon} strokeWidth={2.5} />
+//                   </div>
+//                   <div className={styles.headerText}>
+//                     <h2 className={styles.title}>{t('chatbot.title')}</h2>
+//                     <p className={styles.subtitle}>{t('chatbot.subtitle')}</p>
+//                   </div>
+//                 </div>
+//                 <div className={styles.headerRight}>
+//                   {isSpeaking && (
+//                     <motion.button
+//                       onClick={stopSpeaking}
+//                       className={styles.stopSpeakingBtn}
+//                       whileTap={{ scale: 0.9 }}>
+//                       <VolumeX className={styles.iconResponsive} />
+//                     </motion.button>
+//                   )}
+//                   <motion.button
+//                     onClick={() => { stopVoiceLoop(); stopSpeaking(); setIsOpen(false); }}
+//                     className={styles.closeBtn}
+//                     whileTap={{ scale: 0.9 }}>
+//                     <X className={styles.iconResponsive} />
+//                   </motion.button>
+//                 </div>
+//               </div>
+
+//               {/* Messages Area */}
+//               <div className={styles.messagesArea}>
+//                 {messages.map(msg => (
+//                   <motion.div
+//                     key={msg.id}
+//                     initial={{ opacity: 0, y: 10 }}
+//                     animate={{ opacity: 1, y: 0 }}
+//                     className={`${styles.messageRow} ${msg.type === 'user' ? styles.rowUser : styles.rowBot}`}>
+                    
+//                     <div className={`${styles.column} ${msg.type === 'user' ? styles.columnUser : styles.columnBot}`}>
+//                       <div className={`${styles.bubbleRow} ${msg.type === 'user' ? styles.bubbleRowReverse : styles.bubbleRowNormal}`}>
+//                         {/* Avatar */}
+//                         <div className={`${styles.avatar} ${msg.type === 'user' ? styles.avatarUser : styles.avatarBot}`}>
+//                           {msg.type === 'user'
+//                             ? <span className={styles.avatarLetter}>Y</span>
+//                             : <Sparkles className={styles.avatarIcon} strokeWidth={2.5} />}
+//                         </div>
+//                         {/* Bubble */}
+//                         <div
+//                           className={`${styles.bubble} ${msg.type === 'user' ? styles.bubbleUser : styles.bubbleBot}`}
+//                           dangerouslySetInnerHTML={{ __html: msg.type === 'bot' ? msg.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : msg.text }} />
+//                       </div>
+
+//                       {msg.type === 'bot' && (
+//                         <div className={styles.actions}>
+
+//                           {/* Solutions Grid */}
+//                           {msg.showSolutions && (
+//                             <div className={styles.block}>
+//                               <p className={styles.solutionsLabel}>Core AI Solutions:</p>
+//                               <div className={styles.solutionsGrid}>
+//                                 {solutions.map((sol: Solution, i: number) => (
+//                                   <motion.button
+//                                     key={`sol-${i}`}
+//                                     onClick={() => window.open(sol.url, '_blank')}
+//                                     className={styles.solutionBtn}
+//                                     whileTap={{ scale: 0.98 }}>
+//                                     {sol.text}
+//                                   </motion.button>
+//                                 ))}
+//                                 <motion.button
+//                                   onClick={() => handleActionRedirect('services')}
+//                                   className={styles.fullPageBtn}
+//                                   whileTap={{ scale: 0.98 }}>
+//                                   <ArrowRight className={styles.iconXs} /> Go to Full Solutions Page
+//                                 </motion.button>
+//                               </div>
+//                             </div>
+//                           )}
+
+//                           {/* Industries */}
+//                           {msg.showIndustries && (
+//                             <div className={styles.block}>
+//                               <p className={styles.industriesLabel}>Domains We Serve:</p>
+//                               <p className={styles.industriesText}>
+//                                 {industries.map((i: Industry) => i.text).join(' • ')}
+//                               </p>
+//                               <div className={styles.industriesButtons}>
+//                                 <motion.button
+//                                   onClick={() => handleActionRedirect('domains')}
+//                                   className={styles.industryViewBtn}
+//                                   whileTap={{ scale: 0.95 }}>
+//                                   <ArrowRight className={styles.iconInline} /> {t('chatbot.buttons.viewTechnologies')}
+//                                 </motion.button>
+//                                 <motion.button
+//                                   onClick={() => handleRedirectConfirmation('domains', false)}
+//                                   className={styles.industryNotNowBtn}
+//                                   whileTap={{ scale: 0.95 }}>
+//                                   {t('chatbot.buttons.notNow')}
+//                                 </motion.button>
+//                               </div>
+//                             </div>
+//                           )}
+
+//                           {/* Contact Buttons */}
+//                           {msg.showContactButtons && (
+//                             <div className={styles.contactButtons}>
+//                               <motion.button
+//                                 onClick={() => location.href = 'tel:+917622817924'}
+//                                 className={`${styles.contactBtn} ${styles.contactCall}`}
+//                                 whileTap={{ scale: 0.95 }}>
+//                                 <Phone className={styles.contactIcon} /> {t('chatbot.buttons.callUs')}
+//                               </motion.button>
+//                               <motion.button
+//                                 onClick={() => location.href = 'mailto:info@clumoss.com'}
+//                                 className={`${styles.contactBtn} ${styles.contactEmail}`}
+//                                 whileTap={{ scale: 0.95 }}>
+//                                 <Mail className={styles.contactIcon} /> {t('chatbot.buttons.emailUs')}
+//                               </motion.button>
+//                               <motion.button
+//                                 onClick={() => handleActionRedirect('contact')}
+//                                 className={`${styles.contactBtn} ${styles.contactPage}`}
+//                                 whileTap={{ scale: 0.95 }}>
+//                                 <ExternalLink className={styles.contactIcon} /> View Contact Page
+//                               </motion.button>
+//                             </div>
+//                           )}
+
+//                           {/* Schedule Button */}
+//                           {msg.showScheduleButton && (
+//                             <motion.button
+//                               onClick={() => handleActionRedirect('schedule')}
+//                               className={styles.scheduleBtn}
+//                               whileTap={{ scale: 0.95 }}>
+//                               <Calendar className={styles.scheduleIcon} /> {t('chatbot.buttons.bookNow')}
+//                             </motion.button>
+//                           )}
+
+//                           {/* Confirm Redirect */}
+//                           {msg.showRedirectConfirmation && (
+//                             <div className={styles.confirmBox}>
+//                               <p className={styles.confirmText}>
+//                                 {t('chatbot.confirmRedirect', { page: msg.showRedirectConfirmation.toUpperCase() }) || `Confirm redirection to the ${msg.showRedirectConfirmation.toUpperCase()} page?`}
+//                               </p>
+//                               <div className={styles.confirmButtons}>
+//                                 <motion.button 
+//                                   onClick={() => handleRedirectConfirmation(msg.showRedirectConfirmation!, true)}
+//                                   className={styles.confirmYesBtn}
+//                                   whileTap={{ scale: 0.95 }}>
+//                                   {t('chatbot.buttons.yesRedirect')}
+//                                 </motion.button>
+//                                 <motion.button 
+//                                   onClick={() => handleRedirectConfirmation(msg.showRedirectConfirmation!, false)}
+//                                   className={styles.confirmNoBtn}
+//                                   whileTap={{ scale: 0.95 }}>
+//                                   {t('chatbot.buttons.notNow')}
+//                                 </motion.button>
+//                               </div>
+//                             </div>
+//                           )}
+
+//                           {/* Follow-up Chips */}
+//                           {msg.followUps && msg.followUps.length > 0 && !msg.showRedirectConfirmation && (
+//                             <div className={styles.block}>
+//                               <p className={styles.followUpLabel}>Related Topics</p>
+//                               <div className={styles.followUpList}>
+//                                 {msg.followUps.map((s: FollowUp, i: number) => ( 
+//                                   <motion.button
+//                                     key={`fup-${i}`}
+//                                     onClick={() => handleFollowUp(s)}
+//                                     className={styles.followUpChip}
+//                                     whileTap={{ scale: 0.95 }}>
+//                                     {s.text} 
+//                                   </motion.button>
+//                                 ))}
+//                               </div>
+//                             </div>
+//                           )}
+//                         </div>
+//                       )}
+//                     </div>
+//                   </motion.div>
+//                 ))}
+
+//                 {/* Typing Indicator */}
+//                 {isTyping && (
+//                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={styles.typingRow}>
+//                     <div className={styles.typingInner}>
+//                       <div className={`${styles.avatar} ${styles.avatarBot}`}>
+//                         <Sparkles className={styles.avatarIcon} strokeWidth={2.5} />
+//                       </div>
+//                       <div className={styles.typingBubble}>
+//                         <div className={styles.typingDots}>
+//                           {[0, 0.2, 0.4].map(d => (
+//                             <motion.div
+//                               key={d}
+//                               className={styles.typingDot}
+//                               animate={{ y: [0, -4, 0] }}
+//                               transition={{ duration: 0.6, repeat: Infinity, delay: d }} />
+//                           ))}
+//                         </div>
+//                         <span className={styles.typingLabel}>{t('chatbot.thinking')}</span>
+//                       </div>
+//                     </div>
+//                   </motion.div>
+//                 )}
+//                 <div ref={messagesEndRef} />
+//               </div>
+
+//               {/* Input Area */}
+//               <div className={styles.inputArea}>
+//                 <div className={styles.inputWrapper}>
+//                   <input
+//                     ref={inputRef}
+//                     type="text"
+//                     value={message}
+//                     onChange={e => setMessage(e.target.value)}
+//                     onKeyPress={e => e.key === 'Enter' && !e.shiftKey && handleSend(message, false)}
+//                     placeholder={t('chatbot.placeholder')} 
+//                     className={styles.textInput}
+//                     disabled={isTyping}
+//                     autoComplete="off"
+//                     autoCorrect="off"
+//                     autoCapitalize="sentences" />
+                  
+//                   <div className={styles.inputButtons}>
+//                     <motion.button
+//                       onClick={toggleVoiceMode}
+//                       className={`${styles.iconBtn} ${isListening ? styles.micActive : styles.iconBtnIdle}`}
+//                       whileTap={{ scale: 0.9 }}
+//                       disabled={isTyping}
+//                       aria-label="Toggle Voice Mode">
+//                       <Mic className={styles.iconResponsive} />
+//                     </motion.button>
+                    
+//                     <motion.button
+//                       onClick={isTyping ? () => abortControllerRef.current?.abort() : () => handleSend(message, false)}
+//                       className={`${styles.iconBtn} ${message.trim() ? styles.sendActive : styles.iconBtnIdle} ${styles.sendBtn}`}
+//                       whileTap={{ scale: 0.9 }}
+//                       disabled={!message.trim() && !isTyping}
+//                       aria-label="Send">
+//                       {isTyping ? <X className={styles.iconResponsive} /> : <Send className={styles.iconResponsive} />}
+//                     </motion.button>
+//                   </div>
+//                 </div>
+                
+//                 {/* Voice status */}
+//                 {(isSpeaking || isListening) && (
+//                   <motion.div
+//                     initial={{ opacity: 0, height: 0 }}
+//                     animate={{ opacity: 1, height: 'auto' }}
+//                     exit={{ opacity: 0, height: 0 }}
+//                     className={styles.voiceStatus}>
+//                     {isSpeaking
+//                       ? <Volume2 className={`${styles.statusIcon} ${styles.statusPulse}`} />
+//                       : <Mic className={styles.statusIcon} />}
+//                     <span>{isSpeaking ? t('chatbot.speaking') : t('chatbot.listening')}</span>
+//                   </motion.div>
+//                 )}
+//               </div>
+//             </motion.div>
+//           </motion.div>
+//         )}
+//       </AnimatePresence>
+//     </>
+//   );  
+// }
+
+
 'use client';
 
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
@@ -1700,6 +2519,7 @@ export default function AIAssistant() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
   const [hasGreeted, setHasGreeted] = useState(false);
+  const [streamingMsgId, setStreamingMsgId] = useState<string | null>(null);
 
   // --- Refs ---
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -1786,10 +2606,23 @@ export default function AIAssistant() {
     return null;
   };
 
-  const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: 'auto', block: 'end' });
+  // useEffect(() => {
+  //   scrollToBottom();
+  // }, [messages]);
+  const messagesAreaRef = useRef<HTMLDivElement>(null);
+  const scrollToBottom = useCallback(() => {
+  const el = messagesAreaRef.current;
+  if (!el) return;
+    requestAnimationFrame(() => {
+      el.scrollTop = el.scrollHeight;
+    });
+  }, []);
+
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, isTyping, scrollToBottom]);
 
   // === Prevent body scroll when modal is open ===
   useEffect(() => {
@@ -1953,8 +2786,11 @@ export default function AIAssistant() {
     return () => clearTimeout(timer);
   }, [isOpen, hasGreeted, t, speak, resetInactivity, instantResponsesMap]);
 
-  // === API Call Handler ===
-  const callAPI = async (query: string): Promise<{ text: string, followUps: FollowUp[] } | null> => {
+  // === API Call Handler (Streaming) ===
+  const callAPI = async (
+    query: string,
+    onChunk: (partial: string) => void
+  ): Promise<{ text: string, followUps: FollowUp[] } | null> => {
     if (abortControllerRef.current) abortControllerRef.current.abort();
     abortControllerRef.current = new AbortController();
 
@@ -1965,8 +2801,25 @@ export default function AIAssistant() {
         body: JSON.stringify({ query }),
         signal: abortControllerRef.current.signal,
       });
-      const data = await res.json();
-      return { text: data.response || t('chatbot.apiError'), followUps: [] };
+
+      // Errors (400/500) come back as JSON before streaming starts
+      if (!res.ok || !res.body) {
+        return { text: t('chatbot.apiError'), followUps: [] };
+      }
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let full = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        full += decoder.decode(value, { stream: true });
+        onChunk(full);
+      }
+      full += decoder.decode();
+
+      return { text: full.trim() || t('chatbot.apiError'), followUps: [] };
     } catch (e: unknown) { 
       if (e instanceof Error && e.name === 'AbortError') return null;
       console.error('API Error:', e);
@@ -2069,21 +2922,35 @@ export default function AIAssistant() {
     }
 
     setIsTyping(true);
-    const apiRes = await callAPI(text);
+    const botId = `msg-${Date.now()}-${messageIdCounter.current++}`;
+    const apiFollowUps: FollowUp[] = [
+      { text: t('chatbot.buttons.viewServices'), key: 'solutions' },
+      { text: t('chatbot.buttons.contactUs'), key: 'contactClumoss' },
+    ];
+    let created = false;
+
+    const apiRes = await callAPI(text, (partial) => {
+      if (!created) {
+        created = true;
+        setStreamingMsgId(botId); // hides the typing dots once the first token arrives
+        setMessages(m => [...m, { type: 'bot', text: partial, id: botId }]);
+      } else {
+        setMessages(m => m.map(x => (x.id === botId ? { ...x, text: partial } : x)));
+      }
+    });
+
     setIsTyping(false);
-    
+    setStreamingMsgId(null);
+
     if (apiRes) {
-      const botMsg: Message = {
-        type: 'bot',
-        text: apiRes.text,
-        id: `msg-${Date.now()}-${messageIdCounter.current++}`,
-        followUps: [
-          { text: t('chatbot.buttons.viewServices'), key: 'solutions' }, 
-          { text: t('chatbot.buttons.contactUs'), key: 'contactClumoss' },
-        ],
-      };
-      setMessages(m => [...m, botMsg]);
-      if (fromVoice) speak(botMsg.text);
+      if (created) {
+        // attach final text + follow-up chips once streaming is done
+        setMessages(m => m.map(x => (x.id === botId ? { ...x, text: apiRes.text, followUps: apiFollowUps } : x)));
+      } else {
+        // no tokens streamed (error case)
+        setMessages(m => [...m, { type: 'bot', text: apiRes.text, id: botId, followUps: apiFollowUps }]);
+      }
+      if (fromVoice) speak(apiRes.text);
     }
   };
 
@@ -2189,7 +3056,7 @@ export default function AIAssistant() {
               </div>
 
               {/* Messages Area */}
-              <div className={styles.messagesArea}>
+              <div className={styles.messagesArea} ref={messagesAreaRef}>
                 {messages.map(msg => (
                   <motion.div
                     key={msg.id}
@@ -2343,7 +3210,7 @@ export default function AIAssistant() {
                 ))}
 
                 {/* Typing Indicator */}
-                {isTyping && (
+                {isTyping && !streamingMsgId && (
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={styles.typingRow}>
                     <div className={styles.typingInner}>
                       <div className={`${styles.avatar} ${styles.avatarBot}`}>
