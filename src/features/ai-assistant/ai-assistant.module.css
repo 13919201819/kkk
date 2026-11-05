@@ -1,73 +1,1093 @@
-/* .container {
+/* ==========================================================================
+   ai-assistant.module.css
+   Styles extracted 1:1 from the Tailwind classes / inline styles that were in
+   AIAssistant.tsx. Breakpoints used: xs = 475px, sm = 640px, md = 768px.
+   ========================================================================== */
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ---------- Floating action button (FAB) ---------- */
+
+.fabWrapper {
   position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  z-index: 50;
+  z-index: 60;
+  bottom: max(1.5rem, env(safe-area-inset-bottom, 1.5rem));
+  right: 1.5rem;
 }
 
-.button {
-  background-color: #3b82f6;
-  color: white;
-  padding: 1rem;
+.fabButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   border-radius: 9999px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #2563eb;
-}
-
-.chatBox {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  touch-action: manipulation;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  width: clamp(3.25rem, 10vw, 5rem);
+  height: clamp(3.25rem, 10vw, 5rem);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  width: 20rem;
-  height: 24rem;
+}
+
+.fabSpinner {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  opacity: 0.6;
+  background: conic-gradient(from 0deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+}
+
+.fabInner {
+  position: absolute;
+  inset: 0.375rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.fabIcon {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  width: clamp(1.25rem, 4vw, 2.25rem);
+  height: clamp(1.25rem, 4vw, 2.25rem);
+}
+
+/* ---------- Overlay / backdrop / modal ---------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.modal {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 0.5rem;
+  background-color: #0f172a;
+  overflow: hidden;
+  will-change: transform;
+  width: 100%;
+  /* Mobile: slides up from bottom, takes 92dvh with rounded top corners
+     Tablet+: centered card with max dimensions */
+  height: min(92dvh, 700px);
+  max-width: min(100%, 56rem);
+  border-radius: clamp(1rem, 3vw, 1.5rem) clamp(1rem, 3vw, 1.5rem) 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.chatContent {
-  flex: 1;
+.dragHandleWrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.25rem;
+  flex-shrink: 0;
+}
+
+.dragHandle {
+  width: 2.5rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Shared responsive icon sizes ---------- */
+
+.iconResponsive {
+  width: 1rem;
+  height: 1rem;
+}
+
+.iconXs {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.iconInline {
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-width: 0;
+}
+
+.headerLogo {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background-image: linear-gradient(to bottom right, #3b82f6, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+.headerLogoIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #fff;
+}
+
+.headerText {
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.875rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 10px;
+  color: #9ca3af;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.stopSpeakingBtn {
+  padding: 0.375rem;
+  border-radius: 9999px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.stopSpeakingBtn:hover {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.closeBtn {
+  padding: 0.375rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d1d5db;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.closeBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Messages area ---------- */
+
+.messagesArea {
+  flex: 1 1 0%;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.75rem;
+  scroll-behavior: smooth;
 }
 
-.userMessage {
-  text-align: right;
-  background-color: #2563eb;
-  padding: 0.5rem;
+.messagesArea > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.75rem;
+}
+
+.messageRow {
+  display: flex;
+}
+
+.rowUser {
+  justify-content: flex-end;
+}
+
+.rowBot {
+  justify-content: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.columnUser {
+  max-width: 88%;
+  align-items: flex-end;
+}
+
+.columnBot {
+  max-width: 94%;
+  align-items: flex-start;
+}
+
+.bubbleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.bubbleRowReverse {
+  flex-direction: row-reverse;
+}
+
+.bubbleRowNormal {
+  flex-direction: row;
+}
+
+/* ---------- Avatars ---------- */
+
+.avatar {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarUser {
+  background-image: linear-gradient(to bottom right, #3b82f6, #9333ea);
+}
+
+.avatarBot {
+  background-image: linear-gradient(to bottom right, #374151, #4b5563);
+}
+
+.avatarLetter {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.avatarIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: #fff;
+}
+
+/* ---------- Bubbles ---------- */
+
+.bubble {
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.bubbleUser {
+  background-image: linear-gradient(to bottom right, #2563eb, #9333ea);
+  color: #fff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.bubbleBot {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f3f4f6;
+}
+
+/* ---------- Bot actions (below bubble) ---------- */
+
+.actions {
+  width: 100%;
+  padding-left: 2.25rem;
+}
+
+.actions > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.75rem;
+}
+
+.block {
+  margin-top: 0.25rem;
+}
+
+/* Solutions */
+
+.solutionsLabel,
+.industriesLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.solutionsLabel {
+  margin-bottom: 0.5rem;
+}
+
+.industriesLabel {
+  margin-bottom: 0.25rem;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.375rem;
+}
+
+.solutionBtn {
+  padding: 0.5rem 0.625rem;
   border-radius: 0.5rem;
-}
-
-.botMessage {
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(88, 28, 135, 0.4);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
   text-align: left;
-  background-color: #374151;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  touch-action: manipulation;
 }
 
-.input {
-  flex: 1;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #374151;
-  color: white;
+.solutionBtn:hover {
+  background-color: rgba(107, 33, 168, 0.5);
 }
 
-.sendButton {
-  background-color: #3b82f6;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
+.solutionBtn:active {
+  background-color: rgba(107, 33, 168, 0.6);
 }
 
-.sendButton:hover {
+.fullPageBtn {
+  grid-column: 1 / -1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.fullPageBtn:hover {
+  background-color: rgba(37, 99, 235, 0.3);
+}
+
+.fullPageBtn:active {
+  background-color: rgba(37, 99, 235, 0.4);
+}
+
+/* Industries */
+
+.industriesText {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+}
+
+.industriesButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.industryViewBtn {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(22, 163, 74, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.industryViewBtn:hover {
+  background-color: rgba(22, 163, 74, 0.3);
+}
+
+.industryViewBtn:active {
+  background-color: rgba(22, 163, 74, 0.4);
+}
+
+.industryNotNowBtn {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(75, 85, 99, 0.2);
+  border: 1px solid rgba(107, 114, 128, 0.3);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.industryNotNowBtn:hover {
+  background-color: rgba(75, 85, 99, 0.3);
+}
+
+.industryNotNowBtn:active {
+  background-color: rgba(75, 85, 99, 0.4);
+}
+
+/* Contact buttons */
+
+.contactButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.25rem;
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.625rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.contactCall {
+  background-color: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.contactCall:hover {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+
+.contactCall:active {
+  background-color: rgba(34, 197, 94, 0.3);
+}
+
+.contactEmail {
+  background-color: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.contactEmail:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.contactEmail:active {
+  background-color: rgba(59, 130, 246, 0.3);
+}
+
+.contactPage {
+  background-color: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.contactPage:hover {
+  background-color: rgba(168, 85, 247, 0.2);
+}
+
+.contactPage:active {
+  background-color: rgba(168, 85, 247, 0.3);
+}
+
+.contactIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.375rem;
+  flex-shrink: 0;
+}
+
+/* Schedule button */
+
+.scheduleBtn {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #16a34a, #0d9488);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.scheduleBtn:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.scheduleBtn:active {
+  opacity: 0.9;
+}
+
+.scheduleIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Redirect confirmation */
+
+.confirmBox {
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.confirmText {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #e5e7eb;
+  margin-bottom: 0.75rem;
+}
+
+.confirmButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.confirmYesBtn {
+  flex: 1 1 0%;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(22, 163, 74, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  touch-action: manipulation;
+}
+
+.confirmYesBtn:hover {
+  background-color: rgba(22, 163, 74, 0.3);
+}
+
+.confirmYesBtn:active {
+  background-color: rgba(22, 163, 74, 0.4);
+}
+
+.confirmNoBtn {
+  flex: 1 1 0%;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgba(220, 38, 38, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  touch-action: manipulation;
+}
+
+.confirmNoBtn:hover {
+  background-color: rgba(220, 38, 38, 0.3);
+}
+
+.confirmNoBtn:active {
+  background-color: rgba(220, 38, 38, 0.4);
+}
+
+/* Follow-up chips */
+
+.followUpLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  font-weight: 700;
+  margin-bottom: 0.375rem;
+  padding-left: 0.25rem;
+}
+
+.followUpList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.followUpChip {
+  padding: 0.375rem 0.625rem;
+  border-radius: 9999px;
+  color: #e5e7eb;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.followUpChip:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.followUpChip:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- Typing indicator ---------- */
+
+.typingRow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.typingInner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.typingBubble {
+  padding: 0.625rem 0.75rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.typingDots {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.typingDot {
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #9ca3af;
+  border-radius: 9999px;
+}
+
+.typingLabel {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* ---------- Input area ---------- */
+
+.inputArea {
+  flex-shrink: 0;
+  padding: 0.75rem 0.75rem 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0.75rem));
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.inputWrapper:focus-within {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.textInput {
+  flex: 1 1 0%;
+  min-width: 0;
+  background-color: transparent;
+  color: #fff;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.textInput::placeholder {
+  color: #6b7280;
+}
+
+.inputButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.iconBtn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  touch-action: manipulation;
+}
+
+.micActive {
+  background-color: #ef4444;
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(239 68 68 / 0.2), 0 4px 6px -4px rgb(239 68 68 / 0.2);
+}
+
+.iconBtnIdle {
+  color: #9ca3af;
+}
+
+.iconBtnIdle:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.iconBtnIdle:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sendActive {
   background-color: #2563eb;
-} */
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(37 99 235 / 0.2), 0 4px 6px -4px rgb(37 99 235 / 0.2);
+}
+
+.sendActive:active {
+  background-color: #1d4ed8;
+}
+
+.sendBtn:disabled {
+  opacity: 0.5;
+}
+
+/* Voice status */
+
+.voiceStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #60a5fa;
+}
+
+.statusIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex-shrink: 0;
+}
+
+.statusPulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ==========================================================================
+   Breakpoints (kept in ascending order so later queries override earlier ones)
+   ========================================================================== */
+
+/* xs */
+@media (min-width: 475px) {
+  .solutionsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .overlay {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .dragHandleWrap {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .headerLeft {
+    gap: 0.75rem;
+  }
+
+  .headerLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .headerLogoIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .headerRight {
+    gap: 0.5rem;
+  }
+
+  .stopSpeakingBtn,
+  .closeBtn {
+    padding: 0.5rem;
+  }
+
+  .iconResponsive {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .messagesArea {
+    padding: 1rem 1.25rem;
+  }
+
+  .messagesArea > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+  }
+
+  .columnBot {
+    max-width: 85%;
+  }
+
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .avatarLetter {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .avatarIcon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .bubble {
+    padding: 0.625rem 1rem;
+  }
+
+  .actions {
+    padding-left: 2.5rem;
+  }
+
+  .solutionsLabel,
+  .industriesLabel {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .solutionsGrid {
+    gap: 0.5rem;
+  }
+
+  .solutionBtn {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .fullPageBtn {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    gap: 0.5rem;
+  }
+
+  .industriesText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .industryViewBtn,
+  .industryNotNowBtn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .contactButtons {
+    gap: 0.5rem;
+  }
+
+  .contactBtn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .contactIcon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .scheduleBtn {
+    width: auto;
+  }
+
+  .confirmText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .confirmYesBtn,
+  .confirmNoBtn {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .followUpList {
+    gap: 0.5rem;
+  }
+
+  .followUpChip {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .typingBubble {
+    padding: 0.75rem 1rem;
+  }
+
+  .inputArea {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .inputWrapper {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .textInput {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .messagesArea {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .inputArea {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
