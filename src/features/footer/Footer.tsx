@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import styles from "./footer.module.css";
 
@@ -13,7 +13,7 @@ export default function Footer() {
     Legal: t('footer.legal.links', { returnObjects: true }) as Array<{ name: string; href: string }>,
   };
 
-  const socialLinks = t('footer.social', { returnObjects: true }) as Array<{ name: string; href: string }>;
+  // const socialLinks = t('footer.social', { returnObjects: true }) as Array<{ name: string; href: string }>;
 
   return (
     <footer className={`${styles.footer} px-4 py-12 md:px-6`}>
