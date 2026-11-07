@@ -89,7 +89,18 @@ export default function Footer() {
           </div>
 
           {/* Right: Social Icons */}
-          <div className="flex justify-center md:justify-end gap-5">
+          <div className="flex justify-center md:justify-end">
+          <Link
+            href="https://www.linkedin.com/company/clumoss/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CLUMOSS LinkedIn"
+            className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+          >
+            <Linkedin className="w-6 h-6" />
+          </Link>
+          </div>
+          {/* <div className="flex justify-center md:justify-end gap-5">
             {socialLinks.map(({ name, href }) => {
               const Icon = name === 'LinkedIn' ? Linkedin : name === 'Twitter' ? Twitter : Instagram;
               return (
@@ -103,7 +114,7 @@ export default function Footer() {
                 </Link>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

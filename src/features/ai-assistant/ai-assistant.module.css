@@ -1115,3 +1115,38 @@
     padding-right: 1.5rem;
   }
 }
+
+
+
+
+.fabButton,
+.stopSpeakingBtn,
+.closeBtn,
+.solutionBtn,
+.fullPageBtn,
+.industryViewBtn,
+.industryNotNowBtn,
+.contactBtn,
+.scheduleBtn,
+.confirmYesBtn,
+.confirmNoBtn,
+.followUpChip,
+.iconBtn {
+  cursor: pointer;
+}
+
+.fabButton:disabled,
+.stopSpeakingBtn:disabled,
+.closeBtn:disabled,
+.solutionBtn:disabled,
+.fullPageBtn:disabled,
+.industryViewBtn:disabled,
+.industryNotNowBtn:disabled,
+.contactBtn:disabled,
+.scheduleBtn:disabled,
+.confirmYesBtn:disabled,
+.confirmNoBtn:disabled,
+.followUpChip:disabled,
+.iconBtn:disabled {
+  cursor: not-allowed;
+}
